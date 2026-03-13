@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lecții de muzică premium în București. Pian, chitară, voce, vioară — pentru copii și adulți. Prima lecție 100% gratuită. Descoperă potențialul tău muzical astăzi.">
+  <meta name="keywords" content="lectii muzica bucuresti, scoala muzica, cursuri pian, cursuri chitara, lectii voce, academia muzica">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nova Music Academy — Lecții de Muzică Premium în București">
+  <meta property="og:description" content="Muzica nu se predă. Se descoperă împreună. Prima lecție gratuită.">
+  <meta property="og:image" content="assets/images/og-image.jpg">
+  <meta property="og:url" content="https://nova-music-academy.ro">
+  <meta property="og:type" content="website">
+
+  <title>Nova Music Academy — Lecții de Muzică Premium în București</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+
+  <!-- Preconnect for Google Fonts performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <header class="site-header" role="banner">
+    <nav class="nav container" aria-label="Navigare principală">
+      <a href="/" class="nav__logo" aria-label="Nova Music Academy — Acasă">
+        <span class="nav__logo-mark" aria-hidden="true">♩</span>
+        <span class="nav__logo-text">Nova Music <em>Academy</em></span>
+      </a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="/cursuri/">Cursuri</a></li>
+        <li><a href="/profesori/">Profesori</a></li>
+        <li><a href="/despre-noi/">Despre noi</a></li>
+        <li><a href="/testimoniale/">Testimoniale</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+
+      <a href="/evaluare-gratuita/" class="btn btn--primary nav__cta">
+        🎵 Lecție Gratuită
+      </a>
+
+      <button class="nav__burger" aria-label="Deschide meniu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="/cursuri/">Cursuri</a></li>
+        <li><a href="/profesori/">Profesori</a></li>
+        <li><a href="/despre-noi/">Despre noi</a></li>
+        <li><a href="/testimoniale/">Testimoniale</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+      <a href="/evaluare-gratuita/" class="btn btn--primary">🎵 Lecție Gratuită</a>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       HERO SECTION
+       ============================================================ -->
+  <section class="hero" aria-label="Bun venit la Nova Music Academy">
+
+    <!-- Background Media -->
+    <div class="hero__media" aria-hidden="true">
+      <img
+        class="hero__poster"
+        src="assets/images/hero-poster.webp"
+        alt=""
+        fetchpriority="high"
+        decoding="async"
+        width="1920"
+        height="1080"
+      >
+      <video
+        class="hero__video"
+        muted
+        loop
+        playsinline
+        preload="none"
+        data-src="assets/video/hero-academy.mp4"
+        aria-hidden="true"
+      >
+        <source data-src="assets/video/hero-academy.webm" type="video/webm">
+        <source data-src="assets/video/hero-academy.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+
+    <!-- Content -->
+    <div class="hero__content container">
+
+      <!-- Intent Selector -->
+      <div class="intent-selector" role="group" aria-label="Alege experiența ta">
+        <button class="intent-btn intent-btn--active" data-intent="copii" aria-pressed="true">
+          <span class="intent-btn__emoji" aria-hidden="true">🎹</span>
+          <span class="intent-btn__label">Copii</span>
+          <span class="intent-btn__sub">4–12 ani</span>
+        </button>
+        <button class="intent-btn" data-intent="adulti" aria-pressed="false">
+          <span class="intent-btn__emoji" aria-hidden="true">🎸</span>
+          <span class="intent-btn__label">Adulți</span>
+          <span class="intent-btn__sub">13+ ani</span>
+        </button>
+        <button class="intent-btn" data-intent="online" aria-pressed="false">
+          <span class="intent-btn__emoji" aria-hidden="true">🎵</span>
+          <span class="intent-btn__label">Online</span>
+          <span class="intent-btn__sub">Oriunde</span>
+        </button>
+      </div>
+
+      <!-- Pre-header -->
+      <p class="pre-header hero__preheader" aria-hidden="true">✦ Academia ta de muzică din București</p>
+
+      <!-- H1 -->
+      <h1 class="hero__headline">
+        Muzica nu se predă.<br>
+        <em>Se descoperă împreună.</em>
+      </h1>
+
+      <!-- Subheadline -->
+      <p class="hero__subheadline">
+        Lecții de pian, chitară, voce și vioară pentru copii și adulți în București.
+        Profesori pasionați, metode dovedite, prima lecție complet gratuită.
+      </p>
+
+      <!-- CTAs -->
+      <div class="hero__cta-group">
+        <a href="/evaluare-gratuita/" class="btn btn--primary btn--large btn--glow">
+          🎵 Rezervă Evaluarea Gratuită
+        </a>
+        <a href="/cursuri/" class="btn btn--ghost btn--large">
+          Descoperă Cursurile
+        </a>
+      </div>
+
+      <!-- Trust signals -->
+      <div class="hero__trust" role="list" aria-label="Garanții">
+        <span class="trust-item" role="listitem">✓ Fără card de credit</span>
+        <span class="trust-item" role="listitem">✓ Anulare oricând</span>
+        <span class="trust-item" role="listitem">✓ 300+ studenți mulțumiți</span>
+      </div>
+    </div>
+
+    <!-- Scroll cue -->
+    <div class="hero__scroll" aria-hidden="true">
+      <span class="scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       LOGO WALL
+       ============================================================ -->
+  <section class="logo-wall" aria-label="Parteneri și acreditări">
+    <div class="container">
+      <p class="logo-wall__label">Recunoscuți și recomandați de</p>
+    </div>
+    <div class="logo-wall__track" aria-hidden="true">
+      <!-- Replace with real partner logos -->
+      <img src="assets/logos/yamaha.svg" alt="Yamaha" height="36">
+      <img src="assets/logos/roland.svg" alt="Roland" height="36">
+      <img src="assets/logos/abrsm.svg" alt="ABRSM" height="36">
+      <img src="assets/logos/digi24.svg" alt="Digi24" height="36">
+      <img src="assets/logos/steinway.svg" alt="Steinway" height="36">
+      <!-- Duplicate for infinite scroll -->
+      <img src="assets/logos/yamaha.svg" alt="" height="36" aria-hidden="true">
+      <img src="assets/logos/roland.svg" alt="" height="36" aria-hidden="true">
+      <img src="assets/logos/abrsm.svg" alt="" height="36" aria-hidden="true">
+      <img src="assets/logos/digi24.svg" alt="" height="36" aria-hidden="true">
+      <img src="assets/logos/steinway.svg" alt="" height="36" aria-hidden="true">
+    </div>
+  </section>
+
+  <!-- ============================================================
+       INSTRUMENTS / COURSES SECTION
+       ============================================================ -->
+  <section class="instruments section" aria-label="Cursuri disponibile">
+    <div class="container">
+      <p class="pre-header text-center">✦ Ce vrei să înveți?</p>
+      <h2 class="section-title text-center">Alege instrumentul tău</h2>
+      <p class="section-subtitle text-center">
+        Fiecare instrument te așteaptă cu un profesor dedicat și o metodă adaptată vârstei tale.
+      </p>
+
+      <div class="instruments__grid" id="instruments-grid">
+        <!-- Cards are filtered by JS intent selector -->
+        <article class="instrument-card" data-for="copii adulti online">
+          <div class="instrument-card__icon" aria-hidden="true">🎹</div>
+          <h3>Pian</h3>
+          <p>Clasic sau contemporan — pianul deschide toate porțile muzicii.</p>
+          <div class="instrument-card__meta">
+            <span class="badge">4+ ani</span>
+            <span class="badge badge--highlight">Cel mai popular</span>
+          </div>
+          <a href="/cursuri/pian/" class="btn btn--outline btn--sm">Află mai mult</a>
+        </article>
+
+        <article class="instrument-card" data-for="copii adulti online">
+          <div class="instrument-card__icon" aria-hidden="true">🎸</div>
+          <h3>Chitară</h3>
+          <p>Acustică, electrică sau clasică. De la primele acorduri la scene mari.</p>
+          <div class="instrument-card__meta">
+            <span class="badge">6+ ani</span>
+          </div>
+          <a href="/cursuri/chitara/" class="btn btn--outline btn--sm">Află mai mult</a>
+        </article>
+
+        <article class="instrument-card" data-for="adulti online">
+          <div class="instrument-card__icon" aria-hidden="true">🎤</div>
+          <h3>Voce</h3>
+          <p>Tehnica vocală corectă, control și expresie — pentru orice gen muzical.</p>
+          <div class="instrument-card__meta">
+            <span class="badge">10+ ani</span>
+          </div>
+          <a href="/cursuri/voce/" class="btn btn--outline btn--sm">Află mai mult</a>
+        </article>
+
+        <article class="instrument-card" data-for="copii adulti">
+          <div class="instrument-card__icon" aria-hidden="true">🎻</div>
+          <h3>Vioară</h3>
+          <p>Eleganță și profunzime. Vioara formează disciplina și sensibilitatea artistică.</p>
+          <div class="instrument-card__meta">
+            <span class="badge">5+ ani</span>
+          </div>
+          <a href="/cursuri/vioara/" class="btn btn--outline btn--sm">Află mai mult</a>
+        </article>
+
+        <article class="instrument-card" data-for="adulti online">
+          <div class="instrument-card__icon" aria-hidden="true">🎧</div>
+          <h3>Producție Muzicală</h3>
+          <p>DAW, beatmaking, mixing & mastering — creează muzica ta de acasă.</p>
+          <div class="instrument-card__meta">
+            <span class="badge">14+ ani</span>
+            <span class="badge badge--new">Nou</span>
+          </div>
+          <a href="/cursuri/productie/" class="btn btn--outline btn--sm">Află mai mult</a>
+        </article>
+
+        <article class="instrument-card" data-for="copii adulti online">
+          <div class="instrument-card__icon" aria-hidden="true">🎼</div>
+          <h3>Teoria Muzicii</h3>
+          <p>Citire de note, solfegiu, armonie — fundamentele care accelerează orice instrument.</p>
+          <div class="instrument-card__meta">
+            <span class="badge">7+ ani</span>
+          </div>
+          <a href="/cursuri/teoria-muzicii/" class="btn btn--outline btn--sm">Află mai mult</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WHY US — FEATURE BLOCK
+       ============================================================ -->
+  <section class="features section features--surface" aria-label="De ce Nova Music Academy">
+    <div class="container">
+      <p class="pre-header text-center">✦ De ce noi?</p>
+      <h2 class="section-title text-center">Ce ne face diferiți</h2>
+
+      <div class="features__grid">
+        <div class="feature-card">
+          <div class="feature-card__icon" aria-hidden="true">🏆</div>
+          <h3>Profesori Verificați & Pasionați</h3>
+          <p>Fiecare profesor trece printr-un proces riguros de selecție. Pedagogie demonstrată, nu doar talent muzical.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon" aria-hidden="true">📈</div>
+          <h3>Progres Măsurabil</h3>
+          <p>Rapoarte lunare de progres pentru părinți. Știi exact ce a învățat copilul tău și ce urmează.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon" aria-hidden="true">🎭</div>
+          <h3>Recitaluri & Evenimente</h3>
+          <p>De 3 ori pe an, studenții noștri urcă pe scenă. Experiența performanței face parte din curriculum.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon" aria-hidden="true">🛡️</div>
+          <h3>Mediu Sigur & Suportiv</h3>
+          <p>Greșelile sunt parte din proces. Atmosfera noastră elimină frica de eșec și celebrează fiecare pas.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon" aria-hidden="true">📱</div>
+          <h3>Flexibilitate Completă</h3>
+          <p>Lecții față-în-față în București sau online oriunde. Programul tău, ritmul tău.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon" aria-hidden="true">🎁</div>
+          <h3>Prima Lecție Gratuită</h3>
+          <p>Fără presiune, fără obligații. Vino să simți energia academiei înainte de orice decizie.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TEACHER SPOTLIGHT
+       ============================================================ -->
+  <section class="teachers section" aria-label="Profesorii noștri">
+    <div class="container">
+      <p class="pre-header text-center">✦ Echipa noastră</p>
+      <h2 class="section-title text-center">Cunoaște-ți viitorul profesor</h2>
+
+      <div class="teachers__grid">
+        <!-- Teacher cards — replace with real data -->
+        <article class="teacher-card">
+          <div class="teacher-card__photo">
+            <img src="assets/images/teacher-placeholder.jpg" alt="Profesor pian" width="300" height="300" loading="lazy">
+          </div>
+          <div class="teacher-card__body">
+            <p class="pre-header">✦ Pian & Teoria Muzicii</p>
+            <h3>Numele Profesorului</h3>
+            <p class="teacher-card__bio">10 ani de experiență pedagogică. Absolvent al Universității de Muzică București. Specializat în metoda Suzuki pentru copii.</p>
+            <div class="teacher-card__rating" aria-label="Rating 5 din 5">
+              <span aria-hidden="true">⭐⭐⭐⭐⭐</span>
+              <span class="teacher-card__reviews">48 recenzii</span>
+            </div>
+            <a href="/profesori/profesor-pian/" class="btn btn--outline btn--sm">Vezi profilul</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="text-center" style="margin-top: 2.5rem;">
+        <a href="/profesori/" class="btn btn--primary">Cunoaște toți profesorii</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TESTIMONIALS
+       ============================================================ -->
+  <section class="testimonials section testimonials--surface" aria-label="Ce spun studenții și părinții">
+    <div class="container">
+      <p class="pre-header text-center">✦ Povești reale</p>
+      <h2 class="section-title text-center">Ce spun familiile noastre</h2>
+
+      <!-- Filter tabs -->
+      <div class="testimonials__tabs" role="tablist" aria-label="Filtrează testimoniale">
+        <button class="tab-btn tab-btn--active" role="tab" aria-selected="true" data-tab="all">Toți</button>
+        <button class="tab-btn" role="tab" aria-selected="false" data-tab="parinti">Părinți</button>
+        <button class="tab-btn" role="tab" aria-selected="false" data-tab="adulti">Studenți adulți</button>
+      </div>
+
+      <div class="testimonials__grid">
+        <blockquote class="testimonial-card" data-category="parinti">
+          <div class="testimonial-card__rating" aria-label="5 stele">⭐⭐⭐⭐⭐</div>
+          <p>"Fiica mea (8 ani) s-a transformat complet. De la «nu vreau la pian» la «când e lecția?» în doar 3 luni. Profesoara are un talent aparte cu copiii mici."</p>
+          <footer class="testimonial-card__author">
+            <div class="testimonial-card__avatar" aria-hidden="true">MA</div>
+            <div>
+              <cite>Maria A.</cite>
+              <span>Mama Anastasiei, 8 ani — Pian</span>
+            </div>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonial-card" data-category="adulti">
+          <div class="testimonial-card__rating" aria-label="5 stele">⭐⭐⭐⭐⭐</div>
+          <p>"Am început chitara la 34 de ani, convins că e prea târziu. Astăzi, după 8 luni, cânt primele mele melodii. Mediul este incredibil de suportiv."</p>
+          <footer class="testimonial-card__author">
+            <div class="testimonial-card__avatar" aria-hidden="true">RP</div>
+            <div>
+              <cite>Radu P.</cite>
+              <span>Student adult — Chitară</span>
+            </div>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonial-card" data-category="parinti">
+          <div class="testimonial-card__rating" aria-label="5 stele">⭐⭐⭐⭐⭐</div>
+          <p>"Rapoartele lunare de progres sunt exact ce aveam nevoie ca părinte. Știu precis ce a învățat și ce urmează. Transparență totală."</p>
+          <footer class="testimonial-card__author">
+            <div class="testimonial-card__avatar" aria-hidden="true">IC</div>
+            <div>
+              <cite>Ioana C.</cite>
+              <span>Mama lui Tudor, 11 ani — Vioară</span>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FREE EVALUATION CTA SECTION
+       ============================================================ -->
+  <section class="cta-section" aria-label="Rezervă lecție gratuită" id="evaluare">
+    <div class="container">
+      <div class="cta-section__inner">
+        <div class="cta-section__text">
+          <p class="pre-header">✦ Fără presiune. Fără obligații.</p>
+          <h2>Evaluare Muzicală<br><em>100% Gratuită</em></h2>
+          <p>30 de minute cu un profesor dedicat. Descoperă instrumentul potrivit, nivelul tău actual și un plan personalizat. Complet gratuit.</p>
+          <ul class="cta-section__benefits" role="list">
+            <li>✓ Confirmare instantă prin SMS/Email</li>
+            <li>✓ Anulare sau reprogramare gratuită</li>
+            <li>✓ Fără card de credit necesar</li>
+            <li>✓ Disponibil online și față-în-față</li>
+          </ul>
+        </div>
+
+        <div class="cta-section__form">
+          <form class="booking-form" novalidate aria-label="Formular rezervare lecție gratuită">
+            <h3>Rezervă acum</h3>
+
+            <div class="form-group">
+              <label for="name">Prenume</label>
+              <input type="text" id="name" name="name" placeholder="ex: Alexandru" required autocomplete="given-name">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Telefon</label>
+              <input type="tel" id="phone" name="phone" placeholder="07XX XXX XXX" required autocomplete="tel">
+            </div>
+
+            <div class="form-group">
+              <label for="instrument">Instrument preferat</label>
+              <select id="instrument" name="instrument" required>
+                <option value="">Alege instrumentul...</option>
+                <option value="pian">🎹 Pian</option>
+                <option value="chitara">🎸 Chitară</option>
+                <option value="voce">🎤 Voce</option>
+                <option value="vioara">🎻 Vioară</option>
+                <option value="productie">🎧 Producție Muzicală</option>
+                <option value="teoria">🎼 Teoria Muzicii</option>
+                <option value="nu_stiu">Nu știu încă</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--large btn--full btn--glow">
+              🎵 Rezervă Gratuit Acum
+            </button>
+
+            <p class="form-disclaimer">
+              Prin trimiterea formularului ești de acord cu
+              <a href="/politica-confidentialitate/">politica de confidențialitate</a>.
+              Nu trimitem spam.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FLOATING CTA
+       ============================================================ -->
+  <div class="floating-cta" role="complementary" aria-label="Rezervare rapidă" aria-live="polite">
+    <button class="floating-cta__dismiss" aria-label="Închide">×</button>
+    <p class="floating-cta__headline">🎵 Prima lecție <strong>GRATUITĂ</strong></p>
+    <p class="floating-cta__sub">Fără obligații • Confirmare instant</p>
+    <a href="#evaluare" class="btn btn--white btn--sm floating-cta__btn">Rezervă acum</a>
+  </div>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="/" class="nav__logo" aria-label="Nova Music Academy">
+            <span class="nav__logo-mark" aria-hidden="true">♩</span>
+            <span class="nav__logo-text">Nova Music <em>Academy</em></span>
+          </a>
+          <p>Muzica nu se predă. Se descoperă împreună.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Instagram Nova Music Academy">📸</a>
+            <a href="#" aria-label="Facebook Nova Music Academy">📘</a>
+            <a href="#" aria-label="YouTube Nova Music Academy">▶️</a>
+            <a href="#" aria-label="TikTok Nova Music Academy">🎵</a>
+          </div>
+        </div>
+
+        <nav aria-label="Cursuri">
+          <h4>Cursuri</h4>
+          <ul role="list">
+            <li><a href="/cursuri/pian/">Pian</a></li>
+            <li><a href="/cursuri/chitara/">Chitară</a></li>
+            <li><a href="/cursuri/voce/">Voce</a></li>
+            <li><a href="/cursuri/vioara/">Vioară</a></li>
+            <li><a href="/cursuri/productie/">Producție Muzicală</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Academia">
+          <h4>Academia</h4>
+          <ul role="list">
+            <li><a href="/despre-noi/">Despre noi</a></li>
+            <li><a href="/profesori/">Profesori</a></li>
+            <li><a href="/testimoniale/">Testimoniale</a></li>
+            <li><a href="/blog/">Blog Muzical</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__contact">
+          <h4>Contact</h4>
+          <address>
+            <p>📍 București, România</p>
+            <p>📞 <a href="tel:+40700000000">0700 000 000</a></p>
+            <p>✉️ <a href="mailto:contact@nova-music-academy.ro">contact@nova-music-academy.ro</a></p>
+          </address>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 Nova Music Academy. Toate drepturile rezervate.</p>
+        <div class="footer__legal">
+          <a href="/politica-confidentialitate/">Politica de Confidențialitate</a>
+          <a href="/termeni-conditii/">Termeni și Condiții</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

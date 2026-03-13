@@ -1,0 +1,40 @@
+# System
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+accese.md
+
+# Node (if added later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output (if added later)
+/dist/
+/build/
+/.cache/
+
+# Large media (managed separately or via Git LFS)
+src/assets/video/*.mp4
+src/assets/video/*.webm
+src/assets/video/*.mov
+
+# Logs
+*.log
