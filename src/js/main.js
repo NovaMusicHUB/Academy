@@ -194,7 +194,6 @@
       specialty: '✦ Canto CVT',
       photos: [
         base + 'Jessica%20Diana.jpg',
-        base + 'Jessica%20Diana%202.jpg',
         base + 'Jessica%20Diana%203.jpg',
       ],
       bio: [
@@ -204,17 +203,18 @@
       ],
     },
     'daniela-bazac': {
-      name: 'Daniela Bazac',
-      specialty: '✦ Canto CVT · Pian',
+      name: 'Dana Bazac',
+      specialty: '✦ Pian · Vocal Coach CVT',
       photos: [
-        base + 'Daniela%20Bazac%20-%20poza%201.jpeg',
-        base + 'Daniela%20Bazac%20-%20poza%202.jpeg',
+        'assets/images/Dana%201.jpeg',
+        'assets/images/Dana%202.jpeg',
+        'assets/images/Dana%203.jpeg',
       ],
       bio: [
-        'Sunt Dana Bazac, am 24 de ani și trăiesc muzica în toate formele ei. Absolventă a Universității Naționale de Muzică din București, secția Compoziție, și în prezent studentă în anul II de Master la aceeași specializare, mi-am început parcursul muzical încă din clasa I, cu pianul ca instrument principal.',
-        'De-a lungul anilor, am explorat universul tehnicilor vocale prin studii particulare, trecând prin metode variate până în 2017, când am descoperit Complete Vocal Technique (CVT) ca elev la Nova Music. Această abordare mi-a transformat profund modul de a cânta: mi-am înțeles și valorificat aparatul vocal și am dobândit instrumentele necesare pentru a ajuta și alți artiști să-și atingă potențialul.',
-        'Am urcat pe scenă de mică, încă de la 7 ani, cântând vocal și la pian. Din 2014, alături de diferite trupe, am avut spectacole și evenimente prin țară — concerte, festivaluri și concursuri. În prezent fac parte din trupa Icebreakers.',
-        'Ca profesor de pian și vocal coach, scopul meu este să creez un mediu de învățare inspirant, în care fiecare elev să-și descopere vocea, să își dezvolte sensibilitatea muzicală și să capete încrederea necesară pentru a urca pe scenă.',
+        'Dana Bazac are 24 de ani și o relație profundă cu muzica, construită încă din copilărie, odată cu primele lecții de pian din clasa I. Parcursul său artistic a evoluat constant, ducând-o astăzi pe scenă, atât ca instrumentist, cât și ca vocalist.',
+        'Este absolventă a Universității Naționale de Muzică din București, secția Compoziție, iar în prezent își continuă studiile la nivel de master. De-a lungul anilor, a explorat diverse tehnici vocale, iar întâlnirea cu Complete Vocal Technique (CVT) a reprezentat un moment definitoriu în dezvoltarea sa, oferindu-i o înțelegere clară și sănătoasă a vocii.',
+        'Cu o experiență scenică de peste 17 ani, Dana a susținut numeroase concerte și evenimente încă din 2014, colaborând cu diverse trupe și proiecte muzicale din România.',
+        'În rolul de profesor de pian și vocal coach, Dana creează un mediu sigur și încurajator pentru elevii săi, unde aceștia pot explora, experimenta și evolua în ritmul propriu. Abordarea sa îmbină rigoarea tehnică cu dezvoltarea încrederii și a expresivității, punând accent pe autenticitate — esența oricărui act artistic.',
       ],
     },
     'matei-alexandru': {
@@ -283,6 +283,21 @@
       bio: [
         'Fondatorul Nova Music Academy și instructor de producție muzicală. Pasionat de muzică și tehnologie audio, ghidează cursanții prin universul DAW-urilor, beatmaking-ului, mixingului și masteringului.',
         'Crede că producția muzicală este una dintre cele mai accesibile forme de exprimare artistică modernă — și că fiecare student poate ajunge la rezultate profesionale cu metodele potrivite.',
+      ],
+    },
+    'feli-dilbea': {
+      name: 'Feli Dilbea',
+      specialty: '✦ Vocal Coach · Canto CVT',
+      photos: [
+        'assets/images/Feli.jpeg',
+        'assets/images/Feli%202.jpeg',
+        'assets/images/Feli%203.jpeg',
+      ],
+      bio: [
+        'Absolventă a Universității Naționale de Muzică din București, secția Compoziție – Muzică Ușoară, Feli aduce cu ea peste 18 ani de experiență muzicală și 6 ani de activitate activă în industrie.',
+        'Ca artist singer-songwriter, explorează constant noi direcții creative, iar energia aceasta o aduce direct în sala de curs. Cu o experiență pedagogică de peste 6 ani, știe să se conecteze natural cu fiecare elev, indiferent de vârstă.',
+        'Creează un spațiu în care copiii și tinerii se simt liberi să descopere muzica fără presiune, cu entuziasm și autenticitate. Pasiunea ei pentru psihologie face diferența în modul în care predă — înțelege nevoile emoționale ale elevilor și transformă fiecare lecție într-o experiență de creștere personală, nu doar muzicală.',
+        'Pe scenă de la 6 ani, Feli știe că muzica nu este doar tehnică — este emoție, prezență și autenticitate. La Nova Music Academy, ea transmite exact asta: pasiunea pentru muzică și convingerea că aceasta poate transforma, conecta și inspira.',
       ],
     },
     'bubuci-nelu': {
@@ -720,20 +735,20 @@
       ],
       meta: ['6+ ani', 'Copii & adulți', 'Online disponibil'],
     },
-    voce: {
-      icon: '🎤',
-      name: 'Voce',
-      badge: 'Vârstă minimă: 10 ani',
-      intro: 'Cursul de voce este pentru cei care vor să cânte cu tehnică corectă, expresie și control. Lucrăm pe orice gen muzical și construim un repertoriu personalizat.',
+    teorie: {
+      icon: '🎼',
+      name: 'Teorie Muzicală',
+      badge: 'Vârstă minimă: 6 ani',
+      intro: 'Teoria muzicală este fundația oricărui muzician complet. Înveți să citești partituri, să înțelegi armonia și să comunici muzical cu oricine — indiferent de instrument.',
       points: [
-        'Tehnica vocală și igiena vocii',
-        'Respirație și suport diafragmatic',
-        'Intonație și ureche muzicală',
-        'Interpretare și expresivitate',
-        'Repertoriu pop, R&B, jazz, musical',
-        'Pregătire pentru audiții și înregistrări',
+        'Solfegiu și citit partituri',
+        'Ritmică și metru muzical',
+        'Intervale, acorduri și tonalități',
+        'Armonie de bază și progresii',
+        'Dicteu muzical și ureche absolută',
+        'Aplicat direct pe instrumentul preferat',
       ],
-      meta: ['10+ ani', 'Adulți', 'Online disponibil'],
+      meta: ['6+ ani', 'Copii & adulți', 'Online disponibil'],
     },
     saxofon: {
       icon: '🎷',
@@ -873,7 +888,81 @@
 })();
 
 
-/* ── 9. SMOOTH SCROLL for anchor links ───────────────────────── */
+/* ── 9. SCROLL REVEAL ────────────────────────────────────────── */
+(function initReveal() {
+  // Elements to reveal as cards (staggered within parent)
+  const cardSelectors = [
+    '.instrument-card',
+    '.feature-card',
+    '.cvt-card',
+    '.teacher-card',
+    '.testimonial-card',
+    '.resource-card',
+    '.faq__item',
+  ];
+
+  // Elements to reveal as section headers
+  const headerSelectors = [
+    '.section-title',
+    '.pre-header',
+    '.cvt-section__lead',
+    '.cvt-section__text',
+    '.cvt-section__quote',
+    '.cvt-section__cta',
+  ];
+
+  // Add reveal class to headers
+  document.querySelectorAll(headerSelectors.join(',')).forEach(el => {
+    // Skip hero elements — they have CSS animation already
+    if (el.closest('.hero')) return;
+    el.classList.add('section-reveal');
+  });
+
+  // Add reveal + stagger delay to cards
+  cardSelectors.forEach(sel => {
+    const groups = {};
+    document.querySelectorAll(sel).forEach(el => {
+      const parent = el.parentElement;
+      if (!groups.has) groups[parent] = groups[parent] || [];
+      groups[parent].push(el);
+    });
+    // Group siblings together for stagger
+    document.querySelectorAll(sel).forEach(el => {
+      el.classList.add('reveal');
+    });
+    // Apply stagger per parent group
+    const parents = new Set(
+      Array.from(document.querySelectorAll(sel)).map(el => el.parentElement)
+    );
+    parents.forEach(parent => {
+      parent.querySelectorAll(sel).forEach((el, i) => {
+        el.setAttribute('data-delay', String((i % 6) + 1));
+      });
+    });
+  });
+
+  // Bail out if no IntersectionObserver
+  if (!('IntersectionObserver' in window)) {
+    document.querySelectorAll('.reveal, .section-reveal').forEach(el => {
+      el.classList.add('is-visible');
+    });
+    return;
+  }
+
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal, .section-reveal').forEach(el => obs.observe(el));
+})();
+
+
+/* ── 10. SMOOTH SCROLL for anchor links ──────────────────────── */
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', (e) => {
     const target = document.querySelector(link.getAttribute('href'));
