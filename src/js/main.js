@@ -174,7 +174,47 @@
 })();
 
 
-/* ── 7. TEACHER MODAL ────────────────────────────────────────── */
+/* ── 7. GROUP CLASSES ANNOUNCEMENT POPUP ────────────────────── */
+(function initGroupAnnounce() {
+  const overlay = document.getElementById('group-announce');
+  if (!overlay) return;
+
+  const closeBtn  = document.getElementById('announce-close');
+  const skipBtn   = document.getElementById('announce-skip');
+  const ctaBtn    = document.getElementById('announce-cta');
+
+  function close() {
+    overlay.classList.remove('is-open');
+    overlay.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  // Show immediately every visit
+  overlay.classList.add('is-open');
+  overlay.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+
+  closeBtn.addEventListener('click', close);
+  skipBtn.addEventListener('click', close);
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && overlay.classList.contains('is-open')) close();
+  });
+
+  // CTA opens registration modal
+  ctaBtn.addEventListener('click', () => {
+    close();
+    const reg = document.getElementById('registration-modal');
+    if (reg) {
+      reg.setAttribute('aria-hidden', 'false');
+      reg.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+    }
+  });
+})();
+
+
+/* ── 8. TEACHER MODAL ────────────────────────────────────────── */
 (function initTeacherModal() {
   const overlay  = document.getElementById('teacher-modal');
   if (!overlay) return;
@@ -287,7 +327,7 @@
     },
     'feli-dilbea': {
       name: 'Feli Dilbea',
-      specialty: '✦ Vocal Coach · Canto CVT',
+      specialty: '✦ Pian · Vocal Coach CVT',
       photos: [
         'assets/images/Feli.jpeg',
         'assets/images/Feli%202.jpeg',

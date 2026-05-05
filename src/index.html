@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=2">
 </head>
 <body>
 
@@ -267,6 +267,24 @@
         </article>
 
       </div>
+
+      <!-- Group Classes Banner -->
+      <div class="group-banner">
+        <div class="group-banner__left">
+          <span class="group-banner__tag">🆕 Nou</span>
+          <h3>Lecții de grup disponibile la toate instrumentele</h3>
+          <p>Progresezi mai repede, te motivezi reciproc și plătești mai puțin. Clasele de grup combină învățarea serioasă cu energia unui mediu colaborativ.</p>
+        </div>
+        <div class="group-banner__perks">
+          <span>✔️ Motivație crescută</span>
+          <span>✔️ Concurență sănătoasă</span>
+          <span>✔️ Preț special de lansare</span>
+        </div>
+        <button type="button" class="btn btn--primary btn--glow" data-modal="registration-modal">
+          Rezervă loc în grup
+        </button>
+      </div>
+
     </div>
   </section>
 
@@ -504,10 +522,10 @@
 
         <article class="teacher-card" data-teacher="feli-dilbea">
           <div class="teacher-card__photo">
-            <img src="assets/images/Feli.jpeg" alt="Feli Dilbea — Vocal Coach" width="400" height="400" loading="lazy">
+            <img src="assets/images/Feli.jpeg" alt="Feli Dilbea — Pian · Vocal Coach" width="400" height="400" loading="lazy">
           </div>
           <div class="teacher-card__body">
-            <p class="pre-header">✦ Vocal Coach · Canto CVT</p>
+            <p class="pre-header">✦ Pian · Vocal Coach CVT</p>
             <h3>Feli Dilbea</h3>
             <p class="teacher-card__bio">Absolventă a Universității Naționale de Muzică din București, secția Compoziție – Muzică Ușoară. Artist singer-songwriter cu peste 18 ani de experiență muzicală și 6 ani de pedagogie vocală activă.</p>
           </div>
@@ -1111,6 +1129,48 @@
   </footer>
 
   <!-- ============================================================
+       GROUP CLASSES ANNOUNCEMENT POPUP
+       ============================================================ -->
+  <div class="announce-overlay" id="group-announce" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="announce-title">
+    <div class="announce-popup">
+      <button class="announce-popup__close" id="announce-close" aria-label="Închide">×</button>
+
+      <div class="announce-popup__badge">🆕 Noutate</div>
+
+      <h2 class="announce-popup__title" id="announce-title">
+        🎶 Învață mai repede.<br>Progresează mai frumos.<br><em>Împreună.</em>
+      </h2>
+
+      <p class="announce-popup__intro">
+        La Nova Music Academy lansăm <strong>clasele de grup</strong> – o experiență care face diferența:
+      </p>
+
+      <ul class="announce-popup__list">
+        <li>✔️ <strong>Motivație constantă</strong> – nimeni nu vrea să rămână în urmă</li>
+        <li>✔️ <strong>Concurență sănătoasă</strong> care accelerează progresul</li>
+        <li>✔️ <strong>Colaborare reală</strong> – înveți cântând alături de alții</li>
+        <li>✔️ <strong>Mai multă încredere și energie</strong> la fiecare lecție</li>
+      </ul>
+
+      <p class="announce-popup__sub">
+        Totul într-un mediu prietenos, unde muzica se simte, nu doar se învață.
+      </p>
+
+      <div class="announce-popup__price">
+        💸 <strong>Preț special de lansare</strong> – accesibil și gândit să te ajute să evoluezi constant.
+      </div>
+
+      <button type="button" class="btn btn--primary btn--large btn--full btn--glow" id="announce-cta" data-modal="registration-modal">
+        👉 Rezervă-ți locul într-un grup
+      </button>
+
+      <button type="button" class="announce-popup__skip" id="announce-skip">
+        Nu mă interesează acum
+      </button>
+    </div>
+  </div>
+
+  <!-- ============================================================
        REGISTRATION MODAL
        ============================================================ -->
   <div class="modal-overlay" id="registration-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
@@ -1226,6 +1286,6 @@
     </div>
   </div>
 
-  <script src="js/main.js" defer></script>
+  <script src="js/main.js?v=2" defer></script>
 </body>
 </html>
