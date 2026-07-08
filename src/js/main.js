@@ -206,28 +206,9 @@
     if (e.key === "Escape" && overlay.classList.contains("is-open")) close();
   });
 
-  // CTA — Nova Summer Elite: opens registration modal with Summer pre-selected
-  ctaBtn.addEventListener("click", () => {
-    close();
-    const reg = document.getElementById("registration-modal");
-    if (reg) {
-      reg.setAttribute("aria-hidden", "false");
-      reg.classList.add("is-open");
-      document.body.style.overflow = "hidden";
-      // Pre-select Summer Elite in the course dropdown if it exists
-      const courseSelect = reg.querySelector(
-        'select[name="course"], #reg-course',
-      );
-      if (courseSelect) {
-        const summerOpt = Array.from(courseSelect.options).find(
-          (o) =>
-            o.text.toLowerCase().includes("summer") ||
-            o.value.toLowerCase().includes("summer"),
-        );
-        if (summerOpt) summerOpt.selected = true;
-      }
-    }
-  });
+  // CTA — Nova Summer Elite: navigates to landing page (it's an <a> tag now)
+  // Close popup when clicking the CTA link so scroll is restored
+  if (ctaBtn) ctaBtn.addEventListener("click", close);
 })();
 
 /* ── 8. TEACHER MODAL ────────────────────────────────────────── */
