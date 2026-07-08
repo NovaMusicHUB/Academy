@@ -2840,20 +2840,83 @@ h3 {
 
 /* Mobile: stacked layout */
 @media (max-width: 640px) {
+    .announce-overlay {
+        padding: 0.5rem;
+        align-items: flex-end;
+    }
+
     .announce-popup--summer {
         flex-direction: column;
-        max-height: 92vh;
+        max-height: 94vh;
         overflow-y: auto;
+        border-radius: 20px 20px 16px 16px;
     }
 
+    /* Imaginea ocupa proportional din ecran, nu fix */
     .announce-popup__image {
-        flex: 0 0 200px;
+        flex: 0 0 min(240px, 32vh);
         border-radius: 0;
+        width: 100%;
     }
 
+    .announce-popup__image img {
+        object-position: center 15%;
+    }
+
+    /* Body mai compact pe telefon */
     .announce-popup--summer .announce-popup__body {
-        padding: 1.5rem 1.25rem 1.5rem;
+        padding: 1.1rem 1.1rem 1.25rem;
         overflow-y: visible;
+        gap: 0;
+    }
+
+    .announce-popup__badge {
+        font-size: 0.65rem;
+        padding: 0.2rem 0.6rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .announce-popup__brand {
+        font-size: 1rem;
+        margin-bottom: 0.35rem;
+    }
+
+    .announce-popup__title {
+        font-size: 1.1rem;
+        margin-bottom: 0.35rem;
+    }
+
+    .announce-popup__program {
+        font-size: 0.68rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .announce-popup__intro {
+        font-size: 0.82rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .announce-popup__list {
+        gap: 0.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .announce-popup__list li {
+        font-size: 0.8rem;
+    }
+
+    .announce-popup__sub {
+        font-size: 0.75rem;
+        margin-bottom: 0.85rem;
+        -webkit-line-clamp: 3;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .announce-popup__skip {
+        font-size: 0.75rem;
+        margin-top: 0.5rem;
     }
 }
 
