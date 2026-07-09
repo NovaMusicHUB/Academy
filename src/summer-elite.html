@@ -1296,22 +1296,19 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="se-experience"
-                            >Ai mai cântat înainte?</label
-                        >
-                        <select id="se-experience" name="experience">
-                            <option value="">Alege o opțiune...</option>
-                            <option value="cateva_luni">Da, câteva luni</option>
-                            <option value="1_3_ani">Da, 1-3 ani</option>
-                            <option value="peste_3_ani">Da, peste 3 ani</option>
-                            <option value="inceput">Nu, sunt la început</option>
-                        </select>
+                        <label for="se-dob">Data naşterii *</label>
+                        <input
+                            type="date"
+                            id="se-dob"
+                            name="dob"
+                            required
+                            autocomplete="bday"
+                        />
                     </div>
 
                     <div class="form-group">
                         <label for="se-message"
-                            >De ce vrei să participi la Nova Summer
-                            Elite?</label
+                            >De ce vrei să participi la Nova Summer Elite? <span style="font-weight:400;color:#888">(opțional)</span></label
                         >
                         <textarea
                             id="se-message"
@@ -1416,11 +1413,12 @@
                     var name = form.querySelector("#se-name").value.trim();
                     var phone = form.querySelector("#se-phone").value.trim();
                     var email = form.querySelector("#se-email").value.trim();
+                    var dob = form.querySelector("#se-dob").value;
                     var gdpr = form.querySelector("#se-gdpr").checked;
 
-                    if (!name || !phone || !email) {
+                    if (!name || !phone || !email || !dob) {
                         alert(
-                            "Te rugăm completează câmpurile obligatorii: Nume, Telefon și Email.",
+                            "Te rugăm completeață câmpurile obligatorii: Nume, Telefon, Email și Data naşterii.",
                         );
                         return;
                     }
