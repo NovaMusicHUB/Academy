@@ -495,6 +495,59 @@
                 font-style: italic;
             }
 
+            /* Optiuni pret */
+            .price-option {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-radius: 12px;
+                padding: 0.9rem 1.25rem;
+                margin-bottom: 0.75rem;
+                gap: 0.5rem;
+            }
+
+            .price-option--main {
+                background: var(--color-accent);
+                color: #fff;
+            }
+
+            .price-option--alt {
+                background: var(--color-surface);
+                border: 1.5px dashed #ccc;
+                flex-wrap: wrap;
+            }
+
+            .price-option__label {
+                font-size: 0.9rem;
+                font-weight: 600;
+                opacity: 0.92;
+            }
+
+            .price-option--alt .price-option__label {
+                color: var(--color-base);
+                opacity: 1;
+            }
+
+            .price-option__amount {
+                font-family: 'Playfair Display', serif;
+                font-size: 1.6rem;
+                font-weight: 900;
+                white-space: nowrap;
+            }
+
+            .price-option__amount--alt {
+                color: var(--color-base);
+                font-size: 1.4rem;
+            }
+
+            .price-option__detail {
+                width: 100%;
+                font-size: 0.78rem;
+                color: #888;
+                text-align: right;
+                margin-top: -0.25rem;
+            }
+
             /* ---------- FORM ---------- */
             .summer-form {
                 max-width: 560px;
@@ -1169,33 +1222,37 @@
                     <p class="price-card__name">
                         Program complet Nova Summer Elite
                     </p>
-                    <span class="price-tbd">Contactează-ne pentru detalii</span>
+
+                    <!-- Pret integral -->
+                    <div class="price-option price-option--main">
+                        <span class="price-option__label">Plată integrală</span>
+                        <span class="price-option__amount">4.300 RON</span>
+                    </div>
+
+                    <!-- Pret rate -->
+                    <div class="price-option price-option--alt">
+                        <span class="price-option__label">2 rate egale</span>
+                        <span class="price-option__amount price-option__amount--alt">4.800 RON</span>
+                        <span class="price-option__detail">2 × 2.400 RON</span>
+                    </div>
 
                     <ul class="price-card__includes">
                         <li>
-                            6 săptămâni · 12 întâlniri · 2 ședințe/săptămână × 3
-                            ore
+                            6 săptămâni · 12 întâlniri · 2 ședințe/săptămână × 3 ore
                         </li>
-                        <li>
-                            Canto CVT, mișcare scenică, actorie pentru soliști
-                        </li>
+                        <li>Canto CVT, mișcare scenică, actorie pentru soliști</li>
                         <li>Sesiuni de songwriting</li>
-                        <li>
-                            Întâlniri cu artiști și profesioniști din industrie
-                        </li>
+                        <li>Întâlniri cu artiști și profesioniști din industrie</li>
                         <li>Înregistrare profesională a piesei tale</li>
-                        <li>
-                            Masterizare și distribuție pe platformele de
-                            streaming
-                        </li>
-                        <li>Clip de imagine profesional</li>
+                        <li>Masterizare și distribuție pe platformele de streaming</li>
+                        <li>Clip de imagine filmat în cadrul programului</li>
                     </ul>
 
                     <a
                         href="#inscriere"
                         class="btn btn--primary btn--large btn--full btn--glow"
                     >
-                        Solicită detalii &amp; înscrie-te →
+                        Vreau să mă înscriu →
                     </a>
                     <p class="price-card__note">
                         Locuri extrem de limitate. Nu amâna.
