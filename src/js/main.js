@@ -206,9 +206,18 @@
     if (e.key === "Escape" && overlay.classList.contains("is-open")) close();
   });
 
-  // CTA — Nova Summer Elite: navigates to landing page (it's an <a> tag now)
-  // Close popup when clicking the CTA link so scroll is restored
-  if (ctaBtn) ctaBtn.addEventListener("click", close);
+  // CTA — deschide modalul de înregistrare
+  if (ctaBtn) {
+    ctaBtn.addEventListener("click", () => {
+      close();
+      const reg = document.getElementById("registration-modal");
+      if (reg) {
+        reg.setAttribute("aria-hidden", "false");
+        reg.classList.add("is-open");
+        document.body.style.overflow = "hidden";
+      }
+    });
+  }
 })();
 
 /* ── 8. TEACHER MODAL ────────────────────────────────────────── */
@@ -890,6 +899,21 @@
         "Cântare în ansamblu și band context",
       ],
       meta: ["5+ ani", "Copii & adulți", "Online disponibil"],
+    },
+    dans: {
+      icon: "💃",
+      name: "Dans pentru Scenă",
+      badge: "6+ ani",
+      intro: "Mișcare scenică, coregrafie și prezență artistică pentru muzicieni. Nu predăm dans de performanță — predăm cum să te simți acasă pe scenă, cum să îți miști corpul natural și cum să transmiți emoție prin întreaga ta prezență.",
+      points: [
+        "Coregrafie adaptată stilului tău muzical",
+        "Mișcare scenică și control al spațiului",
+        "Limbajul corpului în fața publicului",
+        "Sincronizare muzică — mișcare",
+        "Exerciții de prezență și încredere scenică",
+        "Potrivit atât pentru soliști cât și pentru trupe",
+      ],
+      meta: "Copii și adulți · 6+ ani · Individual sau grup",
     },
   };
 
