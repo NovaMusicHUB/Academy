@@ -3096,3 +3096,32 @@ h3 {
         color: black;
     }
 }
+
+/* ── Student portal login (navbar) ───────────────────────────── */
+.nav__login {
+    background: transparent;
+    color: var(--color-white);
+    border-color: rgba(255, 255, 255, 0.55);
+    white-space: nowrap;
+}
+.nav__login:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: var(--color-white);
+    transform: translateY(-2px);
+}
+.site-header.is-scrolled .nav__login {
+    color: var(--color-base);
+    border-color: var(--color-base);
+}
+.site-header.is-scrolled .nav__login:hover {
+    background: var(--color-base);
+    color: var(--color-white);
+}
+.nav__login + .nav__cta {
+    margin-left: -1.25rem;
+}
+@media (max-width: 900px) {
+    .nav__login {
+        display: none;
+    }
+}
