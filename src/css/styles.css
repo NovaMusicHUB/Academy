@@ -3099,26 +3099,37 @@ h3 {
 
 /* ── Student portal login (navbar) ───────────────────────────── */
 .nav__login {
-    background: transparent;
-    color: var(--color-white);
-    border-color: rgba(255, 255, 255, 0.55);
+    background: var(--color-highlight);
+    color: var(--color-base);
+    border-color: var(--color-highlight);
+    font-weight: 700;
+    letter-spacing: 0.02em;
     white-space: nowrap;
+    box-shadow: 0 6px 18px rgba(242, 201, 76, 0.35);
 }
-.nav__login:hover {
-    background: rgba(255, 255, 255, 0.12);
-    border-color: var(--color-white);
+.nav__login:hover,
+.nav__login:focus-visible {
+    background: var(--color-highlight-light);
+    border-color: var(--color-highlight-light);
+    color: var(--color-base);
     transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(242, 201, 76, 0.45);
 }
 .site-header.is-scrolled .nav__login {
+    background: var(--color-highlight);
     color: var(--color-base);
-    border-color: var(--color-base);
+    border-color: var(--color-highlight);
 }
 .site-header.is-scrolled .nav__login:hover {
-    background: var(--color-base);
-    color: var(--color-white);
+    background: var(--color-highlight-light);
+    color: var(--color-base);
 }
 .nav__login + .nav__cta {
-    margin-left: -1.25rem;
+    margin-left: 0.5rem;
+}
+.mobile-menu__login {
+    font-weight: 700;
+    color: var(--color-accent) !important;
 }
 @media (max-width: 900px) {
     .nav__login {
