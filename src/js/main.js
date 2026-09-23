@@ -192,10 +192,12 @@
     document.body.style.overflow = "";
   }
 
-  // Show immediately every visit
-  overlay.classList.add("is-open");
-  overlay.setAttribute("aria-hidden", "false");
-  document.body.style.overflow = "hidden";
+  // Apare dupa 10 secunde
+  setTimeout(() => {
+    overlay.classList.add("is-open");
+    overlay.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }, 10000);
 
   closeBtn.addEventListener("click", close);
   skipBtn.addEventListener("click", close);
