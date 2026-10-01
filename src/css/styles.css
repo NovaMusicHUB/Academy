@@ -2943,15 +2943,19 @@ h3 {
     }
 
     .hero__poster {
-        /* Scoatem object-fit: cover — poza se afiseaza la dimensiunea
-           proportionala cu inaltimea, fara crop pe latime */
+        /* Poza la dimensiune naturala proportionala cu inaltimea,
+           fara crop si fara strangere pe latime */
         width: auto !important;
         height: 100% !important;
+        max-width: unset !important;   /* anuleaza regula globala img max-width:100% */
         object-fit: unset !important;
         object-position: unset !important;
-        /* Porneste din stanga */
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* Porneste din stanga, animeaza spre dreapta */
         transform: translateX(0);
-        animation: hero-pan-full 11s ease-in-out infinite alternate;
+        animation: hero-pan-full 12s ease-in-out infinite alternate;
         will-change: transform;
     }
 }
