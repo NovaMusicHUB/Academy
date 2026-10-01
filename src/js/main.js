@@ -216,13 +216,8 @@ function goToPortal() {
     if (e.key === "Escape" && overlay.classList.contains("is-open")) close();
   });
 
-  // CTA — deschide modalul de înregistrare
-  if (ctaBtn) {
-    ctaBtn.addEventListener("click", () => {
-      close();
-      goToPortal();
-    });
-  }
+  // CTA — e <a> cu href catre portal, inchidem doar popup-ul
+  if (ctaBtn) ctaBtn.addEventListener("click", close);
 })();
 
 /* ── 8. TEACHER MODAL ────────────────────────────────────────── */
