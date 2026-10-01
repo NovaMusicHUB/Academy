@@ -1,3 +1,11 @@
+/* Toate butoanele de rezervare / programare duc în portal: elevul își face
+   cont (sau intră în cont) și de acolo își alege disciplina, profesorul și ora.
+   Contactul (telefon, WhatsApp, email) rămâne neschimbat. */
+const PORTAL_SIGNUP = "https://portal.novamusicacademy.ro/?cont=nou";
+function goToPortal() {
+  window.location.href = PORTAL_SIGNUP;
+}
+
 /* ================================================================
    NOVA MUSIC ACADEMY — MAIN JAVASCRIPT
    Version: 1.0 | March 2026
@@ -212,12 +220,7 @@
   if (ctaBtn) {
     ctaBtn.addEventListener("click", () => {
       close();
-      const reg = document.getElementById("registration-modal");
-      if (reg) {
-        reg.setAttribute("aria-hidden", "false");
-        reg.classList.add("is-open");
-        document.body.style.overflow = "hidden";
-      }
+      goToPortal();
     });
   }
 })();
@@ -553,7 +556,7 @@
         <div class="resource-article__cta">
           <p>🎵 <strong>La Nova Music Academy, transformăm urechea muzicală într-un superputere.</strong></p>
           <p>Dacă ai un copil cu ureche muzicală, locul lui e într-un mediu în care acest dar poate fi recunoscut, ghidat și dezvoltat cu profesionalism. Lucrăm cu copii de toate vârstele și îi ajutăm să își descopere vocea, să învețe instrumente și să se exprime prin muzică.</p>
-          <button type="button" class="btn btn--primary" data-modal="registration-modal">🎵 Programează o evaluare gratuită</button>
+          <button type="button" class="btn btn--primary" data-modal="registration-modal">🎵 Programează o lecție de probă</button>
         </div>
         <p class="resource-article__footer">Muzica începe cu o ureche atentă. Lasă-ne să o ducem mai departe.</p>
       </div>`,
@@ -657,7 +660,7 @@
     const trigger = e.target.closest('[data-modal="registration-modal"]');
     if (trigger) {
       e.preventDefault();
-      open();
+      goToPortal();
     }
   });
 
@@ -972,12 +975,7 @@
   if (ctaBtn) {
     ctaBtn.addEventListener("click", () => {
       close();
-      const regOverlay = document.getElementById("registration-modal");
-      if (regOverlay) {
-        regOverlay.setAttribute("aria-hidden", "false");
-        regOverlay.classList.add("is-open");
-        document.body.style.overflow = "hidden";
-      }
+      goToPortal();
     });
   }
 
