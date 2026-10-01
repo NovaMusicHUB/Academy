@@ -2924,21 +2924,35 @@ h3 {
 }
 
 /* ── HERO MOBILE PAN ANIMATION ─────────────────────────── */
-@keyframes hero-pan-left {
-    0%   { transform: scale(1.15) translateX(6%); }
-    100% { transform: scale(1.15) translateX(-6%); }
+/*
+  Logica: poza e afisata la height: 100% cu width: auto
+  (proportional cu dimensiunea reala, nu cropata).
+  translateX(0) = marginea stanga vizibila
+  translateX(calc(-100% + 100vw)) = marginea dreapta vizibila
+  Animatia parcurge toata latimea pozei, de la un capat la altul.
+*/
+@keyframes hero-pan-full {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(calc(-100% + 100vw)); }
 }
 
 @media (max-width: 768px) {
-    /* Ascunde videoul pe mobil — poza cu animatie in schimb */
+    /* Ascunde videoul — poza cu pan in schimb */
     .hero__video {
         display: none !important;
     }
 
     .hero__poster {
-        animation: hero-pan-left 22s ease-in-out infinite alternate;
+        /* Scoatem object-fit: cover — poza se afiseaza la dimensiunea
+           proportionala cu inaltimea, fara crop pe latime */
+        width: auto !important;
+        height: 100% !important;
+        object-fit: unset !important;
+        object-position: unset !important;
+        /* Porneste din stanga */
+        transform: translateX(0);
+        animation: hero-pan-full 11s ease-in-out infinite alternate;
         will-change: transform;
-        transform-origin: center center;
     }
 }
 
@@ -2946,6 +2960,10 @@ h3 {
 @media (prefers-reduced-motion: reduce) {
     .hero__poster {
         animation: none !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        object-position: center center !important;
     }
 }
 
