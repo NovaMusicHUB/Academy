@@ -3181,6 +3181,8 @@ h3 {
 }
 @media (max-width: 900px) {
     .nav__login {
-        display: none;
+        display: inline-flex;
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
     }
 }
