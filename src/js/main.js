@@ -3,7 +3,8 @@
    Contactul (telefon, WhatsApp, email) rămâne neschimbat. */
 const PORTAL_SIGNUP = "https://portal.novamusicacademy.ro/?cont=nou";
 function goToPortal() {
-  window.location.href = PORTAL_SIGNUP;
+  const lang = window.NMA_getLang ? window.NMA_getLang() : "ro";
+  window.location.href = PORTAL_SIGNUP + "&lang=" + encodeURIComponent(lang);
 }
 
 /* Textele generate din JS se citesc din dicționarul i18n la momentul randării

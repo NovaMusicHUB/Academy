@@ -1,0 +1,106 @@
+(function () {
+  var T = window.NMA_TRANSLATIONS = window.NMA_TRANSLATIONS || { ro: {}, en: {} };
+  Object.assign(T.ro, {
+    /* META & HERO */
+    "cal.title": "Cum alegi o școală de muzică pentru copil în București",
+    "cal.description": "Cauți o școală de muzică pentru copil în București? Compară profesorii, lecția introductivă, programul și costurile cu întrebări concrete.",
+    "cal.breadcrumb.home": "Acasă",
+    "cal.pre": "Ghid pentru părinți",
+    "cal.meta": "9 octombrie 2026 · 4 min citire · Nova Music Academy",
+    "cal.intro": "Ai găsit câteva școli, toate au fotografii frumoase și toate vorbesc despre pasiune. Cum alegi? Începe cu lucrurile pe care le poți verifica: relația cu profesorul, ce face copilul la lecție și dacă programul funcționează pentru familia voastră.",
+
+    /* ARTICLE BODY */
+    "cal.h2.1": "Pornește de la copil, nu de la instrumentul preferat de tine",
+    "cal.p.1.1": "Întreabă-l ce îi place să asculte și ce ar vrea să încerce. Poate răspunde „chitară” pentru că a văzut un concert sau „pian” pentru că are un prieten care cântă. Nu trebuie să fie o alegere definitivă. Este un punct de pornire pentru discuția cu profesorul.",
+    "cal.p.1.2": "Dacă nu știe încă, întreabă școala cum îl poate ajuta să descopere instrumentele înainte de un angajament mai lung. Nu presupune că un anumit instrument este obligatoriu pentru orice copil. Vârsta, interesul, felul în care participă și posibilitățile de exercițiu acasă merită discutate împreună.",
+    "cal.h2.2": "Profesorul trebuie să poată explica unui începător",
+    "cal.p.2.1": "Experiența de scenă și studiile muzicale sunt informații utile. Pentru copilul care începe, contează și cum sunt transformate în explicații. Cere să afli cine va ține efectiv lecțiile și dacă lucrează cu copii de vârsta lui.",
+    "cal.p.2.2": "La întâlnire, observă reacția la o greșeală. Profesorul arată din nou? Schimbă explicația? Îi oferă copilului timp să încerce? Un mediu în care poate întreba și greși fără umilire este un criteriu concret, nu un detaliu decorativ.",
+    "cal.h2.3": "Ce urmărești la lecția introductivă",
+    "cal.p.3.1": "Nu te aștepta la o demonstrație spectaculoasă după prima întâlnire. Urmărește dacă elevul este implicat, dacă înțelege o sarcină și dacă profesorul îți poate explica ce a observat. Un copil mai tăcut poate avea nevoie de timp să se acomodeze; entuziasmul imediat nu este singurul semn relevant.",
+    "cal.p.3.2": "După lecție, în loc de „Ai fost cel mai bun?”, încearcă „Ce ai încercat?”, „Ce ți-a plăcut?” și „Ai vrea să te întorci?”. Profesorului îi poți cere un obiectiv pentru următoarele întâlniri și o recomandare despre lucrul acasă.",
+    "cal.h2.4": "Compară abonamentele pe aceleași criterii",
+    "cal.p.4.1": "Un preț lunar, singur, nu spune câtă instruire primește copilul. Verifică numărul și durata ședințelor, dacă sunt individuale sau în grup și ce se întâmplă când o oră trebuie mutată. Cere condițiile în scris înainte să plătești.",
+    "cal.li.4.1": "Câte întâlniri sunt incluse și cât durează fiecare?",
+    "cal.li.4.2": "Ce reguli se aplică absențelor și reprogramărilor?",
+    "cal.li.4.3": "Cum sunt tratate sărbătorile și lunile cu mai multe săptămâni?",
+    "cal.li.4.4": "Există costuri separate pentru materiale, instrument sau evenimente?",
+    "cal.li.4.5": "Ce se întâmplă dacă profesorul lipsește sau se schimbă?",
+    "cal.p.4.2": "Nu presupune că o lecție introductivă este gratuită. Întreabă explicit prețul și ce include. La fel, diferențiază o simplă discuție de orientare de o lecție propriu-zisă.",
+    "cal.h2.5": "Drumul și orarul fac parte din alegere",
+    "cal.p.5.1": "În București, un traseu scurt pe hartă poate fi dificil la ora la care ieșiți de la școală. Verifică drumul în intervalul în care ar avea loc lecția, nu doar într-o dimineață liniștită de weekend. Gândește-te și la timpul de așteptare și la celelalte activități ale copilului.",
+    "cal.p.5.2": "Un program sustenabil lasă loc și pentru odihnă. Dacă fiecare lecție începe cu grabă și stres, merită discutat alt interval înainte să concluzionezi că elevului nu îi place muzica.",
+    "cal.h2.6": "Întreabă ce presupune studiul acasă",
+    "cal.p.6.1": "Pentru lecțiile de instrument, clarifică accesul la un instrument între întâlniri înainte să alegi abonamentul. Cere recomandări potrivite nivelului și spațiului de acasă, fără să cumperi imediat cel mai scump model.",
+    "cal.p.6.2": "Mai întreabă ce rol ar trebui să ai tu. Un părinte fără pregătire muzicală poate ajuta la organizare, dar nu trebuie să inventeze corecturi tehnice. Este mai util să primești de la profesor o sarcină simplă și un mod de a urmări dacă a fost înțeleasă.",
+    "cal.h2.7": "Cum recunoști progresul fără concursuri permanente",
+    "cal.p.7.1": "Nu orice familie urmărește examene sau scenă. Spune ce vă doriți și întreabă cum poate fi observat progresul: o piesă reluată după o perioadă, un ritm realizat mai sigur sau o sarcină pe care copilul o poate face singur.",
+    "cal.p.7.2": "Dacă școala organizează spectacole, întreabă cum sunt pregătiți începătorii și dacă participarea este opțională. Evenimentul poate fi un obiectiv frumos, dar nu trebuie confundat cu singura măsură a valorii lecțiilor.",
+    "cal.h2.8": "Ce poți verifica la Nova Music Academy",
+    "cal.p.8.1": "Poți începe cu <a href=\"/#profesori\">prezentarea profesorilor</a> și <a href=\"/#cursuri\">cursurile disponibile</a>. Sediul prezentat pe site este pe strada Făinari nr. 25, etajul 1, în Sectorul 2. Verifică traseul și cere un interval potrivit înainte de înscriere.",
+    "cal.p.8.2": "La programare, spune vârsta copilului, dacă a mai studiat și ce instrument îl interesează. Cere detaliile abonamentului actual și discută eventualele nelămuriri. O alegere bună începe cu răspunsuri clare, nu cu presiunea de a decide pe loc.",
+
+    /* RELATED, CTA, NAV */
+    "cal.related.aria": "Articole conexe",
+    "cal.related.title": "Citește și",
+    "cal.related.1": "Pot începe lecții de canto dacă mi s-a spus că nu am voce?",
+    "cal.related.2": "Lecții de pian pentru adulți: cum începi de la zero",
+    "cal.cta.title": "Discută cu noi despre primele lecții",
+    "cal.cta.text": "Spune-ne ce ai vrea să înveți și verifică opțiunile de programare.",
+    "cal.cta.button": "Programează o ședință introductivă",
+    "cal.nav.aria": "Navigare articole",
+    "cal.nav.back": "← Înapoi la toate articolele"
+  });
+
+  Object.assign(T.en, {
+    /* META & HERO */
+    "cal.title": "How to Choose a Music School for Your Child in Bucharest",
+    "cal.description": "Looking for a music school for your child in Bucharest? Compare teachers, the introductory lesson, the schedule and costs with concrete questions.",
+    "cal.breadcrumb.home": "Home",
+    "cal.pre": "Parents' Guide",
+    "cal.meta": "October 9, 2026 · 4 min read · Nova Music Academy",
+    "cal.intro": "You have found a few schools, they all have beautiful photos and they all talk about passion. So how do you choose? Start with the things you can check: the relationship with the teacher, what the child does during the lesson and whether the schedule works for your family.",
+
+    /* ARTICLE BODY */
+    "cal.h2.1": "Start with the child, not with your own favorite instrument",
+    "cal.p.1.1": "Ask them what they like to listen to and what they would like to try. They might answer “guitar” because they saw a concert, or “piano” because a friend plays. It doesn't have to be a final choice. It is a starting point for the conversation with the teacher.",
+    "cal.p.1.2": "If they don't know yet, ask the school how it can help them discover instruments before a longer commitment. Don't assume that a particular instrument is required for every child. Age, interest, how they take part and opportunities to practice at home are worth discussing together.",
+    "cal.h2.2": "The teacher must be able to explain things to a beginner",
+    "cal.p.2.1": "Stage experience and musical studies are useful information. For a child who is just starting, what matters is also how this knowledge is turned into explanations. Find out who will actually teach the lessons and whether they work with children of their age.",
+    "cal.p.2.2": "At the meeting, watch how the teacher reacts to a mistake. Do they show it again? Do they change the explanation? Do they give the child time to try? An environment where the child can ask questions and make mistakes without being humiliated is a concrete criterion, not a decorative detail.",
+    "cal.h2.3": "What to look for in the introductory lesson",
+    "cal.p.3.1": "Don't expect a spectacular demonstration after the first meeting. Watch whether the student is engaged, whether they understand a task and whether the teacher can explain what they noticed. A quieter child may need time to settle in; immediate enthusiasm is not the only relevant sign.",
+    "cal.p.3.2": "After the lesson, instead of “Were you the best?”, try “What did you try?”, “What did you enjoy?” and “Would you like to come back?”. You can ask the teacher for a goal for the next sessions and a recommendation about practice at home.",
+    "cal.h2.4": "Compare packages on the same criteria",
+    "cal.p.4.1": "A monthly price on its own doesn't tell you how much instruction the child receives. Check the number and length of sessions, whether they are individual or group, and what happens when a lesson has to be moved. Ask for the conditions in writing before you pay.",
+    "cal.li.4.1": "How many sessions are included, and how long is each one?",
+    "cal.li.4.2": "What rules apply to absences and rescheduling?",
+    "cal.li.4.3": "How are holidays and months with an extra week handled?",
+    "cal.li.4.4": "Are there separate costs for materials, instruments or events?",
+    "cal.li.4.5": "What happens if the teacher is absent or changes?",
+    "cal.p.4.2": "Don't assume that an introductory lesson is free. Ask explicitly about the price and what it includes. Likewise, distinguish a simple orientation conversation from an actual lesson.",
+    "cal.h2.5": "The commute and the schedule are part of the choice",
+    "cal.p.5.1": "In Bucharest, a short route on the map can be difficult at the hour when you leave school. Check the route during the time slot when the lesson would take place, not just on a quiet weekend morning. Think about waiting time too, and about the child's other activities.",
+    "cal.p.5.2": "A sustainable schedule also leaves room for rest. If every lesson starts in a rush and under stress, it is worth discussing another time slot before concluding that the student doesn't like music.",
+    "cal.h2.6": "Ask what practicing at home involves",
+    "cal.p.6.1": "For instrument lessons, clarify access to an instrument between sessions before choosing a package. Ask for recommendations that suit the level and the space at home, without buying the most expensive model right away.",
+    "cal.p.6.2": "Also ask what role you should play. A parent without musical training can help with organization, but should not invent technical corrections. It is more useful to receive a simple task from the teacher, along with a way to check whether it was understood.",
+    "cal.h2.7": "How to recognize progress without constant competitions",
+    "cal.p.7.1": "Not every family is aiming for exams or performing on stage. Say what you want and ask how progress can be observed: a piece played again after a break, a rhythm performed more confidently, or a task the child can do on their own.",
+    "cal.p.7.2": "If the school organizes performances, ask how beginners are prepared and whether participation is optional. An event can be a lovely goal, but it should not be confused with the only measure of the value of the lessons.",
+    "cal.h2.8": "What you can check at Nova Music Academy",
+    "cal.p.8.1": "You can start with the <a href=\"/#profesori\">teachers' profiles</a> and the <a href=\"/#cursuri\">available courses</a>. The headquarters shown on the site is at Făinari St. 25, floor 1, in Sector 2. Check the route and ask for a suitable time slot before enrolling.",
+    "cal.p.8.2": "When booking, tell the school the child's age, whether they have studied before and which instrument interests them. Ask for the details of the current package and discuss any remaining questions. A good choice starts with clear answers, not with pressure to decide on the spot.",
+
+    /* RELATED, CTA, NAV */
+    "cal.related.aria": "Related articles",
+    "cal.related.title": "Read also",
+    "cal.related.1": "Can I start singing lessons if I've been told I have no voice?",
+    "cal.related.2": "Piano lessons for adults: how to start from scratch",
+    "cal.cta.title": "Talk to us about the first lessons",
+    "cal.cta.text": "Tell us what you would like to learn and check the booking options.",
+    "cal.cta.button": "Book an introductory session",
+    "cal.nav.aria": "Article navigation",
+    "cal.nav.back": "← Back to all articles"
+  });
+})();

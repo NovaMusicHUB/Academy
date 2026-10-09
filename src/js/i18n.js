@@ -117,8 +117,22 @@
     });
   }
 
+  // Linkurile spre portal duc și limba aleasă: portalul o citește din ?lang= și o ține minte
+  function syncPortalLinks(lang) {
+    document.querySelectorAll('a[href*="portal.novamusicacademy.ro"]').forEach((a) => {
+      try {
+        const u = new URL(a.href);
+        u.searchParams.set("lang", lang);
+        a.href = u.toString();
+      } catch (e) {
+        // link neobișnuit: îl lăsăm cum e
+      }
+    });
+  }
+
   function render(lang) {
     applyLang(lang);
+    syncPortalLinks(lang);
     updateSwitcher(lang);
     document.documentElement.lang = lang;
     document.dispatchEvent(
