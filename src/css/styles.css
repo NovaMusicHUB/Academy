@@ -3129,7 +3129,85 @@ h3 {
     }
 }
 
-/* ── PRINT ───────────────────────────────────────────────────── */
+/* ── LANGUAGE SWITCHER ──────────────────────────────────── */
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
+    padding: 0.2rem 0.4rem;
+}
+
+.lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.3rem 0.5rem;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.2s, background 0.2s;
+    letter-spacing: 0.04em;
+}
+
+.lang-btn--active {
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+}
+
+.lang-btn:hover:not(.lang-btn--active) {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.lang-flag {
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.lang-code {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+}
+
+.lang-divider {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 0.75rem;
+    user-select: none;
+}
+
+/* Pe mobil, switcher-ul e si el vizibil in navbar */
+@media (max-width: 900px) {
+    .lang-switcher {
+        background: rgba(26, 26, 46, 0.06);
+    }
+    .lang-btn {
+        color: rgba(26, 26, 46, 0.5);
+    }
+    .lang-btn--active {
+        background: rgba(26, 26, 46, 0.1);
+        color: var(--color-base);
+    }
+}
+
+/* Cand header-ul e scrolled (fond deschis) */
+.site-header.is-scrolled .lang-switcher {
+    background: rgba(26, 26, 46, 0.06);
+}
+.site-header.is-scrolled .lang-btn {
+    color: rgba(26, 26, 46, 0.5);
+}
+.site-header.is-scrolled .lang-btn--active {
+    background: rgba(26, 26, 46, 0.1);
+    color: var(--color-base);
+}
+
+/* ── PRINT ──────────────────────────────────────────────── */
 @media print {
     .site-header,
     .whatsapp-fab,

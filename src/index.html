@@ -163,16 +163,30 @@
                 </a>
 
                 <ul class="nav__links" role="list">
-                    <li><a href="#cursuri">Cursuri</a></li>
-                    <li><a href="#profesori">Profesori</a></li>
-                    <li><a href="#despre-noi">Despre noi</a></li>
-                    <li><a href="#recenzii">Recenzii</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#cursuri" data-i18n="nav.cursuri">Cursuri</a></li>
+                    <li><a href="#profesori" data-i18n="nav.profesori">Profesori</a></li>
+                    <li><a href="#despre-noi" data-i18n="nav.despre">Despre noi</a></li>
+                    <li><a href="#recenzii" data-i18n="nav.recenzii">Recenzii</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
                 </ul>
+
+                <!-- Language switcher -->
+                <div class="lang-switcher" role="group" aria-label="Selectează limba">
+                    <button class="lang-btn lang-btn--active" data-lang="ro" aria-pressed="true">
+                        <span class="lang-flag">🇷🇴</span>
+                        <span class="lang-code" data-i18n="lang.ro">RO</span>
+                    </button>
+                    <span class="lang-divider" aria-hidden="true">|</span>
+                    <button class="lang-btn" data-lang="en" aria-pressed="false">
+                        <span class="lang-flag">🇬🇧</span>
+                        <span class="lang-code" data-i18n="lang.en">EN</span>
+                    </button>
+                </div>
 
                 <a
                     href="https://portal.novamusicacademy.ro"
                     class="btn btn--sm nav__login"
+                    data-i18n="nav.login"
                 >
                     Login
                 </a>
@@ -182,6 +196,7 @@
                     class="btn btn--primary nav__cta"
                     target="_blank"
                     rel="noopener"
+                    data-i18n="nav.cta"
                 >
                     Programează-te
                 </a>
@@ -204,13 +219,14 @@
                     <li><a href="#despre-noi">Despre noi</a></li>
                     <li><a href="#recenzii">Recenzii</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a class="mobile-menu__login" href="https://portal.novamusicacademy.ro">Login</a></li>
+                    <li><a class="mobile-menu__login" href="https://portal.novamusicacademy.ro" data-i18n="nav.login">Login</a></li>
                 </ul>
                 <a
                     href="https://portal.novamusicacademy.ro"
                     class="btn btn--primary"
                     target="_blank"
                     rel="noopener"
+                    data-i18n="nav.cta"
                 >
                     Programează-te
                 </a>
@@ -258,18 +274,18 @@
 
 
                 <!-- H1 SEO -->
-                <h1 class="pre-header hero__preheader">
+                <h1 class="pre-header hero__preheader" data-i18n="hero.preheader">
                     ✦ Scoală de Muzică în București
                 </h1>
 
                 <!-- Visual headline -->
                 <p class="hero__headline">
-                    Muzica nu se predă.<br />
-                    <em>Se descoperă împreună.</em>
+                    <span data-i18n="hero.headline">Muzica nu se predă.</span><br />
+                    <em data-i18n="hero.headline.em">Se descoperă împreună.</em>
                 </p>
 
                 <!-- Subheadline -->
-                <p class="hero__subheadline">
+                <p class="hero__subheadline" data-i18n="hero.subheadline">
                     Canto CVT, lecții de pian, chitară, saxofon, tobe și vioară
                     pentru copii și adulți în București. Profesori pasionați,
                     metode dovedite.
@@ -282,23 +298,24 @@
                         class="btn btn--primary btn--large btn--glow"
                         target="_blank"
                         rel="noopener"
+                        data-i18n="hero.cta.primary"
                     >
                         🎵 Rezervă o Ședință
                     </a>
-                    <a href="#cursuri" class="btn btn--ghost btn--large">
+                    <a href="#cursuri" class="btn btn--ghost btn--large" data-i18n="hero.cta.secondary">
                         Descoperă Cursurile
                     </a>
                 </div>
 
                 <!-- Trust signals -->
                 <div class="hero__trust" role="list" aria-label="Garanții">
-                    <span class="trust-item" role="listitem"
+                    <span class="trust-item" role="listitem" data-i18n="hero.trust.1"
                         >✓ 300+ studenți mulțumiți</span
                     >
-                    <span class="trust-item" role="listitem"
+                    <span class="trust-item" role="listitem" data-i18n="hero.trust.2"
                         >✓ Profesori verificați</span
                     >
-                    <span class="trust-item" role="listitem"
+                    <span class="trust-item" role="listitem" data-i18n="hero.trust.3"
                         >✓ Metodă dovedită</span
                     >
                 </div>
@@ -319,9 +336,9 @@
             aria-label="Cursuri disponibile"
         >
             <div class="container">
-                <p class="pre-header text-center">✦ Ce vrei să înveți?</p>
-                <h2 class="section-title text-center">Alege disciplina</h2>
-                <p class="section-subtitle text-center">
+                <p class="pre-header text-center" data-i18n="cursuri.preheader">✦ Ce vrei să înveți?</p>
+                <h2 class="section-title text-center" data-i18n="cursuri.title">Alege disciplina</h2>
+                <p class="section-subtitle text-center" data-i18n="cursuri.subtitle">
                     Fiecare disciplină te așteaptă cu un profesor dedicat și o
                     metodă adaptată vârstei tale.
                 </p>
@@ -336,15 +353,15 @@
                         <div class="instrument-card__icon" aria-hidden="true">
                             🎤
                         </div>
-                        <h3>Canto CVT</h3>
-                        <p>
+                        <h3 data-i18n="cursuri.canto.title">Canto CVT</h3>
+                        <p data-i18n="cursuri.canto.desc">
                             Tehnica vocală Complete Vocal Technique — pentru
                             copii și adulți, orice gen muzical.
                         </p>
                         <div class="instrument-card__meta">
                             <span class="badge">4+ ani</span>
                         </div>
-                        <button type="button" class="btn btn--outline btn--sm">
+                        <button type="button" class="btn btn--outline btn--sm" data-i18n="cursuri.btn.afla">
                             Află mai mult
                         </button>
                     </article>
@@ -357,8 +374,8 @@
                         <div class="instrument-card__icon" aria-hidden="true">
                             🎹
                         </div>
-                        <h3>Pian</h3>
-                        <p>
+                        <h3 data-i18n="cursuri.pian.title">Pian</h3>
+                        <p data-i18n="cursuri.pian.desc">
                             Clasic sau contemporan — pianul deschide toate
                             porțile muzicii.
                         </p>
@@ -368,7 +385,7 @@
                                 >Cel mai popular</span
                             >
                         </div>
-                        <button type="button" class="btn btn--outline btn--sm">
+                        <button type="button" class="btn btn--outline btn--sm" data-i18n="cursuri.btn.afla">
                             Află mai mult
                         </button>
                     </article>
@@ -381,15 +398,15 @@
                         <div class="instrument-card__icon" aria-hidden="true">
                             🎸
                         </div>
-                        <h3>Chitară</h3>
-                        <p>
+                        <h3 data-i18n="cursuri.chitara.title">Chitară</h3>
+                        <p data-i18n="cursuri.chitara.desc">
                             Acustică, electrică sau clasică. De la primele
                             acorduri la scene mari.
                         </p>
                         <div class="instrument-card__meta">
                             <span class="badge">6+ ani</span>
                         </div>
-                        <button type="button" class="btn btn--outline btn--sm">
+                        <button type="button" class="btn btn--outline btn--sm" data-i18n="cursuri.btn.afla">
                             Află mai mult
                         </button>
                     </article>
@@ -402,15 +419,15 @@
                         <div class="instrument-card__icon" aria-hidden="true">
                             🎼
                         </div>
-                        <h3>Teorie Muzicală</h3>
-                        <p>
+                        <h3 data-i18n="cursuri.teorie.title">Teorie Muzicală</h3>
+                        <p data-i18n="cursuri.teorie.desc">
                             Solfegiu, ritmică, armonie și citit partituri —
                             fundamentele care îți deschid orice instrument.
                         </p>
                         <div class="instrument-card__meta">
                             <span class="badge">6+ ani</span>
                         </div>
-                        <button type="button" class="btn btn--outline btn--sm">
+                        <button type="button" class="btn btn--outline btn--sm" data-i18n="cursuri.btn.afla">
                             Află mai mult
                         </button>
                     </article>
@@ -423,15 +440,15 @@
                         <div class="instrument-card__icon" aria-hidden="true">
                             🎷
                         </div>
-                        <h3>Saxofon</h3>
-                        <p>
+                        <h3 data-i18n="cursuri.saxofon.title">Saxofon</h3>
+                        <p data-i18n="cursuri.saxofon.desc">
                             Jazz, clasic sau pop — saxofonul combină
                             expresivitate și versatilitate pentru orice stil.
                         </p>
                         <div class="instrument-card__meta">
                             <span class="badge">7+ ani</span>
                         </div>
-                        <button type="button" class="btn btn--outline btn--sm">
+                        <button type="button" class="btn btn--outline btn--sm" data-i18n="cursuri.btn.afla">
                             Află mai mult
                         </button>
                     </article>
@@ -444,15 +461,15 @@
                         <div class="instrument-card__icon" aria-hidden="true">
                             🎻
                         </div>
-                        <h3>Vioară</h3>
-                        <p>
+                        <h3 data-i18n="cursuri.vioara.title">Vioară</h3>
+                        <p data-i18n="cursuri.vioara.desc">
                             Eleganță și profunzime. Vioara formează disciplina
                             și sensibilitatea artistică.
                         </p>
                         <div class="instrument-card__meta">
                             <span class="badge">5+ ani</span>
                         </div>
-                        <button type="button" class="btn btn--outline btn--sm">
+                        <button type="button" class="btn btn--outline btn--sm" data-i18n="cursuri.btn.afla">
                             Află mai mult
                         </button>
                     </article>
@@ -465,16 +482,16 @@
                         <div class="instrument-card__icon" aria-hidden="true">
                             🎧
                         </div>
-                        <h3>Producție Muzicală</h3>
-                        <p>
-                            DAW, beatmaking, mixing & mastering — creează muzica
+                        <h3 data-i18n="cursuri.productie.title">Producție Muzicală</h3>
+                        <p data-i18n="cursuri.productie.desc">
+                            DAW, beatmaking, mixing &amp; mastering — creează muzica
                             ta de acasă.
                         </p>
                         <div class="instrument-card__meta">
                             <span class="badge">14+ ani</span>
                             <span class="badge badge--new">Nou</span>
                         </div>
-                        <button type="button" class="btn btn--outline btn--sm">
+                        <button type="button" class="btn btn--outline btn--sm" data-i18n="cursuri.btn.afla">
                             Află mai mult
                         </button>
                     </article>
@@ -487,15 +504,15 @@
                         <div class="instrument-card__icon" aria-hidden="true">
                             🥁
                         </div>
-                        <h3>Tobe</h3>
-                        <p>
+                        <h3 data-i18n="cursuri.tobe.title">Tobe</h3>
+                        <p data-i18n="cursuri.tobe.desc">
                             Ritm, coordonare și energie — tobele dezvoltă simțul
                             muzical și disciplina prin distracție.
                         </p>
                         <div class="instrument-card__meta">
                             <span class="badge">5+ ani</span>
                         </div>
-                        <button type="button" class="btn btn--outline btn--sm">
+                        <button type="button" class="btn btn--outline btn--sm" data-i18n="cursuri.btn.afla">
                             Află mai mult
                         </button>
                     </article>
@@ -508,15 +525,15 @@
                         <div class="instrument-card__icon" aria-hidden="true">
                             💃
                         </div>
-                        <h3>Dans pentru Scenă</h3>
-                        <p>
+                        <h3 data-i18n="cursuri.dans.title">Dans pentru Scenă</h3>
+                        <p data-i18n="cursuri.dans.desc">
                             Mișcare scenică, coregrafie și prezență artistică —
                             tot ce ai nevoie pentru a urca pe scenă cu încredere.
                         </p>
                         <div class="instrument-card__meta">
                             <span class="badge">6+ ani</span>
                         </div>
-                        <button type="button" class="btn btn--outline btn--sm">
+                        <button type="button" class="btn btn--outline btn--sm" data-i18n="cursuri.btn.afla">
                             Află mai mult
                         </button>
                     </article>
@@ -526,10 +543,10 @@
                 <div class="group-banner">
                     <div class="group-banner__left">
                         <span class="group-banner__tag">🆕 Nou</span>
-                        <h3>
+                        <h3 data-i18n="cursuri.group.title">
                             Lecții de grup disponibile la toate instrumentele
                         </h3>
-                        <p>
+                        <p data-i18n="cursuri.group.desc">
                             Progresezi mai repede, te motivezi reciproc și
                             plătești mai puțin. Clasele de grup combină
                             învățarea serioasă cu energia unui mediu
@@ -537,15 +554,16 @@
                         </p>
                     </div>
                     <div class="group-banner__perks">
-                        <span>✔️ Motivație crescută</span>
-                        <span>✔️ Concurență sănătoasă</span>
-                        <span>✔️ Preț special de lansare</span>
+                        <span data-i18n="cursuri.group.perk1">✔️ Motivație crescută</span>
+                        <span data-i18n="cursuri.group.perk2">✔️ Concurență sănătoasă</span>
+                        <span data-i18n="cursuri.group.perk3">✔️ Preț special de lansare</span>
                     </div>
                     <a
                         href="https://portal.novamusicacademy.ro"
                         class="btn btn--primary btn--large btn--glow"
                         target="_blank"
                         rel="noopener"
+                        data-i18n="cursuri.group.btn"
                     >
                         Rezervă loc în grup
                     </a>
@@ -563,10 +581,10 @@
         >
             <div class="container">
                 <div class="cvt-section__intro">
-                    <p class="pre-header text-center">
+                    <p class="pre-header text-center" data-i18n="cvt.preheader">
                         ✦ Tehnica noastră vocală
                     </p>
-                    <h2 class="section-title text-center">
+                    <h2 class="section-title text-center" data-i18n="cvt.title">
                         De ce <em>Complete Vocal Technique</em>?
                     </h2>
                     <p class="cvt-section__lead text-center">
@@ -704,16 +722,16 @@
             aria-label="De ce Nova Music Academy"
         >
             <div class="container">
-                <p class="pre-header text-center">✦ De ce noi?</p>
-                <h2 class="section-title text-center">Ce ne face diferiți</h2>
+                <p class="pre-header text-center" data-i18n="features.preheader">✦ De ce noi?</p>
+                <h2 class="section-title text-center" data-i18n="features.title">Ce ne face diferiți</h2>
 
                 <div class="features__grid">
                     <div class="feature-card">
                         <div class="feature-card__icon" aria-hidden="true">
                             🏆
                         </div>
-                        <h3>Profesori Verificați & Pasionați</h3>
-                        <p>
+                        <h3 data-i18n="features.f1.title">Profesori Verificați &amp; Pasionați</h3>
+                        <p data-i18n="features.f1.desc">
                             Fiecare profesor trece printr-un proces riguros de
                             selecție. Pedagogie demonstrată, nu doar talent
                             muzical.
@@ -723,8 +741,8 @@
                         <div class="feature-card__icon" aria-hidden="true">
                             📈
                         </div>
-                        <h3>Progres Măsurabil</h3>
-                        <p>
+                        <h3 data-i18n="features.f2.title">Progres Măsurabil</h3>
+                        <p data-i18n="features.f2.desc">
                             Rapoarte lunare de progres pentru părinți. Știi
                             exact ce a învățat copilul tău și ce urmează.
                         </p>
@@ -733,8 +751,8 @@
                         <div class="feature-card__icon" aria-hidden="true">
                             🎭
                         </div>
-                        <h3>Recitaluri & Evenimente</h3>
-                        <p>
+                        <h3 data-i18n="features.f3.title">Recitaluri &amp; Evenimente</h3>
+                        <p data-i18n="features.f3.desc">
                             De 3 ori pe an, studenții noștri urcă pe scenă.
                             Experiența performanței face parte din curriculum.
                         </p>
@@ -743,8 +761,8 @@
                         <div class="feature-card__icon" aria-hidden="true">
                             🛡️
                         </div>
-                        <h3>Mediu Sigur & Suportiv</h3>
-                        <p>
+                        <h3 data-i18n="features.f4.title">Mediu Sigur &amp; Suportiv</h3>
+                        <p data-i18n="features.f4.desc">
                             Greșelile sunt parte din proces. Atmosfera noastră
                             elimină frica de eșec și celebrează fiecare pas.
                         </p>
@@ -753,8 +771,8 @@
                         <div class="feature-card__icon" aria-hidden="true">
                             📱
                         </div>
-                        <h3>Flexibilitate Completă</h3>
-                        <p>
+                        <h3 data-i18n="features.f5.title">Flexibilitate Completă</h3>
+                        <p data-i18n="features.f5.desc">
                             Lecții față-în-față în București sau online oriunde.
                             Programul tău, ritmul tău.
                         </p>
@@ -763,8 +781,8 @@
                         <div class="feature-card__icon" aria-hidden="true">
                             🤝
                         </div>
-                        <h3>Ședință Introductivă</h3>
-                        <p>
+                        <h3 data-i18n="features.f6.title">Şedință Introductivă</h3>
+                        <p data-i18n="features.f6.desc">
                             Prima întâlnire cu profesorul tău — discutăm
                             obiectivele, nivelul actual și planul personalizat.
                         </p>
@@ -867,8 +885,8 @@
             aria-label="Profesorii noștri"
         >
             <div class="container">
-                <p class="pre-header text-center">✦ Echipa noastră</p>
-                <h2 class="section-title text-center">
+                <p class="pre-header text-center" data-i18n="teachers.preheader">✦ Echipa noastră</p>
+                <h2 class="section-title text-center" data-i18n="teachers.title">
                     Cunoaște-ți viitorul profesor
                 </h2>
 
@@ -1118,8 +1136,8 @@
             aria-label="Galerie foto evenimente"
         >
             <div class="container">
-                <p class="pre-header text-center">✦ Momente din Academy</p>
-                <h2 class="section-title text-center">
+                <p class="pre-header text-center" data-i18n="gallery.preheader">✦ Momente din Academy</p>
+                <h2 class="section-title text-center" data-i18n="gallery.title">
                     Galerie foto evenimente
                 </h2>
 
@@ -1590,8 +1608,8 @@
             aria-label="Recenzii Google"
         >
             <div class="container">
-                <p class="pre-header text-center">✦ Povești reale</p>
-                <h2 class="section-title text-center">
+                <p class="pre-header text-center" data-i18n="testimonials.preheader">✦ Povești reale</p>
+                <h2 class="section-title text-center" data-i18n="testimonials.title">
                     Ce spun studenții noștri
                 </h2>
 
@@ -1620,6 +1638,7 @@
                             href="https://www.google.com/maps/search/?api=1&query=Nova+Music+Academy+Bucuresti"
                             target="_blank"
                             rel="noopener noreferrer"
+                            data-i18n="testimonials.google.btn"
                         >
                             Vezi toate recenziile pe Google →
                         </a>
@@ -2094,9 +2113,9 @@
             aria-label="Resurse muzicale"
         >
             <div class="container">
-                <p class="pre-header text-center">✦ Gratuit pentru tine</p>
-                <h2 class="section-title text-center">Resurse Muzicale</h2>
-                <p class="section-subtitle text-center">
+                <p class="pre-header text-center" data-i18n="resources.preheader">✦ Gratuit pentru tine</p>
+                <h2 class="section-title text-center" data-i18n="resources.title">Resurse Muzicale</h2>
+                <p class="section-subtitle text-center" data-i18n="resources.subtitle">
                     Materiale educaționale gratuite pentru cursanții noștri și
                     pasionații de muzică.
                 </p>
@@ -2252,8 +2271,8 @@
        ============================================================ -->
         <section class="faq section" aria-label="Întrebări frecvente">
             <div class="container">
-                <p class="pre-header text-center">✦ Ai întrebări?</p>
-                <h2 class="section-title text-center">Întrebări frecvente</h2>
+                <p class="pre-header text-center" data-i18n="faq.preheader">✦ Ai întrebări?</p>
+                <h2 class="section-title text-center" data-i18n="faq.title">Întrebări frecvente</h2>
 
                 <div class="faq__list" id="faq-list">
                     <div class="faq__item">
@@ -2421,7 +2440,7 @@
             <div class="container">
                 <div class="cta-section__inner">
                     <div class="cta-section__text">
-                        <p class="pre-header">
+                        <p class="pre-header" data-i18n="cta.preheader">
                             ✦ Primul pas contează
                         </p>
                         <h2>Rezervă o<br /><em>Ședință Introductivă</em></h2>
@@ -2440,8 +2459,8 @@
 
                     <div class="cta-section__form">
                         <div class="booking-form">
-                            <h3>Rezervă acum</h3>
-                            <p class="cta-trigger__desc">
+                            <h3 data-i18n="cta.form.title">Rezervă acum</h3>
+                            <p class="cta-trigger__desc" data-i18n="cta.form.desc">
                                 Îți faci cont în portalul Nova în 2 minute, apoi
                                 alegi disciplina, profesorul și ora lecției de probă
                                 dintre orele libere.
@@ -2451,10 +2470,11 @@
                                 class="btn btn--primary btn--large btn--full btn--glow"
                                 target="_blank"
                                 rel="noopener"
+                                data-i18n="cta.form.btn"
                             >
                                 🎵 Rezervă o Ședință
                             </a>
-                            <p class="form-disclaimer">
+                            <p class="form-disclaimer" data-i18n="cta.form.disclaimer">
                                 Ai deja cont?
                                 <a href="https://portal.novamusicacademy.ro">Intră în portal</a>
                             </p>
@@ -2516,8 +2536,8 @@
                                 >Nova Music <em>Academy</em></span
                             >
                         </a>
-                        <p class="footer__tagline">Where Stars Are Born</p>
-                        <p>Muzica nu se predă. Se descoperă împreună.</p>
+                        <p class="footer__tagline" data-i18n="footer.tagline">Where Stars Are Born</p>
+                        <p data-i18n="footer.desc">Muzica nu se predă. Se descoperă împreună.</p>
                         <div class="footer__social">
                             <a
                                 href="https://www.instagram.com/novamusicro/"
@@ -2635,15 +2655,17 @@
                 </div>
 
                 <div class="footer__bottom">
-                    <p>
+                    <p data-i18n="footer.copy">
                         © 2026 Nova Music Academy. Toate drepturile rezervate.
                     </p>
                     <div class="footer__legal">
                         <a
                             href="https://novamusicacademy.ro/politica-confidentialitate/"
+                            data-i18n="footer.legal.privacy"
                             >Politica de Confidențialitate</a
                         >
                         <a href="https://novamusicacademy.ro/termeni-conditii/"
+                            data-i18n="footer.legal.terms"
                             >Termeni și Condiții</a
                         >
                     </div>
@@ -2671,7 +2693,7 @@
                     ×
                 </button>
 
-                <div class="announce-popup__badge">🆕 Lecții în grup</div>
+                <div class="announce-popup__badge" data-i18n="popup.badge">🆕 Lecții în grup</div>
 
                 <h2 class="announce-popup__title" id="announce-title">
                     Înveți mai repede.<br />Progresezi mai frumos.<br /><em>Împreună.</em>
@@ -2699,11 +2721,12 @@
                     id="announce-cta"
                     target="_blank"
                     rel="noopener"
+                    data-i18n="popup.cta"
                 >
                     👉 Rezervă loc în grup
                 </a>
 
-                <button type="button" class="announce-popup__skip" id="announce-skip">
+                <button type="button" class="announce-popup__skip" id="announce-skip" data-i18n="popup.skip">
                     Nu mă interesează acum
                 </button>
             </div>
@@ -2726,9 +2749,9 @@
                 </button>
 
                 <div class="modal__header">
-                    <p class="pre-header">✦ Primul pas spre muzica ta</p>
-                    <h2 id="modal-title">Rezervă o Ședință</h2>
-                    <p>
+                    <p class="pre-header" data-i18n="modal.preheader">✦ Primul pas spre muzica ta</p>
+                    <h2 id="modal-title" data-i18n="modal.title">Rezervă o Ședință</h2>
+                    <p data-i18n="modal.desc">
                         Completează formularul și te contactăm în maxim 24h
                         pentru programare.
                     </p>
@@ -2740,7 +2763,7 @@
                     novalidate
                 >
                     <div class="form-group">
-                        <label for="reg-name"
+                        <label for="reg-name" data-i18n="modal.name"
                             >Nume și Prenume
                             <span class="required-mark" aria-hidden="true"
                                 >*</span
@@ -2758,7 +2781,7 @@
 
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="reg-phone"
+                            <label for="reg-phone" data-i18n="modal.phone"
                                 >Telefon
                                 <span class="required-mark" aria-hidden="true"
                                     >*</span
@@ -2774,7 +2797,7 @@
                             />
                         </div>
                         <div class="form-group">
-                            <label for="reg-email"
+                            <label for="reg-email" data-i18n="modal.email"
                                 >E-mail
                                 <span class="required-mark" aria-hidden="true"
                                     >*</span
@@ -2792,7 +2815,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="reg-dob"
+                        <label for="reg-dob" data-i18n="modal.dob"
                             >Data Nașterii
                             <span class="required-mark" aria-hidden="true"
                                 >*</span
@@ -2898,11 +2921,12 @@
                     <button
                         type="submit"
                         class="btn btn--primary btn--large btn--full btn--glow"
+                        data-i18n="modal.submit"
                     >
                         🎵 Trimite Cererea
                     </button>
 
-                    <p class="form-disclaimer">
+                    <p class="form-disclaimer" data-i18n="modal.required">
                         Câmpurile marcate cu <strong>*</strong> sunt
                         obligatorii. Nu trimitem spam.
                     </p>
@@ -2956,6 +2980,8 @@
             </div>
         </div>
 
+        <script src="js/translations.js" defer></script>
+        <script src="js/i18n.js" defer></script>
         <script src="js/main.js?v=4" defer></script>
     </body>
 </html>
