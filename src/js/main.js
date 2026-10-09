@@ -6,6 +6,16 @@ function goToPortal() {
   window.location.href = PORTAL_SIGNUP;
 }
 
+/* Textele generate din JS se citesc din dicționarul i18n la momentul randării
+   (nu la încărcarea scriptului). {variabila} este înlocuită din `vars`. */
+function tr(key, vars) {
+  const text = typeof window.NMA_t === "function" ? window.NMA_t(key) : key;
+  if (!vars) return text;
+  return text.replace(/\{(\w+)\}/g, (match, name) =>
+    name in vars ? vars[name] : match,
+  );
+}
+
 /* ================================================================
    NOVA MUSIC ACADEMY — MAIN JAVASCRIPT
    Version: 1.0 | March 2026
@@ -234,144 +244,148 @@ function goToPortal() {
 
   const base = "assets/images/Content%20Profesori/";
 
+  // Specialitatea și biografia sunt chei din translations-app.js (traduse la randare)
   const data = {
     "jessica-diana": {
       name: "Jessica Diana",
-      specialty: "✦ Canto CVT",
+      specialty: "teacher.jessica-diana.specialty",
       photos: [base + "Jessica%20Diana.jpg", base + "Jessica%20Diana%203.jpg"],
       bio: [
-        "Cantautoare și solistă cu peste 12 ani de experiență în industria muzicală, remarcându-se prin succesul proiectului său solo, Jessica D, în țări precum Liban, Cipru, Grecia și Spania, în colaborare cu casa de discuri Roton. Artist complet, cu expertiză în songwriting, înregistrări de studio și spectacole live.",
-        "În calitate de Vocal Coach la Nova Music, Jessica combină experiența sa profesională cu o abordare psihologică profundă, ajutându-și cursanții să devină artiști compleți. Pune accent pe dezvoltarea încrederii în sine, perfecționarea tehnicii vocale și susținerea unei evoluții personale constante.",
-        "Cu o metodă de predare personalizată, Jessica oferă un mediu sigur, motivațional și plin de inspirație, unde fiecare elev își poate descoperi și valorifica potențialul artistic.",
+        "teacher.jessica-diana.bio.0",
+        "teacher.jessica-diana.bio.1",
+        "teacher.jessica-diana.bio.2",
       ],
     },
     "daniela-bazac": {
       name: "Dana Bazac",
-      specialty: "✦ Pian · Vocal Coach CVT",
+      specialty: "teacher.daniela-bazac.specialty",
       photos: [
         "assets/images/Dana%201.jpeg",
         "assets/images/Dana%202.jpeg",
         "assets/images/Dana%203.jpeg",
       ],
       bio: [
-        "Dana Bazac are 24 de ani și o relație profundă cu muzica, construită încă din copilărie, odată cu primele lecții de pian din clasa I. Parcursul său artistic a evoluat constant, ducând-o astăzi pe scenă, atât ca instrumentist, cât și ca vocalist.",
-        "Este absolventă a Universității Naționale de Muzică din București, secția Compoziție, iar în prezent își continuă studiile la nivel de master. De-a lungul anilor, a explorat diverse tehnici vocale, iar întâlnirea cu Complete Vocal Technique (CVT) a reprezentat un moment definitoriu în dezvoltarea sa, oferindu-i o înțelegere clară și sănătoasă a vocii.",
-        "Cu o experiență scenică de peste 17 ani, Dana a susținut numeroase concerte și evenimente încă din 2014, colaborând cu diverse trupe și proiecte muzicale din România.",
-        "În rolul de profesor de pian și vocal coach, Dana creează un mediu sigur și încurajator pentru elevii săi, unde aceștia pot explora, experimenta și evolua în ritmul propriu. Abordarea sa îmbină rigoarea tehnică cu dezvoltarea încrederii și a expresivității, punând accent pe autenticitate — esența oricărui act artistic.",
+        "teacher.daniela-bazac.bio.0",
+        "teacher.daniela-bazac.bio.1",
+        "teacher.daniela-bazac.bio.2",
+        "teacher.daniela-bazac.bio.3",
       ],
     },
     "matei-alexandru": {
       name: "Matei Alexandru",
-      specialty: "✦ Pian · Chitară · Teorie Muzicală",
+      specialty: "teacher.matei-alexandru.specialty",
       photos: [
         base + "Matei%20Alexandru.jpg",
         base + "Matei%20Alexandru%202.jpg",
       ],
       bio: [
-        "Vocația pentru muzică a lui Matei s-a manifestat de la cele mai mici vârste prin fascinația pentru instrumente și manifestarea muzicală a emoțiilor. La vârsta de 5 ani a început studiul pianului prin lecții particulare, iar de la 7 la 15 ani a urmat cursurile Școlii de Muzică și Arte Plastice nr. 5 din București, studiind pian, chitară, teorie muzicală și cor.",
-        "De-a lungul timpului a fost laureat al unor concursuri de interpretare vocală, la chitară și la pian, și a coordonat ateliere de artă muzicală în cadrul unor proiecte educaționale. Actualmente compune și cântă în formația A Theory of Harmony.",
-        quote(
-          "La ora de instrument ofer elevului nu numai cunoașterea instrumentului prin tehnici specifice pianului sau chitarei, ci și uneltele necesare pentru a înțelege muzica în întregul ei. Urmăresc ca elevul să devină un interpret cu impact și în același timp un artist profund și inteligent.",
-        ),
+        "teacher.matei-alexandru.bio.0",
+        "teacher.matei-alexandru.bio.1",
+        quote("teacher.matei-alexandru.bio.2"),
       ],
     },
     "daniel-iudean": {
       name: "Daniel Iudean",
-      specialty: "✦ Tobe · Percuție",
+      specialty: "teacher.daniel-iudean.specialty",
       photos: [
         base + "Daniel%20Iudean%20-%20poza%201.JPG",
         base + "Daniel%20Iudean%20-%20poza%202.JPG",
         base + "Daniel%20Iudean%20-%20poza%203.JPG",
       ],
       bio: [
-        "La 6 ani începe cursurile la Liceul de Artă din Târgu Mureș la secția de pian. La 10 ani, atras de instrumentele de percuție, își schimbă instrumentul și este premiat la olimpiadele de muzică regionale și naționale, remarcându-se la marimbă.",
-        "La 15 ani câștigă concursul Constantin Silvestri, în urma căruia studiază un an la Stewarts Melville College din Edinburgh, Scoția. Acolo descoperă tobele moderne, studiind stiluri de rock, jazz și marching drum.",
-        "Pe toată perioada liceului colaborează cu Filarmonica de Stat din Târgu Mureș. Obține licența la Universitatea Națională de Muzică din București la instrumente de percuție.",
-        "Colaborări: Keo, Alexandra Ungureanu, Skizzo Skillz, Plastik Charm, Ask The Fools. Din 2011 este colaborator permanent în trupa Loredanei Groza. Profesor de tobe din 2018.",
+        "teacher.daniel-iudean.bio.0",
+        "teacher.daniel-iudean.bio.1",
+        "teacher.daniel-iudean.bio.2",
+        "teacher.daniel-iudean.bio.3",
       ],
     },
     "stefan-laurentiu": {
       name: "Ștefan Laurențiu",
-      specialty: "✦ Saxofon · Instrumente de suflat",
+      specialty: "teacher.stefan-laurentiu.specialty",
       photos: [base + "Stefan%20Laurentiu.jpg"],
       bio: [
-        "Absolvent al Liceului de Muzică Sigismund Toduță Cluj; din 2006 până în 2010 a urmat studiile Academiei de Muzică Gheorghe Dima din Cluj-Napoca, licențiat în interpretare muzicală — solist instrumentist clarinet.",
-        "În anii ce au urmat a abordat mai multe culturi muzicale în diferite trupe și orchestre din țară și din străinătate, ajungând să stăpânească o gamă variată de instrumente de suflat: caval, fluier, flaut, saxofon alto, saxofon tenor și saxofon sopran.",
-        "Colaborări: Banda di Bracigliano (Italia), Loredana Groza, Adi Cristescu, Eugenia Nicolae, Trupa Breeze, Aylin Cadir. În prezent este saxofonist în band-ul HB (Horia Brenciu).",
+        "teacher.stefan-laurentiu.bio.0",
+        "teacher.stefan-laurentiu.bio.1",
+        "teacher.stefan-laurentiu.bio.2",
       ],
     },
     "antonia-ivascu": {
       name: "Antonia Ivașcu",
-      specialty: "✦ Pian · Chitară",
+      specialty: "teacher.antonia-ivascu.specialty",
       photos: [
         base + "Antonia%20Ivascu.jpg",
         base + "Antonia%20Ivascu%202.jpg",
         base + "Antonia%20Ivascu%203.jpg",
       ],
       bio: [
-        "Muzica a fost cea mai mare forță din viața mea încă de când eram mică. Pasiunea mea s-a manifestat într-un continuu studiu și experimentare a multor ramuri ale ei — de la cântat vocal, la instrumente, la songwriting și producție.",
-        "Activitatea artistică mi-am început-o de mică, cântând pe scene mai mici sau mai mari. Mai târziu am absolvit Conservatorul din Cluj la secția pedagogie muzicală, în paralel cu Facultatea de Psihologie — cel de-al doilea domeniu de mare interes pentru mine.",
-        "În prezent predau cursuri de pian și chitară și mă bucur să iau parte la drumul în muzică al fiecărui cursant cu care lucrez.",
+        "teacher.antonia-ivascu.bio.0",
+        "teacher.antonia-ivascu.bio.1",
+        "teacher.antonia-ivascu.bio.2",
       ],
     },
     "mihail-tirica": {
       name: "Mihail Tirica",
-      specialty: "✦ Producție Muzicală",
+      specialty: "teacher.mihail-tirica.specialty",
       photoPosition: "top center",
       photos: [
         base + "Mihail%20Tiri%20-%20poza%201.jpg",
         base + "Mihail%20Tiri%20-%20poza%202.jpg",
         base + "Mihail%20Tiri%20-%20poza%203.jpg",
       ],
-      bio: [
-        "Fondatorul Nova Music Academy și instructor de producție muzicală. Pasionat de muzică și tehnologie audio, ghidează cursanții prin universul DAW-urilor, beatmaking-ului, mixingului și masteringului.",
-        "Crede că producția muzicală este una dintre cele mai accesibile forme de exprimare artistică modernă — și că fiecare student poate ajunge la rezultate profesionale cu metodele potrivite.",
-      ],
+      bio: ["teacher.mihail-tirica.bio.0", "teacher.mihail-tirica.bio.1"],
     },
     "feli-dilbea": {
       name: "Feli Dilbea",
-      specialty: "✦ Pian · Vocal Coach CVT",
+      specialty: "teacher.feli-dilbea.specialty",
       photos: [
         "assets/images/Feli.jpeg",
         "assets/images/Feli%202.jpeg",
         "assets/images/Feli%203.jpeg",
       ],
       bio: [
-        "Absolventă a Universității Naționale de Muzică din București, secția Compoziție – Muzică Ușoară, Feli aduce cu ea peste 18 ani de experiență muzicală și 6 ani de activitate activă în industrie.",
-        "Ca artist singer-songwriter, explorează constant noi direcții creative, iar energia aceasta o aduce direct în sala de curs. Cu o experiență pedagogică de peste 6 ani, știe să se conecteze natural cu fiecare elev, indiferent de vârstă.",
-        "Creează un spațiu în care copiii și tinerii se simt liberi să descopere muzica fără presiune, cu entuziasm și autenticitate. Pasiunea ei pentru psihologie face diferența în modul în care predă — înțelege nevoile emoționale ale elevilor și transformă fiecare lecție într-o experiență de creștere personală, nu doar muzicală.",
-        "Pe scenă de la 6 ani, Feli știe că muzica nu este doar tehnică — este emoție, prezență și autenticitate. La Nova Music Academy, ea transmite exact asta: pasiunea pentru muzică și convingerea că aceasta poate transforma, conecta și inspira.",
+        "teacher.feli-dilbea.bio.0",
+        "teacher.feli-dilbea.bio.1",
+        "teacher.feli-dilbea.bio.2",
+        "teacher.feli-dilbea.bio.3",
       ],
     },
     "bubuci-nelu": {
       name: "Bubuci Nelu",
-      specialty: "✦ Vioară",
+      specialty: "teacher.bubuci-nelu.specialty",
       photos: ["assets/images/Nelu.jpeg"],
       bio: [
-        "Violonist și profesor de vioară, absolvent al Universității Naționale de Muzică din București (licență și master, specializarea Stilistică interpretativă – Muzică de cameră).",
-        'Parcursul său muzical a început de la o vârstă fragedă, studiind vioara și pianul la Liceul „Serghei Rahmaninov" din Chișinău, iar ulterior a activat în cadrul Filarmonicii Naționale „Serghei Lunchevici".',
-        'În prezent, este membru al Orchestrei Române de Tineret și al formației „Intermezzo Cantabile", implicându-se constant în concerte și proiecte artistice.',
-        "Ca profesor, se remarcă prin răbdare, claritate în explicații și o abordare echilibrată între tehnică și expresivitate, adaptându-se fiecărui elev și ghidându-l cu atenție în dezvoltarea sa muzicală.",
+        "teacher.bubuci-nelu.bio.0",
+        "teacher.bubuci-nelu.bio.1",
+        "teacher.bubuci-nelu.bio.2",
+        "teacher.bubuci-nelu.bio.3",
       ],
     },
   };
 
-  function quote(text) {
-    return `<blockquote>${text}</blockquote>`;
+  // Paragraf marcat ca citat: se randează ca <blockquote> în loc de <p>
+  function quote(key) {
+    return { quote: key };
   }
 
-  function open(key) {
+  let activeTeacher = null;
+  let photoIndex = 0;
+
+  function render(key) {
     const teacher = data[key];
     if (!teacher) return;
 
-    specialtyEl.textContent = teacher.specialty;
+    specialtyEl.textContent = tr(teacher.specialty);
     nameEl.textContent = teacher.name;
 
     bioEl.innerHTML = teacher.bio
-      .map((p) => (p.startsWith("<blockquote>") ? p : `<p>${p}</p>`))
+      .map((p) =>
+        typeof p === "string"
+          ? `<p>${tr(p)}</p>`
+          : `<blockquote>${tr(p.quote)}</blockquote>`,
+      )
       .join("");
 
-    mainPhoto.src = teacher.photos[0];
+    mainPhoto.src = teacher.photos[photoIndex];
     mainPhoto.alt = teacher.name;
     mainPhoto.style.objectPosition = teacher.photoPosition || "top center";
 
@@ -380,10 +394,12 @@ function goToPortal() {
       teacher.photos.forEach((src, i) => {
         const img = document.createElement("img");
         img.src = src;
-        img.alt = `${teacher.name} — foto ${i + 1}`;
-        img.className = "teacher-modal__thumb" + (i === 0 ? " is-active" : "");
+        img.alt = tr("teacher.photo", { name: teacher.name, n: i + 1 });
+        img.className =
+          "teacher-modal__thumb" + (i === photoIndex ? " is-active" : "");
         img.loading = "lazy";
         img.addEventListener("click", () => {
+          photoIndex = i;
           mainPhoto.src = src;
           thumbsEl
             .querySelectorAll(".teacher-modal__thumb")
@@ -393,6 +409,14 @@ function goToPortal() {
         thumbsEl.appendChild(img);
       });
     }
+  }
+
+  function open(key) {
+    if (!data[key]) return;
+
+    activeTeacher = key;
+    photoIndex = 0;
+    render(key);
 
     overlay.classList.add("is-open");
     overlay.setAttribute("aria-hidden", "false");
@@ -404,6 +428,13 @@ function goToPortal() {
     overlay.setAttribute("aria-hidden", "true");
     document.body.style.overflow = "";
   }
+
+  // Re-randare cu limba nouă dacă modalul e deschis
+  document.addEventListener("nma:langchange", () => {
+    if (activeTeacher && overlay.classList.contains("is-open")) {
+      render(activeTeacher);
+    }
+  });
 
   document.querySelectorAll(".teacher-card[data-teacher]").forEach((card) => {
     card.style.cursor = "pointer";
@@ -436,6 +467,7 @@ function goToPortal() {
 
   let currentItems = [];
   let currentIndex = 0;
+  let currentEvent = "";
 
   // ── Tab switching ──
   tabs.forEach((tab) => {
@@ -461,6 +493,7 @@ function goToPortal() {
       const event = item.dataset.event;
       const idx = parseInt(item.dataset.index, 10);
       const grid = grids[event];
+      currentEvent = event;
       currentItems = grid
         ? Array.from(grid.querySelectorAll(".gallery__item img"))
         : [];
@@ -474,7 +507,7 @@ function goToPortal() {
     const img = currentItems[i];
     if (!img) return;
     lbImg.src = img.src;
-    lbImg.alt = img.alt;
+    lbImg.alt = tr("event." + currentEvent);
     currentIndex = i;
   }
 
@@ -512,6 +545,11 @@ function goToPortal() {
     if (e.key === "ArrowRight")
       showImage((currentIndex + 1) % currentItems.length);
   });
+
+  // Alt-ul imaginii din lightbox se actualizează dacă limba se schimbă cât timp e deschis
+  document.addEventListener("nma:langchange", () => {
+    if (lightbox.classList.contains("is-open")) showImage(currentIndex);
+  });
 })();
 
 /* ── 8. RESOURCE MODAL ───────────────────────────────────────── */
@@ -523,55 +561,79 @@ function goToPortal() {
   const bodyEl = document.getElementById("resource-modal-body");
   const closeBtn = overlay.querySelector(".modal__close");
 
+  const range = (n) => Array.from({ length: n }, (_, i) => i);
+
+  // Articolele sunt funcții: conținutul se generează la fiecare randare, în limba curentă
   const articles = {
-    "article-1": `
+    "article-1": () => `
       <div class="resource-article">
-        <p class="resource-article__intro">Unii copii se nasc cu un simț muzical aparte. Încă de la vârste fragede, pot fi observați imitând sunete, reacționând la muzică sau cântând cu o naturalețe surprinzătoare. Dacă ești părinte și te întrebi dacă micuțul tău are ureche muzicală, iată 10 semne care te pot ghida — și câteva idei despre cum să-i susții talentul.</p>
+        <p class="resource-article__intro">${tr("res.a1.intro")}</p>
         <ol class="resource-article__list">
-          <li><strong>Recunoaște melodii după doar câteva note</strong><br>Dacă identifică rapid piese muzicale, chiar și după primele acorduri, are o memorie auditivă bine dezvoltată — o trăsătură-cheie pentru dezvoltarea muzicală.</li>
-          <li><strong>Cântă corect din auz</strong><br>Dacă reproduce fidel o melodie sau fredonează în ton, fără să fi învățat piesa, e un semn clar de ureche muzicală.</li>
-          <li><strong>Este foarte atent(ă) la sunetele din jur</strong><br>Un copil cu auz muzical reacționează la zgomote subtile și e adesea fascinat de „cum sună lucrurile".</li>
-          <li><strong>Simte ritmul instinctiv</strong><br>Dacă bate din palme, din picior sau se mișcă în sincron cu muzica, ar putea avea simțul ritmului înnăscut.</li>
-          <li><strong>Imită cu ușurință voci și instrumente</strong><br>Mulți copii se joacă imitând. Dar cei cu ureche muzicală o fac cu o fidelitate surprinzătoare, ceea ce arată sensibilitate auditivă.</li>
-          <li><strong>Are reacții emoționale la muzică</strong><br>Muzica îl liniștește, îl înveselește sau îl emoționează? Înseamnă că o percepe profund și personal.</li>
-          <li><strong>Transformă orice obiect în instrument</strong><br>Fie că lovește linguri, cutii sau cărți pentru a crea „muzică", e clar că are o nevoie naturală de a se exprima sonor.</li>
-          <li><strong>Reține versurile ușor și le reproduce cu intonație</strong><br>Un copil care memorizează repede melodii și le interpretează corect, deja își dezvoltă urechea muzicală.</li>
-          <li><strong>Este atras(ă) de instrumente muzicale</strong><br>Caută mereu să cânte la pian, chitară sau alte instrumente? Chiar dacă nu știe „să cânte", entuziasmul e primul pas.</li>
-          <li><strong>Are gusturi muzicale bine conturate</strong><br>Unii copii știu deja ce genuri le plac, ce melodii vor să asculte din nou și din nou. Aceasta arată o legătură profundă cu universul muzicii.</li>
+          ${range(10)
+            .map(
+              (i) =>
+                `<li><strong>${tr(`res.a1.li.${i}.title`)}</strong><br>${tr(`res.a1.li.${i}.text`)}</li>`,
+            )
+            .join("")}
         </ol>
-        <h3>Ce poți face mai departe?</h3>
-        <p>Dacă ai recunoscut măcar 5–6 dintre semnele de mai sus, e momentul ideal să cultivi această înclinație naturală:</p>
+        <h3>${tr("res.a1.h3")}</h3>
+        <p>${tr("res.a1.followup")}</p>
         <ul class="resource-article__tips">
-          <li>Creează-i un mediu bogat în sunete și muzică variată.</li>
-          <li>Cântați împreună — chiar dacă nu ești muzician!</li>
-          <li>Observă ce instrumente sau genuri îl atrag.</li>
-          <li>Fii atent(ă) la ritmurile, sunetele și emoțiile care îl fac să vibreze.</li>
-          <li>Mai ales: investește în educația lui muzicală timpurie.</li>
+          ${range(5)
+            .map((i) => `<li>${tr(`res.a1.tip.${i}`)}</li>`)
+            .join("")}
         </ul>
         <div class="resource-article__cta">
-          <p>🎵 <strong>La Nova Music Academy, transformăm urechea muzicală într-un superputere.</strong></p>
-          <p>Dacă ai un copil cu ureche muzicală, locul lui e într-un mediu în care acest dar poate fi recunoscut, ghidat și dezvoltat cu profesionalism. Lucrăm cu copii de toate vârstele și îi ajutăm să își descopere vocea, să învețe instrumente și să se exprime prin muzică.</p>
-          <button type="button" class="btn btn--primary" data-modal="registration-modal">🎵 Programează o lecție de probă</button>
+          <p>🎵 <strong>${tr("res.a1.cta.title")}</strong></p>
+          <p>${tr("res.a1.cta.text")}</p>
+          <button type="button" class="btn btn--primary" data-modal="registration-modal">${tr("res.a1.cta.btn")}</button>
         </div>
-        <p class="resource-article__footer">Muzica începe cu o ureche atentă. Lasă-ne să o ducem mai departe.</p>
+        <p class="resource-article__footer">${tr("res.a1.footer")}</p>
       </div>`,
   };
 
-  const open = (title, src, type) => {
+  // Titlurile din index.html (data-title) sunt în română; traducerea se ia după data-resource
+  const RESOURCE_TITLE_KEYS = {
+    "article-1": "res.title.article-1",
+    "assets/Content%20Resurse/Teorie%20muzicala/Notiuni%20generale%20de%20teorie%20muzicala.pdf":
+      "res.title.teorie-generale",
+    "assets/Content%20Resurse/Teorie%20muzicala/ritmica%20si%20metrica.pdf":
+      "res.title.ritmica",
+  };
+
+  const titleOf = (card) => {
+    const key = RESOURCE_TITLE_KEYS[card.dataset.resource];
+    return key ? tr(key) : card.dataset.title;
+  };
+
+  let activeCard = null;
+
+  const render = (card) => {
+    const src = card.dataset.resource;
+    const type = card.dataset.type;
+    const title = titleOf(card);
+
     titleEl.textContent = title;
 
     if (type === "article") {
-      bodyEl.innerHTML = articles[src] || "<p>Conținut indisponibil.</p>";
+      bodyEl.innerHTML = articles[src]
+        ? articles[src]()
+        : `<p>${tr("res.unavailable")}</p>`;
     } else if (type === "pdf") {
       bodyEl.innerHTML = `<iframe src="${src}" title="${title}"></iframe>`;
     } else {
       bodyEl.innerHTML = `
         <div class="resource-modal__download">
           <span style="font-size:3rem">📄</span>
-          <p>Acest fișier nu poate fi previzualizat în browser.<br>Apasă butonul de mai jos pentru a-l descărca.</p>
-          <a href="${src}" download class="btn btn--primary btn--large">⬇ Descarcă documentul</a>
+          <p>${tr("res.pdf.note")}</p>
+          <a href="${src}" download class="btn btn--primary btn--large">${tr("res.pdf.download")}</a>
         </div>`;
     }
+  };
+
+  const open = (card) => {
+    activeCard = card;
+    render(card);
 
     overlay.classList.add("is-open");
     overlay.setAttribute("aria-hidden", "false");
@@ -583,12 +645,16 @@ function goToPortal() {
     overlay.setAttribute("aria-hidden", "true");
     document.body.style.overflow = "";
     bodyEl.innerHTML = "";
+    activeCard = null;
   };
 
+  // Re-randare cu limba nouă dacă modalul e deschis
+  document.addEventListener("nma:langchange", () => {
+    if (activeCard && overlay.classList.contains("is-open")) render(activeCard);
+  });
+
   document.querySelectorAll(".resource-card").forEach((card) => {
-    card.addEventListener("click", () => {
-      open(card.dataset.title, card.dataset.resource, card.dataset.type);
-    });
+    card.addEventListener("click", () => open(card));
   });
 
   closeBtn.addEventListener("click", close);
@@ -681,8 +747,10 @@ function goToPortal() {
       const originalText = submitBtn.innerHTML;
 
       submitBtn.disabled = true;
-      submitBtn.innerHTML = "⏳ Se trimite...";
+      submitBtn.innerHTML = tr("form.sending");
 
+      // course = valoarea select-ului (slug, ex. "canto-cvt"): se trimite identic în
+      // ambele limbi, ca echipa să primească aceleași date indiferent de limba formularului
       const data = {
         name: form.querySelector("#reg-name")?.value,
         phone: form.querySelector("#reg-phone")?.value,
@@ -725,7 +793,7 @@ function goToPortal() {
           // Fire Meta Pixel Lead event on successful form submission
           if (typeof fbq === "function") fbq("track", "Lead");
 
-          submitBtn.innerHTML = "✓ Cerere trimisă!";
+          submitBtn.innerHTML = tr("form.success");
           form.reset();
           setTimeout(() => {
             submitBtn.disabled = false;
@@ -737,7 +805,13 @@ function goToPortal() {
         }
       } catch {
         // Fallback — WhatsApp
-        const msg = `Bună ziua! Doresc să rezerv o evaluare gratuită${data.course ? " de " + data.course : ""}. Mă numesc ${data.name}, tel: ${data.phone}`;
+        const msg = data.course
+          ? tr("wa.msg.course", {
+              course: data.course,
+              name: data.name,
+              phone: data.phone,
+            })
+          : tr("wa.msg.plain", { name: data.name, phone: data.phone });
         window.open(
           `https://wa.me/40771089525?text=${encodeURIComponent(msg)}`,
           "_blank",
@@ -766,171 +840,172 @@ function goToPortal() {
   const elMeta = document.getElementById("discipline-modal-meta");
   const ctaBtn = overlay.querySelector(".btn--primary");
 
+  // Textele sunt chei din translations-app.js (traduse la fiecare randare)
   const disciplines = {
     "canto-cvt": {
       icon: "🎤",
-      name: "Canto CVT",
-      badge: "Vârstă minimă: 4 ani",
-      intro:
-        "Complete Vocal Technique (CVT) este cea mai avansată metodă de tehnică vocală din lume. Învățăm să cântăm corect și sănătos, indiferent de gen muzical — pop, rock, jazz sau clasic.",
+      name: "disc.canto-cvt.name",
+      badge: "disc.canto-cvt.badge",
+      intro: "disc.canto-cvt.intro",
       points: [
-        "Înțelegerea și controlul vocii proprii",
-        "Tehnica respirației și a suportului diafragmatic",
-        "Moduri vocale CVT: Neutral, Curbing, Overdrive, Edge",
-        "Eliminarea încordării și a tensiunii vocale",
-        "Repertoriu adaptat stilului preferat",
-        "Pregătire pentru audiții și scene",
+        "disc.canto-cvt.point.0",
+        "disc.canto-cvt.point.1",
+        "disc.canto-cvt.point.2",
+        "disc.canto-cvt.point.3",
+        "disc.canto-cvt.point.4",
+        "disc.canto-cvt.point.5",
       ],
-      meta: ["4+ ani", "Copii & adulți", "Online disponibil"],
+      meta: ["meta.age.4", "meta.kids-adults", "meta.online"],
     },
     pian: {
       icon: "🎹",
-      name: "Pian",
-      badge: "Cel mai popular curs · 4+ ani",
-      intro:
-        "Pianul este instrumentul care deschide toate ușile muzicii. De la primele note la piese complexe, predăm atât clasic cât și contemporan, adaptând mereu la personalitatea elevului.",
+      name: "disc.pian.name",
+      badge: "disc.pian.badge",
+      intro: "disc.pian.intro",
       points: [
-        "Poziția corectă și tehnica mâinilor",
-        "Cititul notelor și solfegiu de bază",
-        "Repertoriu clasic: Mozart, Beethoven, Bach",
-        "Piese moderne și contemporane",
-        "Armonie și teoria muzicii aplicate",
-        "Repertoriu Pop adaptat preferințelor fiecărui student",
+        "disc.pian.point.0",
+        "disc.pian.point.1",
+        "disc.pian.point.2",
+        "disc.pian.point.3",
+        "disc.pian.point.4",
+        "disc.pian.point.5",
       ],
       meta: [
-        "4+ ani",
-        "Copii & adulți",
-        "Online disponibil",
-        "Cel mai popular",
+        "meta.age.4",
+        "meta.kids-adults",
+        "meta.online",
+        "meta.popular",
       ],
     },
     chitara: {
       icon: "🎸",
-      name: "Chitară",
-      badge: "Vârstă minimă: 6 ani",
-      intro:
-        "Acustică, electrică sau clasică — chitara este instrumentul libertății muzicale. De la primele acorduri până pe scene mari, te însoțim în fiecare pas.",
+      name: "disc.chitara.name",
+      badge: "disc.chitara.badge",
+      intro: "disc.chitara.intro",
       points: [
-        "Acorduri de bază și progresii armonice",
-        "Tehnica fingerpicking și plectrum",
-        "Chitară clasică (note și partituri)",
-        "Chitară electrică: rock, blues, pop",
-        "Solo și improvizație",
-        "Citit tablatură și partituri standard",
+        "disc.chitara.point.0",
+        "disc.chitara.point.1",
+        "disc.chitara.point.2",
+        "disc.chitara.point.3",
+        "disc.chitara.point.4",
+        "disc.chitara.point.5",
       ],
-      meta: ["6+ ani", "Copii & adulți", "Online disponibil"],
+      meta: ["meta.age.6", "meta.kids-adults", "meta.online"],
     },
     teorie: {
       icon: "🎼",
-      name: "Teorie Muzicală",
-      badge: "Vârstă minimă: 6 ani",
-      intro:
-        "Teoria muzicală este fundația oricărui muzician complet. Înveți să citești partituri, să înțelegi armonia și să comunici muzical cu oricine — indiferent de instrument.",
+      name: "disc.teorie.name",
+      badge: "disc.teorie.badge",
+      intro: "disc.teorie.intro",
       points: [
-        "Solfegiu și citit partituri",
-        "Ritmică și metru muzical",
-        "Intervale, acorduri și tonalități",
-        "Armonie de bază și progresii",
-        "Dicteu muzical și ureche absolută",
-        "Aplicat direct pe instrumentul preferat",
+        "disc.teorie.point.0",
+        "disc.teorie.point.1",
+        "disc.teorie.point.2",
+        "disc.teorie.point.3",
+        "disc.teorie.point.4",
+        "disc.teorie.point.5",
       ],
-      meta: ["6+ ani", "Copii & adulți", "Online disponibil"],
+      meta: ["meta.age.6", "meta.kids-adults", "meta.online"],
     },
     saxofon: {
       icon: "🎷",
-      name: "Saxofon",
-      badge: "Vârstă minimă: 7 ani",
-      intro:
-        "Unul dintre cele mai expresive instrumente din lume. Saxofonul combină rafinamentul jazzului cu versatilitatea pop-ului și a muzicii clasice.",
+      name: "disc.saxofon.name",
+      badge: "disc.saxofon.badge",
+      intro: "disc.saxofon.intro",
       points: [
-        "Asamblarea și îngrijirea instrumentului",
-        "Embouchure și tehnica de suflat",
-        "Scări, arpegii și tehnici de bază",
-        "Repertoriu jazz, clasic și pop",
-        "Improvizație și frazare",
-        "Ansambluri și muzică de cameră",
+        "disc.saxofon.point.0",
+        "disc.saxofon.point.1",
+        "disc.saxofon.point.2",
+        "disc.saxofon.point.3",
+        "disc.saxofon.point.4",
+        "disc.saxofon.point.5",
       ],
-      meta: ["7+ ani", "Copii & adulți", "Online disponibil"],
+      meta: ["meta.age.7", "meta.kids-adults", "meta.online"],
     },
     vioara: {
       icon: "🎻",
-      name: "Vioară",
-      badge: "Vârstă minimă: 5 ani",
-      intro:
-        "Vioara formează disciplina, concentrarea și sensibilitatea artistică. Un instrument cu o tradiție muzicală bogată, care dezvoltă elevul complet — muzical și uman.",
+      name: "disc.vioara.name",
+      badge: "disc.vioara.badge",
+      intro: "disc.vioara.intro",
       points: [
-        "Poziția corectă și tehnica arcușului",
-        "Intonație și auzul muzical",
-        "Repertoriu clasic sau Pop, adaptat preferințelor fiecărui student",
-        "Tehnici avansate: vibrato, spiccato, détaché",
-        "Citirea partiturilor și solfegiu",
-        "Pregătire pentru concursuri și examene",
+        "disc.vioara.point.0",
+        "disc.vioara.point.1",
+        "disc.vioara.point.2",
+        "disc.vioara.point.3",
+        "disc.vioara.point.4",
+        "disc.vioara.point.5",
       ],
-      meta: ["5+ ani", "Copii & adulți"],
+      meta: ["meta.age.5", "meta.kids-adults"],
     },
     productie: {
       icon: "🎧",
-      name: "Producție Muzicală",
-      badge: "Vârstă minimă: 14 ani · NOU",
-      intro:
-        "Creează muzică de la zero, direct de acasă. Predăm folosind Ableton, FL Studio sau Logic Pro — de la primele beat-uri până la mixuri gata de lansare.",
+      name: "disc.productie.name",
+      badge: "disc.productie.badge",
+      intro: "disc.productie.intro",
       points: [
-        "Introducere în DAW (Ableton / FL Studio / Logic)",
-        "Beatmaking și sound design",
-        "Sampling, sintetizatoare și instrumente virtuale",
-        "Mixing: EQ, compressor, reverb",
-        "Mastering de bază",
-        "Publicarea și distribuția muzicii",
+        "disc.productie.point.0",
+        "disc.productie.point.1",
+        "disc.productie.point.2",
+        "disc.productie.point.3",
+        "disc.productie.point.4",
+        "disc.productie.point.5",
       ],
-      meta: ["14+ ani", "Adulți", "Online disponibil", "Nou"],
+      meta: ["meta.age.14", "meta.adults", "meta.online", "meta.new"],
     },
     tobe: {
       icon: "🥁",
-      name: "Tobe",
-      badge: "Vârstă minimă: 5 ani",
-      intro:
-        "Tobele dezvoltă simțul ritmului, coordonarea și energia muzicală. Un curs plin de dinamism, potrivit atât copiilor cât și adulților care vor să cânte în formații.",
+      name: "disc.tobe.name",
+      badge: "disc.tobe.badge",
+      intro: "disc.tobe.intro",
       points: [
-        "Tehnica basică de tobe: postura și priza bețelor",
-        "Ritmuri de bază: rock, pop, funk",
-        "Coordonarea mâini-picioare",
-        "Citirea partiturilor pentru percuție",
-        "Improvizație și fill-uri",
-        "Cântare în ansamblu și band context",
+        "disc.tobe.point.0",
+        "disc.tobe.point.1",
+        "disc.tobe.point.2",
+        "disc.tobe.point.3",
+        "disc.tobe.point.4",
+        "disc.tobe.point.5",
       ],
-      meta: ["5+ ani", "Copii & adulți", "Online disponibil"],
+      meta: ["meta.age.5", "meta.kids-adults", "meta.online"],
     },
     dans: {
       icon: "💃",
-      name: "Dans pentru Scenă",
-      badge: "6+ ani",
-      intro: "Mișcare scenică, coregrafie și prezență artistică pentru muzicieni. Nu predăm dans de performanță — predăm cum să te simți acasă pe scenă, cum să îți miști corpul natural și cum să transmiți emoție prin întreaga ta prezență.",
+      name: "disc.dans.name",
+      badge: "disc.dans.badge",
+      intro: "disc.dans.intro",
       points: [
-        "Coregrafie adaptată stilului tău muzical",
-        "Mișcare scenică și control al spațiului",
-        "Limbajul corpului în fața publicului",
-        "Sincronizare muzică — mișcare",
-        "Exerciții de prezență și încredere scenică",
-        "Potrivit atât pentru soliști cât și pentru trupe",
+        "disc.dans.point.0",
+        "disc.dans.point.1",
+        "disc.dans.point.2",
+        "disc.dans.point.3",
+        "disc.dans.point.4",
+        "disc.dans.point.5",
       ],
-      meta: "Copii și adulți · 6+ ani · Individual sau grup",
+      meta: ["disc.dans.meta"],
     },
   };
 
-  function open(key) {
+  let activeDiscipline = null;
+
+  function render(key) {
     const d = disciplines[key];
-    if (!d) return;
 
     elIcon.textContent = d.icon;
-    elBadge.textContent = d.badge;
-    elName.textContent = d.name;
-    elIntro.textContent = d.intro;
+    elBadge.textContent = tr(d.badge);
+    elName.textContent = tr(d.name);
+    elIntro.textContent = tr(d.intro);
 
-    elPoints.innerHTML = d.points.map((p) => `<li>${p}</li>`).join("");
+    elPoints.innerHTML = d.points.map((p) => `<li>${tr(p)}</li>`).join("");
 
     elMeta.innerHTML = d.meta
-      .map((m) => `<span class="badge">${m}</span>`)
+      .map((m) => `<span class="badge">${tr(m)}</span>`)
       .join("");
+  }
+
+  function open(key) {
+    if (!disciplines[key]) return;
+
+    activeDiscipline = key;
+    render(key);
 
     overlay.setAttribute("aria-hidden", "false");
     overlay.classList.add("is-open");
@@ -943,6 +1018,13 @@ function goToPortal() {
     overlay.classList.remove("is-open");
     document.body.style.overflow = "";
   }
+
+  // Re-randare cu limba nouă dacă modalul e deschis
+  document.addEventListener("nma:langchange", () => {
+    if (activeDiscipline && overlay.classList.contains("is-open")) {
+      render(activeDiscipline);
+    }
+  });
 
   // Open on card button click
   document
@@ -1078,3 +1160,50 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
     }
   });
 });
+
+/* ── 11. TEXTE STATICE DIN MODALE, LIGHTBOX ȘI GALERIE ─────────── */
+/* Aceste elemente au text/aria/alt în index.html; le actualizăm din dicționar
+   la încărcare și la fiecare schimbare de limbă. */
+(function initLocalizedChrome() {
+  const CHROME = [
+    ["#lightbox", "aria-label", "lightbox.label"],
+    [".lightbox__close", "aria-label", "common.close"],
+    [".lightbox__prev", "aria-label", "lightbox.prev"],
+    [".lightbox__next", "aria-label", "lightbox.next"],
+    ["#discipline-modal .modal__close", "aria-label", "common.close"],
+    ["#teacher-modal .modal__close", "aria-label", "common.close"],
+    ["#resource-modal .modal__close", "aria-label", "res.close"],
+    ["#registration-modal .modal__close", "aria-label", "reg.close"],
+    [
+      "#discipline-modal .discipline-modal__body h4",
+      "textContent",
+      "disc.learn",
+    ],
+    ["#discipline-modal .btn--primary", "textContent", "disc.cta"],
+  ];
+
+  function apply() {
+    CHROME.forEach(([selector, prop, key]) => {
+      document.querySelectorAll(selector).forEach((el) => {
+        if (prop === "textContent") {
+          el.textContent = tr(key);
+        } else {
+          el.setAttribute(prop, tr(key));
+        }
+      });
+    });
+
+    document.querySelectorAll(".gallery__item").forEach((item) => {
+      const img = item.querySelector("img");
+      if (img) img.alt = tr("event." + item.dataset.event);
+    });
+
+    ["craciun", "vara"].forEach((event) => {
+      const grid = document.getElementById("gallery-" + event);
+      if (grid) grid.setAttribute("aria-label", tr("event." + event));
+    });
+  }
+
+  apply();
+  document.addEventListener("nma:langchange", apply);
+})();

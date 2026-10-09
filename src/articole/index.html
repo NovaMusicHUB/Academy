@@ -5,19 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
             name="description"
+                        data-i18n-content="art.meta.desc"
             content="Articole despre educație muzicală, tehnici vocale, instrumente și sfaturi pentru părinți și studenți. Blog Nova Music Academy."
         />
 
         <!-- Open Graph -->
-        <meta property="og:title" content="Articole despre muzică și educație muzicală | Nova Music Academy" />
-        <meta property="og:description" content="Articole despre educație muzicală, tehnici vocale, instrumente și sfaturi pentru părinți și studenți. Blog Nova Music Academy." />
+        <meta property="og:title" content="Articole despre muzică și educație muzicală | Nova Music Academy" data-i18n-content="art.title" />
+        <meta data-i18n-content="art.meta.desc" property="og:description" content="Articole despre educație muzicală, tehnici vocale, instrumente și sfaturi pentru părinți și studenți. Blog Nova Music Academy." />
         <meta property="og:url" content="https://novamusicacademy.ro/articole/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://novamusicacademy.ro/assets/images/hero-poster.png" />
 
         <link rel="canonical" href="https://novamusicacademy.ro/articole/" />
 
-        <title>Articole despre muzică și educație muzicală | Nova Music Academy</title>
+        <title data-i18n-title="art.title">Articole despre muzică și educație muzicală | Nova Music Academy</title>
 
         <!-- Favicon -->
         <link rel="icon" href="../assets/images/logo-icon.png" type="image/png" />
@@ -98,11 +99,11 @@
            NAVIGATION
            ============================================================ -->
         <header class="site-header" role="banner">
-            <nav class="nav container" aria-label="Navigare principală">
+            <nav class="nav container" aria-label="Navigare principală" data-i18n-aria="art.nav.aria">
                 <a
                     href="/"
                     class="nav__logo"
-                    aria-label="Nova Music Academy — Acasă"
+                    aria-label="Nova Music Academy — Acasă" data-i18n-aria="art.nav.home.aria"
                 >
                     <img
                         class="nav__logo-img nav__logo-img--dark"
@@ -127,11 +128,11 @@
                     <li><a href="/#despre-noi" data-i18n="nav.despre">Despre noi</a></li>
                     <li><a href="/#recenzii" data-i18n="nav.recenzii">Recenzii</a></li>
                     <li><a href="/#contact" data-i18n="nav.contact">Contact</a></li>
-                    <li><a href="/articole/" aria-current="page" class="nav__link--active">Articole</a></li>
+                    <li><a href="/articole/" aria-current="page" class="nav__link--active" data-i18n="nav.articole">Articole</a></li>
                 </ul>
 
                 <!-- Language switcher -->
-                <div class="lang-switcher" role="group" aria-label="Selectează limba">
+                <div class="lang-switcher" role="group" aria-label="Selectează limba" data-i18n-aria="art.lang.aria">
                     <button class="lang-btn lang-btn--active" data-lang="ro" aria-pressed="true">
                         <span class="lang-flag">🇷🇴</span>
                         <span class="lang-code" data-i18n="lang.ro">RO</span>
@@ -163,7 +164,7 @@
 
                 <button
                     class="nav__burger"
-                    aria-label="Deschide meniu"
+                    aria-label="Deschide meniu" data-i18n-aria="art.nav.burger.aria"
                     aria-expanded="false"
                     aria-controls="mobile-menu"
                 >
@@ -174,12 +175,12 @@
             <!-- Mobile Menu -->
             <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
                 <ul role="list">
-                    <li><a href="/#cursuri">Cursuri</a></li>
-                    <li><a href="/#profesori">Profesori</a></li>
-                    <li><a href="/#despre-noi">Despre noi</a></li>
-                    <li><a href="/#recenzii">Recenzii</a></li>
+                    <li><a href="/#cursuri" data-i18n="nav.cursuri">Cursuri</a></li>
+                    <li><a href="/#profesori" data-i18n="nav.profesori">Profesori</a></li>
+                    <li><a href="/#despre-noi" data-i18n="nav.despre">Despre noi</a></li>
+                    <li><a href="/#recenzii" data-i18n="nav.recenzii">Recenzii</a></li>
                     <li><a href="/#contact">Contact</a></li>
-                    <li><a href="/articole/" aria-current="page">Articole</a></li>
+                    <li><a href="/articole/" aria-current="page" data-i18n="nav.articole">Articole</a></li>
                     <li><a class="mobile-menu__login" href="https://portal.novamusicacademy.ro" data-i18n="nav.login">Login</a></li>
                 </ul>
                 <a
@@ -197,10 +198,10 @@
         <!-- ============================================================
            PAGE HERO
            ============================================================ -->
-        <section class="articles-hero" aria-label="Blog & Resurse">
-            <p class="articles-hero__pre">✦ Blog &amp; Resurse</p>
-            <h1 class="articles-hero__title">Articole despre muzică și educație</h1>
-            <p class="articles-hero__sub">Sfaturi practice, tehnici vocale, ghiduri pentru părinți și povești din academia noastră.</p>
+        <section class="articles-hero" aria-label="Blog & Resurse" data-i18n-aria="art.hero.aria">
+            <p class="articles-hero__pre" data-i18n="art.hero.pre">✦ Blog &amp; Resurse</p>
+            <h1 class="articles-hero__title" data-i18n="art.hero.title">Articole despre muzică și educație</h1>
+            <p class="articles-hero__sub" data-i18n="art.hero.sub">Sfaturi practice, tehnici vocale, ghiduri pentru părinți și povești din academia noastră.</p>
         </section>
 
         <!-- ============================================================
@@ -217,15 +218,15 @@
                     <a
                         href="../articole/beneficiile-lectiilor-de-muzica-pentru-copii/"
                         class="article-card"
-                        aria-label="Citește: Beneficiile lecțiilor de muzică pentru copii — ce spune știința"
+                        aria-label="Citește: Beneficiile lecțiilor de muzică pentru copii — ce spune știința" data-i18n-aria="art.card.aria"
                     >
                         <div class="article-card__thumb" aria-hidden="true">🎵</div>
                         <div class="article-card__body">
-                            <p class="article-card__cat">Educație Muzicală</p>
-                            <h2 class="article-card__title">Beneficiile lecțiilor de muzică pentru copii — ce spune știința</h2>
-                            <p class="article-card__excerpt">Studiile arată că lecțiile de muzică influențează dezvoltarea cognitivă, emoțională și socială a copilului. Iată ce beneficii concrete aduc și de la ce vârstă să începi.</p>
-                            <p class="article-card__meta">Iulie 2026 &nbsp;·&nbsp; 8 min citire</p>
-                            <span class="article-card__btn">Citește articolul →</span>
+                            <p class="article-card__cat" data-i18n="art.card.cat">Educație Muzicală</p>
+                            <h2 class="article-card__title" data-i18n="art.card.title">Beneficiile lecțiilor de muzică pentru copii — ce spune știința</h2>
+                            <p class="article-card__excerpt" data-i18n="art.card.excerpt">Studiile arată că lecțiile de muzică influențează dezvoltarea cognitivă, emoțională și socială a copilului. Iată ce beneficii concrete aduc și de la ce vârstă să începi.</p>
+                            <p class="article-card__meta" data-i18n-html="art.card.meta">Iulie 2026 &nbsp;·&nbsp; 8 min citire</p>
+                            <span class="article-card__btn" data-i18n="art.card.btn">Citește articolul →</span>
                         </div>
                     </a>
 
@@ -236,14 +237,15 @@
         <!-- ============================================================
            CTA SECTION
            ============================================================ -->
-        <section class="articles-cta" aria-label="Rezervă o ședință introductivă">
-            <h2>Vrei să descoperi muzica?</h2>
-            <p>Rezervă o ședință introductivă cu unul din profesorii noștri.</p>
+        <section class="articles-cta" aria-label="Rezervă o ședință introductivă" data-i18n-aria="art.cta.aria">
+            <h2 data-i18n="art.cta.title">Vrei să descoperi muzica?</h2>
+            <p data-i18n="art.cta.text">Rezervă o ședință introductivă cu unul din profesorii noștri.</p>
             <a
                 href="https://portal.novamusicacademy.ro"
                 class="btn btn--primary"
                 target="_blank"
                 rel="noopener"
+            data-i18n="art.cta.btn"
             >
                 🎵 Programează-te acum
             </a>
@@ -298,26 +300,26 @@
                         </div>
                     </div>
 
-                    <nav aria-label="Cursuri">
-                        <h4>Cursuri</h4>
+                    <nav aria-label="Cursuri" data-i18n-aria="nav.cursuri">
+                        <h4 data-i18n="nav.cursuri">Cursuri</h4>
                         <ul role="list">
                             <li><a href="/#cursuri" data-discipline="canto-cvt">Canto CVT</a></li>
-                            <li><a href="/#cursuri" data-discipline="pian">Pian</a></li>
-                            <li><a href="/#cursuri" data-discipline="chitara">Chitară</a></li>
-                            <li><a href="/#cursuri" data-discipline="teorie">Teorie Muzicală</a></li>
-                            <li><a href="/#cursuri" data-discipline="saxofon">Saxofon</a></li>
-                            <li><a href="/#cursuri" data-discipline="vioara">Vioară</a></li>
-                            <li><a href="/#cursuri" data-discipline="tobe">Tobe</a></li>
-                            <li><a href="/#cursuri" data-discipline="productie">Producție Muzicală</a></li>
+                            <li><a href="/#cursuri" data-discipline="pian" data-i18n="art.disc.pian">Pian</a></li>
+                            <li><a href="/#cursuri" data-discipline="chitara" data-i18n="art.disc.chitara">Chitară</a></li>
+                            <li><a href="/#cursuri" data-discipline="teorie" data-i18n="art.disc.teorie">Teorie Muzicală</a></li>
+                            <li><a href="/#cursuri" data-discipline="saxofon" data-i18n="art.disc.saxofon">Saxofon</a></li>
+                            <li><a href="/#cursuri" data-discipline="vioara" data-i18n="art.disc.vioara">Vioară</a></li>
+                            <li><a href="/#cursuri" data-discipline="tobe" data-i18n="art.disc.tobe">Tobe</a></li>
+                            <li><a href="/#cursuri" data-discipline="productie" data-i18n="art.disc.productie">Producție Muzicală</a></li>
                         </ul>
                     </nav>
 
-                    <nav aria-label="Academia">
-                        <h4>Academia</h4>
+                    <nav aria-label="Academia" data-i18n-aria="art.footer.academy">
+                        <h4 data-i18n="art.footer.academy">Academia</h4>
                         <ul role="list">
-                            <li><a href="/#despre-noi">Despre noi</a></li>
-                            <li><a href="/#profesori">Profesori</a></li>
-                            <li><a href="/#recenzii">Recenzii</a></li>
+                            <li><a href="/#despre-noi" data-i18n="nav.despre">Despre noi</a></li>
+                            <li><a href="/#profesori" data-i18n="nav.profesori">Profesori</a></li>
+                            <li><a href="/#recenzii" data-i18n="nav.recenzii">Recenzii</a></li>
                             <li>
                                 <a
                                     href="https://www.youtube.com/@novamusicro"
@@ -325,7 +327,7 @@
                                     rel="noopener noreferrer"
                                 >YouTube Nova Music</a>
                             </li>
-                            <li><a href="/articole/">Articole</a></li>
+                            <li><a href="/articole/" data-i18n="nav.articole">Articole</a></li>
                             <li><a href="/#contact">Contact</a></li>
                         </ul>
                     </nav>
@@ -367,6 +369,8 @@
         </footer>
 
         <script src="../js/translations.js" defer></script>
+        <script src="../js/translations-pages.js" defer></script>
+        <script src="../js/translations-app.js" defer></script>
         <script src="../js/i18n.js" defer></script>
         <script src="../js/main.js?v=3" defer></script>
     </body>

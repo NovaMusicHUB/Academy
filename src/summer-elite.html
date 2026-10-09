@@ -5,23 +5,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="canonical" href="https://novamusicacademy.ro/summer-elite" />
 
-        <title>
+        <title data-i18n-title="se.title">
             Nova Summer Elite — Program de Mentorat &amp; Creștere Artistică |
             Nova Music Academy
         </title>
 
         <meta
             name="description"
+            data-i18n-content="se.meta.desc"
             content="Nova Summer Elite — programul intensiv de mentorat artistic de 6 săptămâni pentru cei care vor mai mult decât simple lecții. Canto CVT, mișcare scenică, songwriting și lansare oficială pe streaming."
         />
 
         <!-- Open Graph -->
         <meta
             property="og:title"
+            data-i18n-content="se.og.title"
             content="Nova Summer Elite — Program de Mentorat &amp; Creștere Artistică"
         />
         <meta
             property="og:description"
+            data-i18n-content="se.og.desc"
             content="6 săptămâni · 12 întâlniri · 3 ore per ședință · 1 piesă înregistrată și lansată. Programul exclusiv de vară al Nova Music Academy."
         />
         <meta
@@ -840,11 +843,12 @@
          NAVBAR
          ============================================= -->
         <header class="site-header" role="banner">
-            <nav class="nav container" aria-label="Navigare principală">
+            <nav class="nav container" aria-label="Navigare principală" data-i18n-aria="se.nav.aria">
                 <a
                     href="/"
                     class="nav__logo"
                     aria-label="Nova Music Academy — Acasă"
+                    data-i18n-aria="se.nav.home.aria"
                 >
                     <img
                         class="nav__logo-img nav__logo-img--dark"
@@ -866,18 +870,32 @@
                 </a>
 
                 <ul class="nav__links" role="list">
-                    <li><a href="/">Acasă</a></li>
-                    <li><a href="/#cursuri">Cursuri</a></li>
-                    <li><a href="/#profesori">Profesori</a></li>
+                    <li><a href="/" data-i18n="se.nav.home">Acasă</a></li>
+                    <li><a href="/#cursuri" data-i18n="nav.cursuri">Cursuri</a></li>
+                    <li><a href="/#profesori" data-i18n="nav.profesori">Profesori</a></li>
                 </ul>
 
-                <a href="#inscriere" class="btn btn--primary nav__cta">
+                <!-- Language switcher -->
+                <div class="lang-switcher" role="group" aria-label="Selectează limba" data-i18n-aria="se.lang.aria">
+                    <button class="lang-btn lang-btn--active" data-lang="ro" aria-pressed="true">
+                        <span class="lang-flag">🇷🇴</span>
+                        <span class="lang-code" data-i18n="lang.ro">RO</span>
+                    </button>
+                    <span class="lang-divider" aria-hidden="true">|</span>
+                    <button class="lang-btn" data-lang="en" aria-pressed="false">
+                        <span class="lang-flag">🇬🇧</span>
+                        <span class="lang-code" data-i18n="lang.en">EN</span>
+                    </button>
+                </div>
+
+                <a href="#inscriere" class="btn btn--primary nav__cta" data-i18n="se.cta.enroll">
                     Vreau să mă înscriu
                 </a>
 
                 <button
                     class="nav__burger"
                     aria-label="Deschide meniu"
+                    data-i18n-aria="se.nav.burger.aria"
                     aria-expanded="false"
                     aria-controls="mobile-menu-se"
                 >
@@ -888,11 +906,11 @@
             <!-- Mobile Menu -->
             <div class="mobile-menu" id="mobile-menu-se" aria-hidden="true">
                 <ul role="list">
-                    <li><a href="/">Acasă</a></li>
-                    <li><a href="/#cursuri">Cursuri</a></li>
-                    <li><a href="/#profesori">Profesori</a></li>
+                    <li><a href="/" data-i18n="se.nav.home">Acasă</a></li>
+                    <li><a href="/#cursuri" data-i18n="nav.cursuri">Cursuri</a></li>
+                    <li><a href="/#profesori" data-i18n="nav.profesori">Profesori</a></li>
                 </ul>
-                <a href="#inscriere" class="btn btn--primary">
+                <a href="#inscriere" class="btn btn--primary" data-i18n="se.cta.enroll">
                     Vreau să mă înscriu
                 </a>
             </div>
@@ -901,7 +919,7 @@
         <!-- =============================================
          URGENCY BANNER
          ============================================= -->
-        <div class="urgency-banner" role="alert">
+        <div class="urgency-banner" role="alert" data-i18n="se.urgency">
             🔥 Locuri limitate — Program exclusiv pentru vara 2026
         </div>
 
@@ -913,23 +931,24 @@
                 class="summer-hero__bg"
                 src="assets/images/Nova Summer Elite.jpg"
                 alt="Nova Summer Elite — Program intensiv de vară"
+                data-i18n-alt="se.hero.img.alt"
             />
             <div class="summer-hero__overlay" aria-hidden="true"></div>
             <div class="summer-hero__content">
-                <p class="summer-hero__pre">☀️ Vară 2026 · Program exclusiv</p>
+                <p class="summer-hero__pre" data-i18n="se.hero.pre">☀️ Vară 2026 · Program exclusiv</p>
                 <h1 class="summer-hero__title">Nova Summer Elite</h1>
-                <p class="summer-hero__subtitle">
+                <p class="summer-hero__subtitle" data-i18n="se.hero.subtitle">
                     Nu lăsa vara asta să treacă pe lângă visul tău.
                 </p>
-                <p class="summer-hero__desc">
+                <p class="summer-hero__desc" data-i18n="se.hero.desc">
                     6 săptămâni · 12 întâlniri · 2 ședințe/săptămână · 3 ore
                     fiecare
                 </p>
                 <div class="summer-hero__ctas">
-                    <a href="#inscriere" class="btn btn--primary btn--large">
+                    <a href="#inscriere" class="btn btn--primary btn--large" data-i18n="se.cta.enroll.arrow">
                         Vreau să mă înscriu →
                     </a>
-                    <a href="#program" class="btn--ghost-white">
+                    <a href="#program" class="btn--ghost-white" data-i18n="se.hero.discover">
                         Descoperă programul ↓
                     </a>
                 </div>
@@ -945,13 +964,14 @@
                     <!-- Left: text -->
                     <div>
                         <span class="se-pre-header"
-                            >✦ Ce este Nova Summer Elite?</span
+                            data-i18n="se.about.pre"
+                                                        >✦ Ce este Nova Summer Elite?</span
                         >
-                        <h2 class="se-h2" id="despre-h2">
+                        <h2 class="se-h2" id="despre-h2" data-i18n-html="se.about.title">
                             Un program care te transformă,<br />nu doar te
                             învaţă.
                         </h2>
-                        <p class="se-lead">
+                        <p class="se-lead" data-i18n="se.about.lead">
                             6 săptămâni. 12 întâlniri. 2 ședințe pe săptămână,
                             câte 3 ore fiecare. Un singur obiectiv: să devii
                             artistul pe care îl porți în tine. Nova Summer Elite
@@ -965,21 +985,22 @@
                     <div class="summer-stats">
                         <div class="summer-stat-card">
                             <span class="summer-stat-card__number">6</span>
-                            <p class="summer-stat-card__label">
+                            <p class="summer-stat-card__label" data-i18n-html="se.stat1.label">
                                 săptămâni<br />Program intensiv de vară
                             </p>
                         </div>
                         <div class="summer-stat-card">
                             <span class="summer-stat-card__number">12</span>
-                            <p class="summer-stat-card__label">
+                            <p class="summer-stat-card__label" data-i18n-html="se.stat2.label">
                                 întâlniri<br />3 ore fiecare
                             </p>
                         </div>
                         <div class="summer-stat-card">
                             <span class="summer-stat-card__number"
-                                >1 piesă</span
+                                data-i18n="se.stat3.number"
+                                                                >1 piesă</span
                             >
-                            <p class="summer-stat-card__label">
+                            <p class="summer-stat-card__label" data-i18n="se.stat3.label">
                                 Înregistrată &amp; lansată la final
                             </p>
                         </div>
@@ -998,7 +1019,7 @@
         >
             <div class="se-container">
                 <span class="se-pre-header">✦ Curriculum</span>
-                <h2 class="se-h2" id="curriculum-h2">
+                <h2 class="se-h2" id="curriculum-h2" data-i18n="se.curr.title">
                     6 discipline. Un artist complet.
                 </h2>
 
@@ -1006,7 +1027,7 @@
                     <div class="curriculum-card">
                         <span class="curriculum-card__emoji">🎤</span>
                         <h3 class="curriculum-card__title">Canto CVT</h3>
-                        <p class="curriculum-card__desc">
+                        <p class="curriculum-card__desc" data-i18n="se.curr.1.desc">
                             Tehnica vocală Complete Vocal Technique — singura
                             metodă bazată pe anatomie vocală verificată. Înveți
                             să îți folosești vocea corect, sănătos și eficient.
@@ -1015,8 +1036,8 @@
 
                     <div class="curriculum-card">
                         <span class="curriculum-card__emoji">🎭</span>
-                        <h3 class="curriculum-card__title">Mișcare Scenică</h3>
-                        <p class="curriculum-card__desc">
+                        <h3 class="curriculum-card__title" data-i18n="se.curr.2.title">Mișcare Scenică</h3>
+                        <p class="curriculum-card__desc" data-i18n="se.curr.2.desc">
                             Prezența pe scenă se construiește. Vei lucra corpul,
                             gestul și energia pentru a transmite emoție
                             autentică la fiecare performanță.
@@ -1025,10 +1046,10 @@
 
                     <div class="curriculum-card">
                         <span class="curriculum-card__emoji">🎬</span>
-                        <h3 class="curriculum-card__title">
+                        <h3 class="curriculum-card__title" data-i18n="se.curr.3.title">
                             Actorie pentru Soliști
                         </h3>
-                        <p class="curriculum-card__desc">
+                        <p class="curriculum-card__desc" data-i18n="se.curr.3.desc">
                             Un artist complet știe să trăiască fiecare piesă, nu
                             doar să o cânte. Actoria vocală transformă
                             interpretarea dintr-o tehnică într-o experiență.
@@ -1038,7 +1059,7 @@
                     <div class="curriculum-card">
                         <span class="curriculum-card__emoji">✍️</span>
                         <h3 class="curriculum-card__title">Songwriting</h3>
-                        <p class="curriculum-card__desc">
+                        <p class="curriculum-card__desc" data-i18n="se.curr.4.desc">
                             Descoperă procesul de compoziție — de la ideea brută
                             la piesa finalizată. Vei pleca cu cel puțin o piesă
                             originală înregistrată.
@@ -1047,10 +1068,10 @@
 
                     <div class="curriculum-card">
                         <span class="curriculum-card__emoji">🤝</span>
-                        <h3 class="curriculum-card__title">
+                        <h3 class="curriculum-card__title" data-i18n="se.curr.5.title">
                             Întâlniri cu Artiști din Industrie
                         </h3>
-                        <p class="curriculum-card__desc">
+                        <p class="curriculum-card__desc" data-i18n="se.curr.5.desc">
                             Sesiuni exclusive cu artiști și profesioniști din
                             industria muzicală românească. Întrebări reale,
                             răspunsuri directe.
@@ -1059,10 +1080,10 @@
 
                     <div class="curriculum-card">
                         <span class="curriculum-card__emoji">🎵</span>
-                        <h3 class="curriculum-card__title">
+                        <h3 class="curriculum-card__title" data-i18n="se.curr.6.title">
                             Discuții de Grup pe Teme Muzicale
                         </h3>
-                        <p class="curriculum-card__desc">
+                        <p class="curriculum-card__desc" data-i18n="se.curr.6.desc">
                             Muzica nu se face în izolare. Vei explora teme de
                             artă, identitate artistică, carieră și creație
                             alături de colegi la fel de pasionați.
@@ -1077,17 +1098,17 @@
          ============================================= -->
         <section class="se-section" aria-labelledby="final-h2">
             <div class="se-container">
-                <span class="se-pre-header">✦ La final, în septembrie</span>
-                <h2 class="se-h2" id="final-h2">Nu pleci cu mâna goală.</h2>
+                <span class="se-pre-header" data-i18n="se.final.pre">✦ La final, în septembrie</span>
+                <h2 class="se-h2" id="final-h2" data-i18n="se.final.title">Nu pleci cu mâna goală.</h2>
 
                 <div class="deliverable-grid">
                     <div class="deliverable-card">
                         <span class="deliverable-card__emoji">🎙️</span>
                         <div>
-                            <h3 class="deliverable-card__title">
+                            <h3 class="deliverable-card__title" data-i18n="se.del.1.title">
                                 O piesă înregistrată profesional
                             </h3>
-                            <p class="deliverable-card__desc">
+                            <p class="deliverable-card__desc" data-i18n="se.del.1.desc">
                                 Piesa ta, produsă și masterizată, gata pentru
                                 distribuție.
                             </p>
@@ -1097,10 +1118,10 @@
                     <div class="deliverable-card">
                         <span class="deliverable-card__emoji">🚀</span>
                         <div>
-                            <h3 class="deliverable-card__title">
+                            <h3 class="deliverable-card__title" data-i18n="se.del.2.title">
                                 Lansare pe platformele de streaming
                             </h3>
-                            <p class="deliverable-card__desc">
+                            <p class="deliverable-card__desc" data-i18n="se.del.2.desc">
                                 Spotify, Apple Music, YouTube Music — muzica ta
                                 ajunge la public.
                             </p>
@@ -1110,10 +1131,10 @@
                     <div class="deliverable-card">
                         <span class="deliverable-card__emoji">🎥</span>
                         <div>
-                            <h3 class="deliverable-card__title">
+                            <h3 class="deliverable-card__title" data-i18n="se.del.3.title">
                                 Un clip de imagine
                             </h3>
-                            <p class="deliverable-card__desc">
+                            <p class="deliverable-card__desc" data-i18n="se.del.3.desc">
                                 Un material video filmat în cadrul programului,
                                 care surprinde evoluția ta artistică și poate
                                 fi folosit pe rețelele sociale.
@@ -1124,10 +1145,10 @@
                     <div class="deliverable-card">
                         <span class="deliverable-card__emoji">🧠</span>
                         <div>
-                            <h3 class="deliverable-card__title">
+                            <h3 class="deliverable-card__title" data-i18n="se.del.4.title">
                                 Un bagaj de cunoștințe
                             </h3>
-                            <p class="deliverable-card__desc">
+                            <p class="deliverable-card__desc" data-i18n="se.del.4.desc">
                                 Pe care poate nu l-ai fi putut căpăta altfel. Cu
                                 prieteni noi și certitudinea că ai ales să nu
                                 lași visul să rămână doar un vis.
@@ -1143,28 +1164,28 @@
          ============================================= -->
         <section class="se-section se-section--alt" aria-labelledby="pta-h2">
             <div class="se-container" style="max-width: 720px">
-                <h2 class="se-h2" id="pta-h2">
+                <h2 class="se-h2" id="pta-h2" data-i18n="se.fit.title">
                     Este programul potrivit pentru tine dacă...
                 </h2>
 
                 <ul class="checklist" role="list">
-                    <li>
+                    <li data-i18n="se.fit.1">
                         Cânți sau vrei să cânți și simți că e momentul să faci
                         un pas serios
                     </li>
-                    <li>
+                    <li data-i18n="se.fit.2">
                         Vrei să te dezvolți artistic dincolo de lecțiile clasice
                     </li>
-                    <li>Visezi să lansezi o piesă proprie</li>
-                    <li>
+                    <li data-i18n="se.fit.3">Visezi să lansezi o piesă proprie</li>
+                    <li data-i18n="se.fit.4">
                         Vrei să înțelegi cum funcționează industria muzicală
                     </li>
-                    <li>
+                    <li data-i18n="se.fit.5">
                         Ești gata să investești 6 săptămâni și 36 de ore în tine
                     </li>
                 </ul>
 
-                <div class="not-for-you">
+                <div class="not-for-you" data-i18n-html="se.notfit">
                     <strong>Nu este pentru tine dacă:</strong> cauți distracție
                     ușoară fără efort real.
                 </div>
@@ -1176,12 +1197,12 @@
          ============================================= -->
         <section class="se-section" aria-labelledby="format-h2">
             <div class="se-container">
-                <h2 class="se-h2" id="format-h2">Cum se desfășoară</h2>
+                <h2 class="se-h2" id="format-h2" data-i18n="se.format.title">Cum se desfășoară</h2>
 
                 <div class="info-cards">
                     <div class="info-card">
                         <span class="info-card__emoji">📍</span>
-                        <h3 class="info-card__title">Locație</h3>
+                        <h3 class="info-card__title" data-i18n="se.format.loc.title">Locație</h3>
                         <p class="info-card__value">
                             Str. Făinari nr. 25, et. 1<br />București, Sector 2
                         </p>
@@ -1189,8 +1210,8 @@
 
                     <div class="info-card">
                         <span class="info-card__emoji">📅</span>
-                        <h3 class="info-card__title">Perioada</h3>
-                        <p class="info-card__value">
+                        <h3 class="info-card__title" data-i18n="se.format.period.title">Perioada</h3>
+                        <p class="info-card__value" data-i18n-html="se.format.period.value">
                             Vară 2026<br />(detalii la înscriere)
                         </p>
                     </div>
@@ -1198,7 +1219,7 @@
                     <div class="info-card">
                         <span class="info-card__emoji">👥</span>
                         <h3 class="info-card__title">Format</h3>
-                        <p class="info-card__value">
+                        <p class="info-card__value" data-i18n-html="se.format.group.value">
                             Grup mic<br />(locuri limitate)
                         </p>
                     </div>
@@ -1215,46 +1236,47 @@
             aria-labelledby="pret-h2"
         >
             <div class="se-container" style="text-align: center">
-                <span class="se-pre-header">✦ Investiție</span>
-                <h2 class="se-h2" id="pret-h2">Prețul programului</h2>
+                <span class="se-pre-header" data-i18n="se.price.pre">✦ Investiție</span>
+                <h2 class="se-h2" id="pret-h2" data-i18n="se.price.title">Prețul programului</h2>
 
                 <div class="price-card">
-                    <p class="price-card__name">
+                    <p class="price-card__name" data-i18n="se.price.name">
                         Program complet Nova Summer Elite
                     </p>
 
                     <!-- Pret integral -->
                     <div class="price-option price-option--main">
-                        <span class="price-option__label">Plată integrală</span>
-                        <span class="price-option__amount">4.300 RON</span>
+                        <span class="price-option__label" data-i18n="se.price.full.label">Plată integrală</span>
+                        <span class="price-option__amount" data-i18n="se.price.full.amount">4.300 RON</span>
                     </div>
 
                     <!-- Pret rate -->
                     <div class="price-option price-option--alt">
-                        <span class="price-option__label">2 rate egale</span>
-                        <span class="price-option__amount price-option__amount--alt">4.800 RON</span>
-                        <span class="price-option__detail">2 × 2.400 RON</span>
+                        <span class="price-option__label" data-i18n="se.price.inst.label">2 rate egale</span>
+                        <span class="price-option__amount price-option__amount--alt" data-i18n="se.price.inst.amount">4.800 RON</span>
+                        <span class="price-option__detail" data-i18n="se.price.inst.detail">2 × 2.400 RON</span>
                     </div>
 
                     <ul class="price-card__includes">
-                        <li>
+                        <li data-i18n="se.price.inc.1">
                             6 săptămâni · 12 întâlniri · 2 ședințe/săptămână × 3 ore
                         </li>
-                        <li>Canto CVT, mișcare scenică, actorie pentru soliști</li>
-                        <li>Sesiuni de songwriting</li>
-                        <li>Întâlniri cu artiști și profesioniști din industrie</li>
-                        <li>Înregistrare profesională a piesei tale</li>
-                        <li>Masterizare și distribuție pe platformele de streaming</li>
-                        <li>Clip de imagine filmat în cadrul programului</li>
+                        <li data-i18n="se.price.inc.2">Canto CVT, mișcare scenică, actorie pentru soliști</li>
+                        <li data-i18n="se.price.inc.3">Sesiuni de songwriting</li>
+                        <li data-i18n="se.price.inc.4">Întâlniri cu artiști și profesioniști din industrie</li>
+                        <li data-i18n="se.price.inc.5">Înregistrare profesională a piesei tale</li>
+                        <li data-i18n="se.price.inc.6">Masterizare și distribuție pe platformele de streaming</li>
+                        <li data-i18n="se.price.inc.7">Clip de imagine filmat în cadrul programului</li>
                     </ul>
 
                     <a
                         href="#inscriere"
                         class="btn btn--primary btn--large btn--full btn--glow"
+                    data-i18n="se.cta.enroll.arrow"
                     >
                         Vreau să mă înscriu →
                     </a>
-                    <p class="price-card__note">
+                    <p class="price-card__note" data-i18n="se.price.note">
                         Locuri extrem de limitate. Nu amâna.
                     </p>
                 </div>
@@ -1273,17 +1295,17 @@
                 class="se-container"
                 style="text-align: center; max-width: 700px"
             >
-                <span class="se-pre-header">✦ Înscrie-te acum</span>
-                <h2 class="se-h2" id="inscriere-h2">
+                <span class="se-pre-header" data-i18n="se.form.pre">✦ Înscrie-te acum</span>
+                <h2 class="se-h2" id="inscriere-h2" data-i18n="se.form.title">
                     Rezervă-ți locul în program
                 </h2>
-                <p class="se-lead" style="margin: 0 auto 0">
+                <p class="se-lead" style="margin: 0 auto 0" data-i18n="se.form.lead">
                     Completează formularul și te contactăm în 24h cu toate
                     detaliile despre disponibilitate și preț.
                 </p>
 
                 <!-- Success message (hidden initially) -->
-                <div class="form-success" id="form-success" role="alert">
+                <div class="form-success" id="form-success" role="alert" data-i18n="se.form.success">
                     ✓ Cerere trimisă! Te contactăm în curând.
                 </div>
 
@@ -1318,24 +1340,26 @@
                     />
 
                     <div class="form-group">
-                        <label for="se-name">Nume și Prenume *</label>
+                        <label for="se-name" data-i18n="se.form.name.label">Nume și Prenume *</label>
                         <input
                             type="text"
                             id="se-name"
                             name="name"
                             placeholder="ex. Maria Ionescu"
+                            data-i18n-placeholder="se.form.name.ph"
                             required
                             autocomplete="name"
                         />
                     </div>
 
                     <div class="form-group">
-                        <label for="se-phone">Telefon *</label>
+                        <label for="se-phone" data-i18n="se.form.phone.label">Telefon *</label>
                         <input
                             type="tel"
                             id="se-phone"
                             name="phone"
                             placeholder="ex. 0771 089 525"
+                            data-i18n-placeholder="se.form.phone.ph"
                             required
                             autocomplete="tel"
                         />
@@ -1348,13 +1372,14 @@
                             id="se-email"
                             name="email"
                             placeholder="adresa@email.ro"
+                            data-i18n-placeholder="se.form.email.ph"
                             required
                             autocomplete="email"
                         />
                     </div>
 
                     <div class="form-group">
-                        <label for="se-dob">Data naşterii *</label>
+                        <label for="se-dob" data-i18n="se.form.dob.label">Data naşterii *</label>
                         <input
                             type="date"
                             id="se-dob"
@@ -1366,12 +1391,14 @@
 
                     <div class="form-group">
                         <label for="se-message"
+                                                    data-i18n-html="se.form.msg.label"
                             >De ce vrei să participi la Nova Summer Elite? <span style="font-weight:400;color:#888">(opțional)</span></label
                         >
                         <textarea
                             id="se-message"
                             name="message"
                             placeholder="Spune-ne pe scurt de ce vrei să participi la Nova Summer Elite..."
+                            data-i18n-placeholder="se.form.msg.ph"
                         ></textarea>
                     </div>
 
@@ -1382,7 +1409,7 @@
                             name="gdpr"
                             required
                         />
-                        <label for="se-gdpr">
+                        <label for="se-gdpr" data-i18n="se.form.gdpr">
                             Sunt de acord cu prelucrarea datelor mele cu
                             caracter personal în scopul contactării legate de
                             programul Nova Summer Elite. *
@@ -1393,11 +1420,12 @@
                         type="submit"
                         class="btn btn--primary btn--large btn--full btn--glow"
                         id="se-submit-btn"
+                                                data-i18n="se.form.submit"
                     >
                         Trimite cererea →
                     </button>
 
-                    <p class="form-note">
+                    <p class="form-note" data-i18n="se.form.note">
                         Nu trimitem spam. Te contactăm doar în legătură cu
                         programul.
                     </p>
@@ -1412,6 +1440,7 @@
             <a
                 href="/"
                 class="summer-footer__logo"
+                                data-i18n-aria="se.nav.home.aria"
                 aria-label="Nova Music Academy — Acasă"
             >
                 <img
@@ -1422,10 +1451,10 @@
                 />
                 <span>Nova Music Academy</span>
             </a>
-            <p class="summer-footer__copy">
+            <p class="summer-footer__copy" data-i18n="footer.copy">
                 © 2026 Nova Music Academy. Toate drepturile rezervate.
             </p>
-            <a href="/" class="summer-footer__back">← Înapoi la site</a>
+            <a href="/" class="summer-footer__back" data-i18n="se.footer.back">← Înapoi la site</a>
         </footer>
 
         <!-- =============================================
@@ -1476,21 +1505,21 @@
 
                     if (!name || !phone || !email || !dob) {
                         alert(
-                            "Te rugăm completeață câmpurile obligatorii: Nume, Telefon, Email și Data naşterii.",
+                            (window.NMA_t ? window.NMA_t('se.js.alert.required') : "Te rugăm completeață câmpurile obligatorii: Nume, Telefon, Email și Data naşterii."),
                         );
                         return;
                     }
 
                     if (!gdpr) {
                         alert(
-                            "Te rugăm să bifezi acordul pentru prelucrarea datelor.",
+                            (window.NMA_t ? window.NMA_t('se.js.alert.gdpr') : "Te rugăm să bifezi acordul pentru prelucrarea datelor."),
                         );
                         return;
                     }
 
                     // Disable button while submitting
                     submitBtn.disabled = true;
-                    submitBtn.textContent = "Se trimite...";
+                    submitBtn.textContent = window.NMA_t ? window.NMA_t('se.js.sending') : "Se trimite...";
 
                     try {
                         var formData = new FormData(form);
@@ -1519,35 +1548,36 @@
                             });
                         } else {
                             throw new Error(
-                                data.message || "Eroare la trimitere.",
+                                data.message || (window.NMA_t ? window.NMA_t('se.js.err.generic') : "Eroare la trimitere."),
                             );
                         }
                     } catch (err) {
                         console.error("Form error:", err);
 
                         // Fallback: redirect to WhatsApp
-                        var waText = encodeURIComponent(
-                            "Bună ziua! Mă numesc " +
-                                name +
-                                " și doresc să mă înscriu la programul Nova Summer Elite. Numărul meu de telefon este " +
-                                phone +
-                                ". Vă rog să mă contactați cu detalii.",
-                        );
+                        var waMsg = (window.NMA_t ? window.NMA_t('se.js.wa') : "Bună ziua! Mă numesc {name} și doresc să mă înscriu la programul Nova Summer Elite. Numărul meu de telefon este {phone}. Vă rog să mă contactați cu detalii.")
+                            .replace("{name}", name)
+                            .replace("{phone}", phone);
+                        var waText = encodeURIComponent(waMsg);
                         var waUrl = "https://wa.me/40771089525?text=" + waText;
 
                         if (
                             confirm(
-                                "A apărut o eroare la trimiterea formularului. Dorești să ne contactezi direct pe WhatsApp?",
+                                (window.NMA_t ? window.NMA_t('se.js.err.confirm') : "A apărut o eroare la trimiterea formularului. Dorești să ne contactezi direct pe WhatsApp?"),
                             )
                         ) {
                             window.open(waUrl, "_blank");
                         }
 
                         submitBtn.disabled = false;
-                        submitBtn.textContent = "Trimite cererea →";
+                        submitBtn.textContent = window.NMA_t ? window.NMA_t('se.form.submit') : "Trimite cererea →";
                     }
                 });
             })();
         </script>
+
+        <script src="js/translations.js" defer></script>
+        <script src="js/translations-pages.js" defer></script>
+        <script src="js/i18n.js" defer></script>
     </body>
 </html>

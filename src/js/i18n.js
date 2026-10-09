@@ -2,45 +2,111 @@
 (function () {
   const STORAGE_KEY = "nma_lang";
   const DEFAULT_LANG = "ro";
+  const SUPPORTED = ["ro", "en"];
 
-  function getLang() {
-    return localStorage.getItem(STORAGE_KEY) || DEFAULT_LANG;
+  // [atribut-cheie, atribut-țintă] pentru elementele traduse prin atribute
+  const ATTR_BINDINGS = [
+    ["data-i18n-placeholder", "placeholder"],
+    ["data-i18n-aria", "aria-label"],
+    ["data-i18n-alt", "alt"],
+    ["data-i18n-content", "content"],
+  ];
+
+  // Conținutul ORIGINAL din HTML, memorat înainte de prima traducere,
+  // ca să putem reveni exact la el când limba curentă nu are cheia.
+  const originals = new WeakMap();
+  let titleOriginal = null;
+  let titleTranslated = false;
+
+  function readStoredLang() {
+    try {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      return SUPPORTED.includes(saved) ? saved : DEFAULT_LANG;
+    } catch (e) {
+      return DEFAULT_LANG;
+    }
   }
 
-  function setLang(lang) {
-    localStorage.setItem(STORAGE_KEY, lang);
-    applyLang(lang);
-    updateSwitcher(lang);
-    document.documentElement.lang = lang;
+  let currentLang = readStoredLang();
+
+  function lookup(lang, key) {
+    const all = window.NMA_TRANSLATIONS;
+    const dict = all && all[lang];
+    if (!dict || !key) return undefined;
+    return dict[key];
+  }
+
+  function stateOf(el) {
+    let state = originals.get(el);
+    if (!state) {
+      state = { html: null, textApplied: false, attrs: {} };
+      originals.set(el, state);
+    }
+    return state;
+  }
+
+  function applyText(lang, el) {
+    const state = stateOf(el);
+    if (state.html === null) state.html = el.innerHTML;
+
+    const isHtml = el.hasAttribute("data-i18n-html");
+    const key = el.getAttribute(isHtml ? "data-i18n-html" : "data-i18n");
+    const value = lookup(lang, key);
+    if (value !== undefined) {
+      if (isHtml) {
+        el.innerHTML = value;
+      } else {
+        el.textContent = value;
+      }
+      state.textApplied = true;
+    } else if (state.textApplied) {
+      el.innerHTML = state.html;
+      state.textApplied = false;
+    }
+  }
+
+  function applyAttr(lang, el, keyAttr, targetAttr) {
+    const state = stateOf(el);
+    if (!(targetAttr in state.attrs)) {
+      state.attrs[targetAttr] = el.getAttribute(targetAttr);
+    }
+
+    const value = lookup(lang, el.getAttribute(keyAttr));
+    const next = value !== undefined ? value : state.attrs[targetAttr];
+    if (next === null) {
+      el.removeAttribute(targetAttr);
+    } else {
+      el.setAttribute(targetAttr, next);
+    }
+  }
+
+  function applyTitle(lang) {
+    const el = document.querySelector("[data-i18n-title]");
+    if (!el) return;
+    if (titleOriginal === null) titleOriginal = document.title;
+
+    const value = lookup(lang, el.getAttribute("data-i18n-title"));
+    if (value !== undefined) {
+      document.title = value;
+      titleTranslated = true;
+    } else if (titleTranslated) {
+      document.title = titleOriginal;
+      titleTranslated = false;
+    }
   }
 
   function applyLang(lang) {
-    if (!window.NMA_TRANSLATIONS) return;
-    const t = window.NMA_TRANSLATIONS[lang];
-    if (!t) return;
-
-    document.querySelectorAll("[data-i18n]").forEach((el) => {
-      const key = el.getAttribute("data-i18n");
-      if (t[key] !== undefined) {
-        if (el.hasAttribute("data-i18n-html")) {
-          el.innerHTML = t[key];
-        } else {
-          el.textContent = t[key];
-        }
-      }
+    document.querySelectorAll("[data-i18n], [data-i18n-html]").forEach((el) => {
+      applyText(lang, el);
     });
 
-    // Placeholder attributes
-    document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
-      const key = el.getAttribute("data-i18n-placeholder");
-      if (t[key] !== undefined) el.placeholder = t[key];
+    ATTR_BINDINGS.forEach(([keyAttr, targetAttr]) => {
+      document.querySelectorAll(`[${keyAttr}]`).forEach((el) => {
+        applyAttr(lang, el, keyAttr, targetAttr);
+      });
     });
 
-    // aria-label attributes
-    document.querySelectorAll("[data-i18n-aria]").forEach((el) => {
-      const key = el.getAttribute("data-i18n-aria");
-      if (t[key] !== undefined) el.setAttribute("aria-label", t[key]);
-    });
+    applyTitle(lang);
   }
 
   function updateSwitcher(lang) {
@@ -51,18 +117,47 @@
     });
   }
 
+  function render(lang) {
+    applyLang(lang);
+    updateSwitcher(lang);
+    document.documentElement.lang = lang;
+    document.dispatchEvent(
+      new CustomEvent("nma:langchange", { detail: { lang } }),
+    );
+  }
+
+  function setLang(lang) {
+    if (!SUPPORTED.includes(lang)) return;
+    currentLang = lang;
+    try {
+      localStorage.setItem(STORAGE_KEY, lang);
+    } catch (e) {
+      // Stocarea poate fi indisponibilă (ex. modul privat); limba rămâne activă
+    }
+    render(lang);
+  }
+
   function init() {
-    // Wire up switcher buttons
     document.querySelectorAll(".lang-btn").forEach((btn) => {
       btn.addEventListener("click", () => setLang(btn.dataset.lang));
     });
 
-    // Apply saved language on load
-    const saved = getLang();
-    applyLang(saved);
-    updateSwitcher(saved);
-    document.documentElement.lang = saved;
+    render(currentLang);
   }
+
+  window.NMA_getLang = function () {
+    return currentLang;
+  };
+
+  window.NMA_t = function (key, fallback) {
+    const all = window.NMA_TRANSLATIONS || {};
+    const current = all[currentLang] || {};
+    if (current[key] !== undefined) return current[key];
+    if (all[DEFAULT_LANG] && all[DEFAULT_LANG][key] !== undefined) {
+      return all[DEFAULT_LANG][key];
+    }
+    return fallback !== undefined ? fallback : key;
+  };
 
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);

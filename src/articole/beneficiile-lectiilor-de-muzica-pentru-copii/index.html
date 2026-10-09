@@ -5,19 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
             name="description"
+                        data-i18n-content="artc.meta.desc"
             content="Studiile arată că lecțiile de muzică îmbunătățesc atenția, memoria, inteligența emoțională și performanța școlară. Ghid complet pentru părinți."
         />
 
         <!-- Open Graph -->
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="Beneficiile lecțiilor de muzică pentru copii — ce spune știința | Nova Music Academy" />
-        <meta property="og:description" content="Studiile arată că lecțiile de muzică îmbunătățesc atenția, memoria, inteligența emoțională și performanța școlară. Ghid complet pentru părinți." />
+        <meta data-i18n-content="artc.title" property="og:title" content="Beneficiile lecțiilor de muzică pentru copii — ce spune știința | Nova Music Academy" />
+        <meta data-i18n-content="artc.meta.desc" property="og:description" content="Studiile arată că lecțiile de muzică îmbunătățesc atenția, memoria, inteligența emoțională și performanța școlară. Ghid complet pentru părinți." />
         <meta property="og:url" content="https://novamusicacademy.ro/articole/beneficiile-lectiilor-de-muzica-pentru-copii/" />
         <meta property="og:image" content="https://novamusicacademy.ro/assets/images/og-image.jpg" />
 
         <link rel="canonical" href="https://novamusicacademy.ro/articole/beneficiile-lectiilor-de-muzica-pentru-copii/" />
 
-        <title>Beneficiile lecțiilor de muzică pentru copii — ce spune știința | Nova Music Academy</title>
+        <title data-i18n-title="artc.title">Beneficiile lecțiilor de muzică pentru copii — ce spune știința | Nova Music Academy</title>
 
         <!-- Favicon -->
         <link rel="icon" href="../../assets/images/logo-icon.png" type="image/png" />
@@ -164,11 +165,11 @@
            NAVIGATION
            ============================================================ -->
         <header class="site-header" role="banner">
-            <nav class="nav container" aria-label="Navigare principală">
+            <nav class="nav container" aria-label="Navigare principală" data-i18n-aria="artc.nav.aria">
                 <a
                     href="/"
                     class="nav__logo"
-                    aria-label="Nova Music Academy — Acasă"
+                    aria-label="Nova Music Academy — Acasă" data-i18n-aria="artc.nav.home.aria"
                 >
                     <img
                         class="nav__logo-img nav__logo-img--dark"
@@ -193,11 +194,11 @@
                     <li><a href="/#despre-noi" data-i18n="nav.despre">Despre noi</a></li>
                     <li><a href="/#recenzii" data-i18n="nav.recenzii">Recenzii</a></li>
                     <li><a href="/#contact" data-i18n="nav.contact">Contact</a></li>
-                    <li><a href="/articole/" class="nav__link--active">Articole</a></li>
+                    <li><a href="/articole/" class="nav__link--active" data-i18n="nav.articole">Articole</a></li>
                 </ul>
 
                 <!-- Language switcher -->
-                <div class="lang-switcher" role="group" aria-label="Selectează limba">
+                <div class="lang-switcher" role="group" aria-label="Selectează limba" data-i18n-aria="artc.lang.aria">
                     <button class="lang-btn lang-btn--active" data-lang="ro" aria-pressed="true">
                         <span class="lang-flag">🇷🇴</span>
                         <span class="lang-code" data-i18n="lang.ro">RO</span>
@@ -229,7 +230,7 @@
 
                 <button
                     class="nav__burger"
-                    aria-label="Deschide meniu"
+                    aria-label="Deschide meniu" data-i18n-aria="artc.nav.burger.aria"
                     aria-expanded="false"
                     aria-controls="mobile-menu"
                 >
@@ -240,12 +241,12 @@
             <!-- Mobile Menu -->
             <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
                 <ul role="list">
-                    <li><a href="/#cursuri">Cursuri</a></li>
-                    <li><a href="/#profesori">Profesori</a></li>
-                    <li><a href="/#despre-noi">Despre noi</a></li>
-                    <li><a href="/#recenzii">Recenzii</a></li>
+                    <li><a href="/#cursuri" data-i18n="nav.cursuri">Cursuri</a></li>
+                    <li><a href="/#profesori" data-i18n="nav.profesori">Profesori</a></li>
+                    <li><a href="/#despre-noi" data-i18n="nav.despre">Despre noi</a></li>
+                    <li><a href="/#recenzii" data-i18n="nav.recenzii">Recenzii</a></li>
                     <li><a href="/#contact">Contact</a></li>
-                    <li><a href="/articole/">Articole</a></li>
+                    <li><a href="/articole/" data-i18n="nav.articole">Articole</a></li>
                     <li><a class="mobile-menu__login" href="https://portal.novamusicacademy.ro" data-i18n="nav.login">Login</a></li>
                 </ul>
                 <a
@@ -264,21 +265,21 @@
            BREADCRUMB
            ============================================================ -->
         <nav class="article-breadcrumb" aria-label="Breadcrumb">
-            <a href="/">Acasă</a>
+            <a href="/" data-i18n="artc.bc.home">Acasă</a>
             <span aria-hidden="true"> / </span>
-            <a href="/articole/">Articole</a>
+            <a href="/articole/" data-i18n="nav.articole">Articole</a>
             <span aria-hidden="true"> / </span>
-            <span aria-current="page">Beneficiile lecțiilor de muzică pentru copii</span>
+            <span aria-current="page" data-i18n="artc.bc.current">Beneficiile lecțiilor de muzică pentru copii</span>
         </nav>
 
         <!-- ============================================================
            ARTICLE HERO
            ============================================================ -->
         <header class="article-hero">
-            <span class="article-hero__pre">✦ Educație Muzicală</span>
-            <h1 class="article-hero__title">Beneficiile lecțiilor de muzică pentru copii — ce spune știința</h1>
-            <p class="article-hero__meta">15 iulie 2026 &nbsp;·&nbsp; 8 min citire &nbsp;·&nbsp; Nova Music Academy</p>
-            <p class="article-hero__intro">
+            <span class="article-hero__pre" data-i18n="artc.hero.pre">✦ Educație Muzicală</span>
+            <h1 class="article-hero__title" data-i18n="artc.hero.title">Beneficiile lecțiilor de muzică pentru copii — ce spune știința</h1>
+            <p class="article-hero__meta" data-i18n-html="artc.hero.meta">15 iulie 2026 &nbsp;·&nbsp; 8 min citire &nbsp;·&nbsp; Nova Music Academy</p>
+            <p class="article-hero__intro" data-i18n="artc.hero.intro">
                 Studiile din ultimele trei decenii arată consistent că lecțiile de muzică nu sunt doar o activitate extrașcolară — sunt un instrument puternic de dezvoltare a creierului, a inteligenței emoționale și a competențelor sociale ale copilului.
             </p>
         </header>
@@ -291,18 +292,18 @@
 
                 <!-- INTRODUCERE -->
                 <section aria-labelledby="intro-heading">
-                    <h2 id="intro-heading">De ce muzica contează în dezvoltarea copilului</h2>
+                    <h2 id="intro-heading" data-i18n="artc.h2.1">De ce muzica contează în dezvoltarea copilului</h2>
 
-                    <p>
+                    <p data-i18n="artc.p.1.1">
                         Lecțiile de muzică pentru copii sunt adesea privite de părinți ca o activitate extrașcolară opțională — un mod plăcut de a umple timpul liber sau de a cultiva un hobby. Realitatea, confirmată de zeci de studii științifice din ultimele decenii, este cu totul alta: muzica este unul dintre cele mai puternice instrumente de modelare a creierului uman în copilărie, cu efecte profunde și durabile asupra cogniției, emoțiilor, comportamentului social și performanței academice.
                     </p>
 
-                    <p>
+                    <p data-i18n="artc.p.1.2">
                         Spre deosebire de ascultatul pasiv al muzicii — care oferă beneficii limitate —, studiul activ al unui instrument sau al vocii angajează simultan zone multiple ale creierului: cortexul motor, cortexul auditiv, centrii de procesare lingvistică, sistemul limbic (implicat în emoții) și cortexul prefrontal (responsabil cu atenția și luarea deciziilor). Această activare simultană și repetată creează conexiuni neuronale mai dense și mai rapide decât aproape orice altă activitate de la această vârstă.
                     </p>
 
                     <div class="article-highlight">
-                        <p>
+                        <p data-i18n-html="artc.quote">
                             „Creierul muzicianului diferă structural și funcțional de cel al non-muzicianului, cu regiuni implicate în procesarea motrică, auditivă și vizuospațială semnificativ mai mari." — Schlaug, Norton, Overy &amp; Winner, <em>Annals of the New York Academy of Sciences</em>, 2005.
                         </p>
                     </div>
@@ -310,87 +311,87 @@
 
                 <!-- BENEFICII COGNITIVE -->
                 <section aria-labelledby="cognitiv-heading">
-                    <h2 id="cognitiv-heading">Beneficii cognitive: ce se întâmplă în creierul copilului care studiază muzică</h2>
+                    <h2 id="cognitiv-heading" data-i18n="artc.h2.2">Beneficii cognitive: ce se întâmplă în creierul copilului care studiază muzică</h2>
 
-                    <p>
+                    <p data-i18n-html="artc.p.2.1">
                         Unele dintre cele mai relevante cercetări în domeniu provin de la <strong>Nina Kraus</strong>, profesor de neuroștiință la Northwestern University și directoarea laboratorului Brainvolts. Studiile ei longitudinale arată că muzicienii — inclusiv copiii care au studiat muzică — au un sistem nervos mai bine calibrat pentru a procesa sunete complexe. Creierul lor encodează mai rapid și mai precis informațiile auditive, ceea ce se traduce direct în abilități lingvistice și de citit superioare.
                     </p>
 
-                    <p>
+                    <p data-i18n-html="artc.p.2.2">
                         Un studiu landmark publicat în 2004 în revista <em>Psychological Science</em> de <strong>E. Glenn Schellenberg</strong> de la Universitatea din Toronto a urmărit 144 de copii de 6 ani, repartizați aleatoriu în grupuri: unii au primit lecții de pian sau de voce timp de un an, alții au urmat cursuri de teatru sau nu au primit nicio instruire suplimentară. La finalul anului, copiii cu lecții de muzică au înregistrat câștiguri semnificativ mai mari la testele IQ față de celelalte grupuri — în medie 7 puncte față de 4,3 la grupul de control.
                     </p>
 
-                    <p>
+                    <p data-i18n-html="artc.p.2.3">
                         <strong>Institutul Brain and Creativity din cadrul Universității din California de Sud (USC)</strong>, condus de Assal Habibi, a derulat un studiu longitudinal pe mai mulți ani cu copii din zone defavorizate din Los Angeles. Cei care au primit instruire muzicală intensivă au prezentat o maturizare accelerată a sistemelor neuronale implicate în procesarea limbajului și reglarea emoțională, comparativ cu cei din grupurile fără muzică.
                     </p>
 
-                    <h3>Atenție și memorie de lucru</h3>
+                    <h3 data-i18n="artc.h3.1">Atenție și memorie de lucru</h3>
 
-                    <p>
+                    <p data-i18n="artc.p.2.4">
                         Practica muzicală solicită o atenție susținută și împărțită — trebuie să citești notele, să asculți ce produci, să controlezi postura, respirația și mișcarea mâinilor, toate în același timp. Această gimnastică mentală întărește memoria de lucru și capacitatea de concentrare, abilități direct transferabile în sala de clasă și în viața de zi cu zi.
                     </p>
 
-                    <h3>Clarificarea mitului „Efectul Mozart"</h3>
+                    <h3 data-i18n="artc.h3.2">Clarificarea mitului „Efectul Mozart"</h3>
 
-                    <p>
+                    <p data-i18n-html="artc.p.2.5">
                         Merită clarificat un mit popular intens comercializat: <strong>„efectul Mozart"</strong> — ideea că ascultarea muzicii lui Mozart crește inteligența copilului. Studiul original din 1993 al lui Rauscher, Shaw și Ky a demonstrat o îmbunătățire temporară (de 10–15 minute) a raționamentului spațial la adulți care ascultaseră Mozart, nu o creștere generală sau permanentă a IQ-ului și nu la copii. Beneficiile cognitive documentate provin exclusiv din studiul activ al muzicii, nu din ascultatul pasiv.
                     </p>
                 </section>
 
                 <!-- DEZVOLTARE EMOTIONALA -->
                 <section aria-labelledby="emotional-heading">
-                    <h2 id="emotional-heading">Dezvoltare emoțională: muzica ca limbaj al emoțiilor</h2>
+                    <h2 id="emotional-heading" data-i18n="artc.h2.3">Dezvoltare emoțională: muzica ca limbaj al emoțiilor</h2>
 
-                    <p>
+                    <p data-i18n="artc.p.3.1">
                         Muzica este, prin natura ei, un limbaj emoțional. Copiii care studiază muzica sunt expuși sistematic la exprimarea și interpretarea emoțiilor prin sunete — ei învață să distingă un frazeu trist de unul triumfal, o melodie anxioasă de una liniștitoare. Această instruire nu rămâne în domeniul muzical.
                     </p>
 
-                    <p>
+                    <p data-i18n="artc.p.3.2">
                         Cercetările arată că antrenamentul auditiv muzical îmbunătățește capacitatea copilului de a recunoaște emoțiile în vocile altor persoane și în expresiile faciale — o abilitate esențială pentru empatie și relații sociale sănătoase. Când înveți să distingi tonuri, intensități și variații de ritm, creierul tău devine mai atent la conținutul emoțional al oricărui sunet, inclusiv al vorbirii umane.
                     </p>
 
-                    <p>
+                    <p data-i18n-html="artc.p.3.3">
                         În plus, practica muzicală oferă un mecanism sănătos de <strong>reglare emoțională</strong>. Când un copil trece printr-un moment dificil — frustrare, tristețe sau anxietate —, faptul că poate cânta sau exersa devine o supapă de exprimare și procesare emoțională. Mulți studenți descriu muzica drept „refugiul" lor în momentele dificile, un spațiu în care emoțiile sunt binevenite, nu suprimate.
                     </p>
                 </section>
 
                 <!-- BENEFICII SOCIALE -->
                 <section aria-labelledby="social-heading">
-                    <h2 id="social-heading">Beneficii sociale: colaborarea și curajul scenic</h2>
+                    <h2 id="social-heading" data-i18n="artc.h2.4">Beneficii sociale: colaborarea și curajul scenic</h2>
 
-                    <p>
+                    <p data-i18n="artc.p.4.1">
                         Lecțiile de muzică — mai ales cele de grup, ansamblurile, corurile și recitalurile — sunt medii sociale extraordinare pentru copii. Prin muzică, copiii exersează:
                     </p>
 
                     <ul>
-                        <li><strong>Ascultarea activă:</strong> în muzica de ansamblu trebuie să te auzi pe tine și pe ceilalți simultan, ajustându-te continuu la cei din jur.</li>
-                        <li><strong>Colaborarea și responsabilitatea:</strong> fiecare parte muzicală contează; greșeala unuia afectează întregul grup, ceea ce predă responsabilitatea fără sancțiuni dure.</li>
-                        <li><strong>Susținerea reciprocă:</strong> copiii mai avansați îi ajută pe cei la început, formând empatie și abilități de mentori.</li>
-                        <li><strong>Curajul de a performa în public:</strong> recitalurile, oricât de mici, sunt exerciții de expunere controlată la „presiunea publicului", reducând anxietatea socială și construind încredere în sine cu fiecare apariție.</li>
+                        <li data-i18n-html="artc.li.4.1"><strong>Ascultarea activă:</strong> în muzica de ansamblu trebuie să te auzi pe tine și pe ceilalți simultan, ajustându-te continuu la cei din jur.</li>
+                        <li data-i18n-html="artc.li.4.2"><strong>Colaborarea și responsabilitatea:</strong> fiecare parte muzicală contează; greșeala unuia afectează întregul grup, ceea ce predă responsabilitatea fără sancțiuni dure.</li>
+                        <li data-i18n-html="artc.li.4.3"><strong>Susținerea reciprocă:</strong> copiii mai avansați îi ajută pe cei la început, formând empatie și abilități de mentori.</li>
+                        <li data-i18n-html="artc.li.4.4"><strong>Curajul de a performa în public:</strong> recitalurile, oricât de mici, sunt exerciții de expunere controlată la „presiunea publicului", reducând anxietatea socială și construind încredere în sine cu fiecare apariție.</li>
                     </ul>
 
-                    <p>
+                    <p data-i18n="artc.p.4.2">
                         Aceste abilități sociale, exersate în context muzical, se transferă în sala de clasă, pe terenul de sport și, mai târziu, la locul de muncă.
                     </p>
                 </section>
 
                 <!-- DISCIPLINA SI PERSEVERENTA -->
                 <section aria-labelledby="disciplina-heading">
-                    <h2 id="disciplina-heading">Disciplină și perseverență: lecția invizibilă a muzicii</h2>
+                    <h2 id="disciplina-heading" data-i18n="artc.h2.5">Disciplină și perseverență: lecția invizibilă a muzicii</h2>
 
-                    <p>
+                    <p data-i18n="artc.p.5.1">
                         Poate cel mai valoros beneficiu pe termen lung al lecțiilor de muzică nu este de natură muzicală — este formarea caracterului. Studiul unui instrument impune:
                     </p>
 
                     <ul>
-                        <li><strong>Consecvență:</strong> progresul vine doar prin practică regulată, nu din sesiuni sporadice și intense. Copilul învață că rutina zilnică produce rezultate vizibile.</li>
-                        <li><strong>Toleranță la frustrare:</strong> o piesă dificilă poate dura săptămâni sau luni de muncă până la stăpânire — copilul descoperă că efortul susținut aduce recompensă.</li>
-                        <li><strong>Mentalitate de creștere (growth mindset):</strong> în muzică, nu există „nu pot" permanent — există „nu pot încă". Această perspectivă, confirmată de cercetările psihologului Carol Dweck, este un predictor puternic al succesului în orice domeniu.</li>
-                        <li><strong>Automonitorizare și gândire critică:</strong> copiii care studiază muzica deprind obiceiul de a se asculta, de a identifica ce nu funcționează și de a găsi soluții — o abilitate metacognitivă de mare valoare.</li>
+                        <li data-i18n-html="artc.li.5.1"><strong>Consecvență:</strong> progresul vine doar prin practică regulată, nu din sesiuni sporadice și intense. Copilul învață că rutina zilnică produce rezultate vizibile.</li>
+                        <li data-i18n-html="artc.li.5.2"><strong>Toleranță la frustrare:</strong> o piesă dificilă poate dura săptămâni sau luni de muncă până la stăpânire — copilul descoperă că efortul susținut aduce recompensă.</li>
+                        <li data-i18n-html="artc.li.5.3"><strong>Mentalitate de creștere (growth mindset):</strong> în muzică, nu există „nu pot" permanent — există „nu pot încă". Această perspectivă, confirmată de cercetările psihologului Carol Dweck, este un predictor puternic al succesului în orice domeniu.</li>
+                        <li data-i18n-html="artc.li.5.4"><strong>Automonitorizare și gândire critică:</strong> copiii care studiază muzica deprind obiceiul de a se asculta, de a identifica ce nu funcționează și de a găsi soluții — o abilitate metacognitivă de mare valoare.</li>
                     </ul>
 
                     <div class="article-highlight">
-                        <p>
+                        <p data-i18n="artc.hl.5">
                             Studiile arată că copiii care urmează lecții de muzică timp de cel puțin doi ani prezintă niveluri mai ridicate de autocontrol și disciplină față de grupurile de control, independent de alți factori socioeconomici.
                         </p>
                     </div>
@@ -398,95 +399,96 @@
 
                 <!-- PERFORMANTA SCOLARA -->
                 <section aria-labelledby="scoala-heading">
-                    <h2 id="scoala-heading">Performanță școlară: legătura documentată</h2>
+                    <h2 id="scoala-heading" data-i18n="artc.h2.6">Performanță școlară: legătura documentată</h2>
 
-                    <p>
+                    <p data-i18n="artc.p.6.1">
                         Corelația dintre muzică și performanță academică este una dintre cele mai consistente în literatura pedagogică:
                     </p>
 
                     <ul>
-                        <li><strong>Matematică:</strong> ritmul muzical este, în esență, matematică aplicată — fracții, numărare, recunoașterea tiparelor. Copiii care înțeleg bătăile și metrul au o intuiție mai bună pentru fracții și pentru structurile logice și cantitative.</li>
-                        <li><strong>Limbile străine:</strong> sensibilitatea fonologică dezvoltată prin canto și prin studiul instrumentelor face ca creierul să fie mai receptiv la sunetele noi ale limbilor străine. Cercetările arată că muzicienii asimilează fonologia unei limbi noi mai ușor decât non-muzicienii.</li>
-                        <li><strong>Lectură și scriere:</strong> muzica și cititul împart mecanisme neuronale similare — decodarea simbolurilor, înțelegerea structurii și a ritmului unui „text". Copiii care citesc note muzicale devin adesea cititori mai fluenți.</li>
-                        <li><strong>Atenție în clasă:</strong> capacitatea de concentrare antrenată la instrument se transferă direct în capacitatea de a asculta și de a urmări o lecție sau o explicație.</li>
+                        <li data-i18n-html="artc.li.6.1"><strong>Matematică:</strong> ritmul muzical este, în esență, matematică aplicată — fracții, numărare, recunoașterea tiparelor. Copiii care înțeleg bătăile și metrul au o intuiție mai bună pentru fracții și pentru structurile logice și cantitative.</li>
+                        <li data-i18n-html="artc.li.6.2"><strong>Limbile străine:</strong> sensibilitatea fonologică dezvoltată prin canto și prin studiul instrumentelor face ca creierul să fie mai receptiv la sunetele noi ale limbilor străine. Cercetările arată că muzicienii asimilează fonologia unei limbi noi mai ușor decât non-muzicienii.</li>
+                        <li data-i18n-html="artc.li.6.3"><strong>Lectură și scriere:</strong> muzica și cititul împart mecanisme neuronale similare — decodarea simbolurilor, înțelegerea structurii și a ritmului unui „text". Copiii care citesc note muzicale devin adesea cititori mai fluenți.</li>
+                        <li data-i18n-html="artc.li.6.4"><strong>Atenție în clasă:</strong> capacitatea de concentrare antrenată la instrument se transferă direct în capacitatea de a asculta și de a urmări o lecție sau o explicație.</li>
                     </ul>
 
-                    <p>
+                    <p data-i18n-html="artc.p.6.2">
                         Un studiu realizat în Canada pe 6.250 de elevi de clasa I și a II-a, publicat în <em>Journal of Educational Psychology</em>, a arătat că cei înrolați în programe de educație muzicală au obținut scoruri semnificativ mai mari la testele de matematică și citit față de colegii fără muzică, chiar și după controlul variabilelor socioeconomice.
                     </p>
                 </section>
 
                 <!-- DE LA CE VARSTA -->
                 <section aria-labelledby="varsta-heading">
-                    <h2 id="varsta-heading">De la ce vârstă să înscrii copilul la muzică?</h2>
+                    <h2 id="varsta-heading" data-i18n="artc.h2.7">De la ce vârstă să înscrii copilul la muzică?</h2>
 
-                    <p>
+                    <p data-i18n="artc.p.7.1">
                         Nu există o vârstă „prea mică" pentru expunerea la muzică, dar există o vârstă potrivită pentru fiecare tip de instruire formală:
                     </p>
 
                     <ul>
-                        <li><strong>3–4 ani:</strong> Activități muzicale de grup, ritm și mișcare, familiarizare cu sunetele muzicale. Nu lecții formale individuale, dar expunerea muzicală bogată în această perioadă este esențială — creierul este extrem de receptiv.</li>
-                        <li><strong>4–5 ani:</strong> <strong>Canto (voce)</strong> — vocea este primul instrument și nu are cerințe fizice minime. <strong>Pianul</strong> este ideal la această vârstă: tastele sunt clare și vizibile, nu există probleme de postură sau rezistență fizică, iar feedback-ul sonor este imediat.</li>
-                        <li><strong>6–7 ani:</strong> <strong>Vioara</strong> (cu instrumente de dimensiune 1/4 sau 1/2), <strong>chitara clasică</strong> (cu corzi de nylon, mai blânde pe degete), continuarea pianului la nivel mai avansat.</li>
-                        <li><strong>7–9 ani:</strong> Marea majoritate a instrumentelor devine accesibilă — <strong>chitara electrică și acustică</strong>, <strong>saxofonul</strong> (în funcție de constituția fizică), <strong>trompeta</strong>, <strong>flautul</strong>.</li>
-                        <li><strong>10+ ani:</strong> <strong>Tobe și percuție</strong> (coordonarea necesară este mai ușor de atins după 10 ani), <strong>contrabasul</strong>, <strong>producția muzicală</strong> (necesită gândire abstractă mai matură și familiarizare cu tehnologia).</li>
+                        <li data-i18n-html="artc.li.7.1"><strong>3–4 ani:</strong> Activități muzicale de grup, ritm și mișcare, familiarizare cu sunetele muzicale. Nu lecții formale individuale, dar expunerea muzicală bogată în această perioadă este esențială — creierul este extrem de receptiv.</li>
+                        <li data-i18n-html="artc.li.7.2"><strong>4–5 ani:</strong> <strong>Canto (voce)</strong> — vocea este primul instrument și nu are cerințe fizice minime. <strong>Pianul</strong> este ideal la această vârstă: tastele sunt clare și vizibile, nu există probleme de postură sau rezistență fizică, iar feedback-ul sonor este imediat.</li>
+                        <li data-i18n-html="artc.li.7.3"><strong>6–7 ani:</strong> <strong>Vioara</strong> (cu instrumente de dimensiune 1/4 sau 1/2), <strong>chitara clasică</strong> (cu corzi de nylon, mai blânde pe degete), continuarea pianului la nivel mai avansat.</li>
+                        <li data-i18n-html="artc.li.7.4"><strong>7–9 ani:</strong> Marea majoritate a instrumentelor devine accesibilă — <strong>chitara electrică și acustică</strong>, <strong>saxofonul</strong> (în funcție de constituția fizică), <strong>trompeta</strong>, <strong>flautul</strong>.</li>
+                        <li data-i18n-html="artc.li.7.5"><strong>10+ ani:</strong> <strong>Tobe și percuție</strong> (coordonarea necesară este mai ușor de atins după 10 ani), <strong>contrabasul</strong>, <strong>producția muzicală</strong> (necesită gândire abstractă mai matură și familiarizare cu tehnologia).</li>
                     </ul>
 
-                    <p>
+                    <p data-i18n="artc.p.7.2">
                         Indiferent de vârstă, este important ca primele lecții să fie o experiență pozitivă, fără presiune excesivă. Motivația intrinsecă — plăcerea de a cânta — este combustibilul pe termen lung al oricărui muzician.
                     </p>
                 </section>
 
                 <!-- CE INSTRUMENT SA ALEGI -->
                 <section aria-labelledby="instrument-heading">
-                    <h2 id="instrument-heading">Cum să alegi instrumentul potrivit pentru copilul tău</h2>
+                    <h2 id="instrument-heading" data-i18n="artc.h2.8">Cum să alegi instrumentul potrivit pentru copilul tău</h2>
 
-                    <p>
+                    <p data-i18n="artc.p.8.1">
                         Cel mai bun instrument este, de regulă, cel care îl entuziasmează pe copil. Totuși, câteva criterii practice ajută la luarea deciziei:
                     </p>
 
                     <ul>
-                        <li><strong>Vârsta și dimensiunea fizică:</strong> pianul și vocea nu au limite de vârstă minimă reale; instrumentele de suflat cer plămâni mai dezvoltați; chitara și vioara cer forță în degete și o anumită talie a mâinii.</li>
-                        <li><strong>Temperamentul copilului:</strong> copiii introvertiți pot prefera pianul, cu practica sa solitară și intimă; cei extravertiți pot înflori în ansambluri, în lecții de grup sau în canto.</li>
-                        <li><strong>Contextul practic:</strong> are familia spațiu pentru un pian acustic? Poate copilul exersa fără a deranja vecinii? (Pianul digital cu căști rezolvă elegant această problemă.)</li>
-                        <li><strong>Recomandarea unui specialist:</strong> cel mai eficient mod de a alege este o ședință introductivă cu un profesor. Un specialist poate evalua temperamentul, constituția fizică și preferințele muzicale ale copilului și poate face o recomandare personalizată bazată pe experiență.</li>
+                        <li data-i18n-html="artc.li.8.1"><strong>Vârsta și dimensiunea fizică:</strong> pianul și vocea nu au limite de vârstă minimă reale; instrumentele de suflat cer plămâni mai dezvoltați; chitara și vioara cer forță în degete și o anumită talie a mâinii.</li>
+                        <li data-i18n-html="artc.li.8.2"><strong>Temperamentul copilului:</strong> copiii introvertiți pot prefera pianul, cu practica sa solitară și intimă; cei extravertiți pot înflori în ansambluri, în lecții de grup sau în canto.</li>
+                        <li data-i18n-html="artc.li.8.3"><strong>Contextul practic:</strong> are familia spațiu pentru un pian acustic? Poate copilul exersa fără a deranja vecinii? (Pianul digital cu căști rezolvă elegant această problemă.)</li>
+                        <li data-i18n-html="artc.li.8.4"><strong>Recomandarea unui specialist:</strong> cel mai eficient mod de a alege este o ședință introductivă cu un profesor. Un specialist poate evalua temperamentul, constituția fizică și preferințele muzicale ale copilului și poate face o recomandare personalizată bazată pe experiență.</li>
                     </ul>
                 </section>
 
                 <!-- CONCLUZIE -->
                 <section aria-labelledby="concluzie-heading">
-                    <h2 id="concluzie-heading">Concluzie: investiția cu cel mai bun randament</h2>
+                    <h2 id="concluzie-heading" data-i18n="artc.h2.9">Concluzie: investiția cu cel mai bun randament</h2>
 
-                    <p>
+                    <p data-i18n="artc.p.9.1">
                         Lecțiile de muzică pentru copii reprezintă o investiție cu randament extraordinar pe termen lung. Ele nu formează neapărat muzicieni profesioniști — formează oameni cu creiere mai capabile, emoții mai bine gestionate, abilități sociale mai dezvoltate și o disciplină interioară care îi va servi în orice domeniu ar alege.
                     </p>
 
-                    <p>
+                    <p data-i18n="artc.p.9.2">
                         Știința este clară: nu există aproape nicio altă activitate extrașcolară mai completă decât studiul muzicii. Efectele se văd în clasă, în relații, în capacitatea de a face față dificultăților și, nu în ultimul rând, în bucuria profundă de a crea ceva frumos din sunet.
                     </p>
 
-                    <p>
+                    <p data-i18n="artc.p.9.3">
                         Dacă ești la început și nu știi de unde să pornești, cel mai bun prim pas este o ședință introductivă — fără presiune, fără angajament — în care poți vedea cum reacționează copilul la diferite instrumente și poți primi o recomandare profesionistă personalizată.
                     </p>
                 </section>
 
                 <!-- CTA BOX -->
                 <div class="article-cta-box">
-                    <h3>Vrei să înceapă și copilul tău?</h3>
-                    <p>Rezerv</p>ă o ședință introductivă — discutăm obiectivele, alegem instrumentul potrivit și stabilim un plan personalizat.</p>
+                    <h3 data-i18n="artc.cta.title">Vrei să înceapă și copilul tău?</h3>
+                    <p data-i18n="artc.cta.text">Rezervă o ședință introductivă — discutăm obiectivele, alegem instrumentul potrivit și stabilim un plan personalizat.</p>
                     <a
                         href="https://portal.novamusicacademy.ro"
                         class="btn btn--primary"
                         target="_blank"
                         rel="noopener"
+                    data-i18n="artc.cta.btn"
                     >
                         🎵 Rezervă o ședință introductivă
                     </a>
                 </div>
 
                 <!-- ARTICLE NAV -->
-                <nav class="article-nav" aria-label="Navigare articole">
-                    <a href="/articole/">← Înapoi la toate articolele</a>
+                <nav class="article-nav" aria-label="Navigare articole" data-i18n-aria="artc.nav.aria.article">
+                    <a href="/articole/" data-i18n="artc.nav.back">← Înapoi la toate articolele</a>
                 </nav>
 
             </div>
@@ -541,26 +543,26 @@
                         </div>
                     </div>
 
-                    <nav aria-label="Cursuri">
-                        <h4>Cursuri</h4>
+                    <nav aria-label="Cursuri" data-i18n-aria="nav.cursuri">
+                        <h4 data-i18n="nav.cursuri">Cursuri</h4>
                         <ul role="list">
                             <li><a href="/#cursuri" data-discipline="canto-cvt">Canto CVT</a></li>
-                            <li><a href="/#cursuri" data-discipline="pian">Pian</a></li>
-                            <li><a href="/#cursuri" data-discipline="chitara">Chitară</a></li>
-                            <li><a href="/#cursuri" data-discipline="teorie">Teorie Muzicală</a></li>
-                            <li><a href="/#cursuri" data-discipline="saxofon">Saxofon</a></li>
-                            <li><a href="/#cursuri" data-discipline="vioara">Vioară</a></li>
-                            <li><a href="/#cursuri" data-discipline="tobe">Tobe</a></li>
-                            <li><a href="/#cursuri" data-discipline="productie">Producție Muzicală</a></li>
+                            <li><a href="/#cursuri" data-discipline="pian" data-i18n="artc.disc.pian">Pian</a></li>
+                            <li><a href="/#cursuri" data-discipline="chitara" data-i18n="artc.disc.chitara">Chitară</a></li>
+                            <li><a href="/#cursuri" data-discipline="teorie" data-i18n="artc.disc.teorie">Teorie Muzicală</a></li>
+                            <li><a href="/#cursuri" data-discipline="saxofon" data-i18n="artc.disc.saxofon">Saxofon</a></li>
+                            <li><a href="/#cursuri" data-discipline="vioara" data-i18n="artc.disc.vioara">Vioară</a></li>
+                            <li><a href="/#cursuri" data-discipline="tobe" data-i18n="artc.disc.tobe">Tobe</a></li>
+                            <li><a href="/#cursuri" data-discipline="productie" data-i18n="artc.disc.productie">Producție Muzicală</a></li>
                         </ul>
                     </nav>
 
-                    <nav aria-label="Academia">
-                        <h4>Academia</h4>
+                    <nav aria-label="Academia" data-i18n-aria="artc.footer.academy">
+                        <h4 data-i18n="artc.footer.academy">Academia</h4>
                         <ul role="list">
-                            <li><a href="/#despre-noi">Despre noi</a></li>
-                            <li><a href="/#profesori">Profesori</a></li>
-                            <li><a href="/#recenzii">Recenzii</a></li>
+                            <li><a href="/#despre-noi" data-i18n="nav.despre">Despre noi</a></li>
+                            <li><a href="/#profesori" data-i18n="nav.profesori">Profesori</a></li>
+                            <li><a href="/#recenzii" data-i18n="nav.recenzii">Recenzii</a></li>
                             <li>
                                 <a
                                     href="https://www.youtube.com/@novamusicro"
@@ -568,7 +570,7 @@
                                     rel="noopener noreferrer"
                                 >YouTube Nova Music</a>
                             </li>
-                            <li><a href="/articole/">Articole</a></li>
+                            <li><a href="/articole/" data-i18n="nav.articole">Articole</a></li>
                             <li><a href="/#contact">Contact</a></li>
                         </ul>
                     </nav>
@@ -610,6 +612,8 @@
         </footer>
 
         <script src="../../js/translations.js" defer></script>
+        <script src="../../js/translations-pages.js" defer></script>
+        <script src="../../js/translations-app.js" defer></script>
         <script src="../../js/i18n.js" defer></script>
         <script src="../../js/main.js?v=3" defer></script>
     </body>
