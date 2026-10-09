@@ -1,0 +1,610 @@
+<!--
+  ╔══════════════════════════════════════════════════════════════╗
+  ║  NOVA MUSIC ACADEMY — TEMPLATE ARTICOL NOU                  ║
+  ╠══════════════════════════════════════════════════════════════╣
+  ║                                                              ║
+  ║  CUM SE ADAUGĂ UN ARTICOL NOU:                              ║
+  ║                                                              ║
+  ║  1. Copiază acest fișier într-un director nou:               ║
+  ║     src/articole/[slug-articol]/index.html                  ║
+  ║     Exemplu: src/articole/cum-sa-alegi-un-instrument/        ║
+  ║                                                              ║
+  ║  2. Slug-ul trebuie să fie:                                  ║
+  ║     - Scris cu litere mici și cratime (nu spații/underscore) ║
+  ║     - Descriptiv și relevant pentru titlu                    ║
+  ║     - Fără diacritice (ă→a, î→i, ș→s, ț→t, â→a)           ║
+  ║                                                              ║
+  ║  3. Înlocuiește TOATE câmpurile marcate cu [PLACEHOLDER]    ║
+  ║                                                              ║
+  ║  4. Actualizează src/articole/index.html cu noul card       ║
+  ║                                                              ║
+  ║  5. Actualizează src/sitemap.xml cu URL-ul nou:             ║
+  ║     <url>                                                    ║
+  ║       <loc>https://novamusicacademy.ro/articole/[slug]/</loc>║
+  ║       <lastmod>YYYY-MM-DD</lastmod>                         ║
+  ║       <changefreq>monthly</changefreq>                       ║
+  ║       <priority>0.7</priority>                               ║
+  ║     </url>                                                   ║
+  ║                                                              ║
+  ║  6. Adaugă traducerea titlului și excerpt-ului în           ║
+  ║     src/js/translations.js dacă site-ul e bilingv           ║
+  ║                                                              ║
+  ╚══════════════════════════════════════════════════════════════╝
+-->
+<!doctype html>
+<html lang="ro">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- ═══════════════════════════════════════════════════════
+             META DESCRIPTION
+             · Max 160 de caractere
+             · Include cuvântul cheie principal
+             · Formulat ca beneficiu pentru cititor
+             ═══════════════════════════════════════════════════════ -->
+        <meta
+            name="description"
+            content="[PLACEHOLDER — meta description, max 160 caractere]"
+        />
+
+        <!-- ═══════════════════════════════════════════════════════
+             OPEN GRAPH — pentru previzualizare pe social media
+             · og:title: același sau similar cu <title>
+             · og:description: poate fi ușor diferit de meta description
+             · og:image: imagine 1200×630px, absolută (https://...)
+             ═══════════════════════════════════════════════════════ -->
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="[PLACEHOLDER — Titlu articol] | Nova Music Academy" />
+        <meta property="og:description" content="[PLACEHOLDER — descriere OG, max 200 caractere]" />
+        <meta property="og:url" content="https://novamusicacademy.ro/articole/[PLACEHOLDER-slug]/" />
+        <meta property="og:image" content="https://novamusicacademy.ro/assets/images/og-image.jpg" />
+        <!-- Dacă ai o imagine specifică articolului, înlocuiește og:image cu URL-ul ei absolut -->
+
+        <!-- ═══════════════════════════════════════════════════════
+             CANONICAL — URL-ul canonic complet al articolului
+             ═══════════════════════════════════════════════════════ -->
+        <link rel="canonical" href="https://novamusicacademy.ro/articole/[PLACEHOLDER-slug]/" />
+
+        <!-- ═══════════════════════════════════════════════════════
+             TITLE — format recomandat:
+             "[Titlu articol] | Nova Music Academy"
+             Max ~60 de caractere pentru SEO optim
+             ═══════════════════════════════════════════════════════ -->
+        <title>[PLACEHOLDER — Titlu articol] | Nova Music Academy</title>
+
+        <!-- Favicon -->
+        <link rel="icon" href="../../assets/images/logo-icon.png" type="image/png" />
+
+        <!-- ═══════════════════════════════════════════════════════
+             SCHEMA.ORG — BlogPosting structured data
+             Înlocuiește TOATE câmpurile [PLACEHOLDER]
+             datePublished / dateModified: format ISO 8601 (YYYY-MM-DD)
+             ═══════════════════════════════════════════════════════ -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": "[PLACEHOLDER — titlul articolului, identic cu H1]",
+            "description": "[PLACEHOLDER — scurtă descriere, 1-2 propoziții]",
+            "datePublished": "[PLACEHOLDER — ex: 2026-08-01]",
+            "dateModified": "[PLACEHOLDER — ex: 2026-08-01]",
+            "author": {
+                "@type": "Organization",
+                "name": "Nova Music Academy",
+                "url": "https://novamusicacademy.ro"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Nova Music Academy",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://novamusicacademy.ro/assets/images/logo-icon.png"
+                }
+            },
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://novamusicacademy.ro/articole/[PLACEHOLDER-slug]/"
+            },
+            "keywords": "[PLACEHOLDER — cuvinte cheie separate prin virgulă]"
+        }
+        </script>
+
+        <!-- ═══════════════════════════════════════════════════════
+             SCHEMA.ORG — BreadcrumbList
+             Actualizează position 3 cu titlul și URL-ul articolului
+             ═══════════════════════════════════════════════════════ -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Acasă",
+                    "item": "https://novamusicacademy.ro/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Articole",
+                    "item": "https://novamusicacademy.ro/articole/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "[PLACEHOLDER — titlul articolului]",
+                    "item": "https://novamusicacademy.ro/articole/[PLACEHOLDER-slug]/"
+                }
+            ]
+        }
+        </script>
+
+        <!-- Preconnect for Google Fonts performance -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Playfair+Display:wght@700;900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- CSS global — calea ../../ e corectă pentru nivelul articole/[slug]/ -->
+        <link rel="stylesheet" href="../../css/styles.css?v=3" />
+
+        <!-- Meta Pixel Code — nu modifica -->
+        <script>
+            !(function (f, b, e, v, n, t, s) {
+                if (f.fbq) return;
+                n = f.fbq = function () {
+                    n.callMethod
+                        ? n.callMethod.apply(n, arguments)
+                        : n.queue.push(arguments);
+                };
+                if (!f._fbq) f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = "2.0";
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s);
+            })(
+                window,
+                document,
+                "script",
+                "https://connect.facebook.net/en_US/fbevents.js",
+            );
+            fbq("init", "1841691336722567");
+            fbq("track", "PageView");
+        </script>
+        <noscript>
+            <img
+                height="1"
+                width="1"
+                style="display: none"
+                src="https://www.facebook.com/tr?id=1841691336722567&ev=PageView&noscript=1"
+            />
+        </noscript>
+        <!-- End Meta Pixel Code -->
+
+        <!-- ═══════════════════════════════════════════════════════
+             STILURI INLINE — specific paginii de articol
+             Nu modifica aceste stiluri; sunt comune tuturor articolelor.
+             Adaugă stiluri specifice DUPĂ blocul de mai jos dacă e necesar.
+             ═══════════════════════════════════════════════════════ -->
+        <style>
+            .article-hero { background: var(--color-base); padding: 5rem 1.5rem 3rem; color: #fff; }
+            .article-hero__pre { font-family: 'Caveat', cursive; font-size: 1.2rem; color: var(--color-highlight); margin-bottom: 0.5rem; display: block; }
+            .article-hero__title { font-family: 'Playfair Display', serif; font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 900; line-height: 1.25; margin: 0 0 1rem; max-width: 760px; }
+            .article-hero__meta { font-size: 0.85rem; color: rgba(255,255,255,0.6); }
+            .article-hero__intro { font-size: 1.1rem; color: rgba(255,255,255,0.85); max-width: 760px; line-height: 1.7; margin-top: 1.25rem; font-weight: 500; }
+            .article-breadcrumb { background: var(--color-surface); padding: 0.75rem 1.5rem; font-size: 0.85rem; }
+            .article-breadcrumb a { color: var(--color-accent); text-decoration: none; }
+            .article-breadcrumb a:hover { text-decoration: underline; }
+            .article-body { max-width: 760px; margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+            .article-body h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.3rem, 2.5vw, 1.65rem); font-weight: 900; color: var(--color-base); margin: 2.5rem 0 1rem; }
+            .article-body h3 { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: var(--color-base); margin: 1.75rem 0 0.75rem; }
+            .article-body p { font-size: 1rem; color: #333; line-height: 1.8; margin-bottom: 1.1rem; }
+            .article-body ul, .article-body ol { padding-left: 1.5rem; margin-bottom: 1.1rem; }
+            .article-body li { font-size: 1rem; color: #333; line-height: 1.75; margin-bottom: 0.4rem; }
+            .article-body strong { color: var(--color-base); }
+            .article-highlight { background: var(--color-surface); border-left: 4px solid var(--color-accent); border-radius: 0 12px 12px 0; padding: 1.25rem 1.5rem; margin: 2rem 0; }
+            .article-highlight p { margin: 0; font-size: 1rem; color: var(--color-base); font-style: italic; line-height: 1.7; }
+            .article-cta-box { background: var(--color-base); border-radius: 20px; padding: 2.5rem; text-align: center; margin: 3rem 0; color: #fff; }
+            .article-cta-box h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 900; margin: 0 0 0.75rem; }
+            .article-cta-box p { color: rgba(255,255,255,0.75); margin-bottom: 1.5rem; font-size: 0.95rem; }
+            .article-nav { border-top: 1px solid #ede8e0; padding-top: 2rem; margin-top: 2rem; }
+            .article-nav a { color: var(--color-accent); text-decoration: none; font-weight: 600; }
+            .article-nav a:hover { text-decoration: underline; }
+            @media (max-width: 640px) {
+                .article-hero { padding: 4rem 1.25rem 2.5rem; }
+                .article-body { padding: 2rem 1.25rem 3rem; }
+            }
+            /* Adaugă stiluri specifice acestui articol aici, dacă e necesar */
+        </style>
+    </head>
+    <body>
+
+        <!-- ============================================================
+           NAVIGATION
+           Navbar complet identic cu site-ul principal.
+           · Logo și assets folosesc prefix ../../
+           · Linkurile de secțiuni folosesc /#sectiune (cu slash la prefix)
+           · Link "Articole" are clasa nav__link--active
+           ============================================================ -->
+        <header class="site-header" role="banner">
+            <nav class="nav container" aria-label="Navigare principală">
+                <a
+                    href="/"
+                    class="nav__logo"
+                    aria-label="Nova Music Academy — Acasă"
+                >
+                    <img
+                        class="nav__logo-img nav__logo-img--dark"
+                        src="../../assets/images/logo-icon.png"
+                        alt="Nova Music Academy"
+                        width="36"
+                        height="36"
+                    />
+                    <img
+                        class="nav__logo-img nav__logo-img--light"
+                        src="../../assets/images/logo-white.png"
+                        alt="Nova Music Academy"
+                        width="36"
+                        height="36"
+                    />
+                    <span class="nav__logo-text">Nova Music <em>Academy</em></span>
+                </a>
+
+                <ul class="nav__links" role="list">
+                    <li><a href="/#cursuri" data-i18n="nav.cursuri">Cursuri</a></li>
+                    <li><a href="/#profesori" data-i18n="nav.profesori">Profesori</a></li>
+                    <li><a href="/#despre-noi" data-i18n="nav.despre">Despre noi</a></li>
+                    <li><a href="/#recenzii" data-i18n="nav.recenzii">Recenzii</a></li>
+                    <li><a href="/#contact" data-i18n="nav.contact">Contact</a></li>
+                    <!-- Link "Articole" activ pe toate paginile din /articole/ -->
+                    <li><a href="/articole/" class="nav__link--active">Articole</a></li>
+                </ul>
+
+                <!-- Language switcher -->
+                <div class="lang-switcher" role="group" aria-label="Selectează limba">
+                    <button class="lang-btn lang-btn--active" data-lang="ro" aria-pressed="true">
+                        <span class="lang-flag">🇷🇴</span>
+                        <span class="lang-code" data-i18n="lang.ro">RO</span>
+                    </button>
+                    <span class="lang-divider" aria-hidden="true">|</span>
+                    <button class="lang-btn" data-lang="en" aria-pressed="false">
+                        <span class="lang-flag">🇬🇧</span>
+                        <span class="lang-code" data-i18n="lang.en">EN</span>
+                    </button>
+                </div>
+
+                <a
+                    href="https://portal.novamusicacademy.ro"
+                    class="btn btn--sm nav__login"
+                    data-i18n="nav.login"
+                >
+                    Login
+                </a>
+
+                <a
+                    href="https://portal.novamusicacademy.ro"
+                    class="btn btn--primary nav__cta"
+                    target="_blank"
+                    rel="noopener"
+                    data-i18n="nav.cta"
+                >
+                    Programează-te
+                </a>
+
+                <button
+                    class="nav__burger"
+                    aria-label="Deschide meniu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                >
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+                <ul role="list">
+                    <li><a href="/#cursuri">Cursuri</a></li>
+                    <li><a href="/#profesori">Profesori</a></li>
+                    <li><a href="/#despre-noi">Despre noi</a></li>
+                    <li><a href="/#recenzii">Recenzii</a></li>
+                    <li><a href="/#contact">Contact</a></li>
+                    <li><a href="/articole/">Articole</a></li>
+                    <li><a class="mobile-menu__login" href="https://portal.novamusicacademy.ro" data-i18n="nav.login">Login</a></li>
+                </ul>
+                <a
+                    href="https://portal.novamusicacademy.ro"
+                    class="btn btn--primary"
+                    target="_blank"
+                    rel="noopener"
+                    data-i18n="nav.cta"
+                >
+                    Programează-te
+                </a>
+            </div>
+        </header>
+
+        <!-- ============================================================
+           BREADCRUMB
+           Actualizează textul din <span aria-current="page"> cu titlul
+           scurt al articolului tău.
+           ============================================================ -->
+        <nav class="article-breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Acasă</a>
+            <span aria-hidden="true"> / </span>
+            <a href="/articole/">Articole</a>
+            <span aria-hidden="true"> / </span>
+            <span aria-current="page">[PLACEHOLDER — titlu scurt articol]</span>
+        </nav>
+
+        <!-- ============================================================
+           ARTICLE HERO
+           · pre-header: categoria articolului (ex: "Educație Muzicală",
+             "Tehnici Vocale", "Ghid Instrumente", "Sfaturi Părinți")
+           · H1: titlul complet al articolului
+           · meta: data publicării, timp de citire, autor
+           · intro: paragraful introductiv bold, max 2-3 propoziții
+           ============================================================ -->
+        <header class="article-hero">
+            <span class="article-hero__pre">✦ [PLACEHOLDER — Categorie articol]</span>
+            <h1 class="article-hero__title">[PLACEHOLDER — Titlul complet al articolului]</h1>
+            <p class="article-hero__meta">
+                [PLACEHOLDER — ex: 1 august 2026] &nbsp;·&nbsp; [PLACEHOLDER — ex: 6 min citire] &nbsp;·&nbsp; Nova Music Academy
+            </p>
+            <p class="article-hero__intro">
+                [PLACEHOLDER — Paragraful introductiv bold. 2-3 propoziții care rezumă esența articolului și motivează cititorul să continue. Scrie la persoana a doua sau a treia, fără clișee.]
+            </p>
+        </header>
+
+        <!-- ============================================================
+           ARTICLE BODY
+           Conținutul articolului în <article> cu <section> pentru
+           fiecare capitol major. Structura recomandată:
+           · H2: titluri de capitol (4-8 capitole)
+           · H3: subtitluri opționale în cadrul unui capitol
+           · <p>: paragrafe de text
+           · <ul>/<ol>: liste
+           · .article-highlight: citate, date statistice, idei cheie
+           · .article-cta-box: CTA intern (recomandat după ultimul capitol)
+           ============================================================ -->
+        <article>
+            <div class="article-body">
+
+                <!-- ────────────────────────────────────────────────
+                   CAPITOL 1
+                   id pe H2 = slug al titlului (pentru ancorare)
+                   ──────────────────────────────────────────────── -->
+                <section aria-labelledby="cap1-heading">
+                    <h2 id="cap1-heading">[PLACEHOLDER — Titlu capitol 1]</h2>
+
+                    <p>
+                        [PLACEHOLDER — Text</p> capitol 1. Scrie minim 2-3 paragrafe per capitol. Articolul în ansamblu trebuie să aibă minimum 800 de cuvinte (recomandat 1000+).]
+                    </p>
+
+                    <p>
+                        [PLACEHOLDER — Al doilea paragraf al capitolului 1.]
+                    </p>
+
+                    <!-- Bloc highlight opțional — folosit pentru citate, statistici, idei-cheie -->
+                    <div class="article-highlight">
+                        <p>
+                            [PLACEHOLDER — Citat, statistică sau idee-cheie relevantă pentru capitol.]
+                        </p>
+                    </div>
+                </section>
+
+                <!-- ────────────────────────────────────────────────
+                   CAPITOL 2
+                   ──────────────────────────────────────────────── -->
+                <section aria-labelledby="cap2-heading">
+                    <h2 id="cap2-heading">[PLACEHOLDER — Titlu capitol 2]</h2>
+
+                    <p>
+                        [PLACEHOLDER — Text capitol 2.]
+                    </p>
+
+                    <!-- Exemplu de lista neordonată -->
+                    <ul>
+                        <li>[PLACEHOLDER — element listă 1]</li>
+                        <li>[PLACEHOLDER — element listă 2]</li>
+                        <li>[PLACEHOLDER — element listă 3]</li>
+                    </ul>
+                </section>
+
+                <!-- ────────────────────────────────────────────────
+                   CAPITOL 3
+                   ──────────────────────────────────────────────── -->
+                <section aria-labelledby="cap3-heading">
+                    <h2 id="cap3-heading">[PLACEHOLDER — Titlu capitol 3]</h2>
+
+                    <p>
+                        [PLACEHOLDER — Text capitol 3.]
+                    </p>
+
+                    <h3>[PLACEHOLDER — Subtitlu opțional H3]</h3>
+
+                    <p>
+                        [PLACEHOLDER — Text secțiune cu H3.]
+                    </p>
+                </section>
+
+                <!-- ────────────────────────────────────────────────
+                   CONCLUZIE — ultimul capitol înainte de CTA
+                   ──────────────────────────────────────────────── -->
+                <section aria-labelledby="concluzie-heading">
+                    <h2 id="concluzie-heading">Concluzie</h2>
+
+                    <p>
+                        [PLACEHOLDER — Rezumă ideile principale ale articolului în 2-3 propoziții. Încheie cu un mesaj pozitiv și orientat spre acțiune.]
+                    </p>
+
+                    <p>
+                        [PLACEHOLDER — Propoziție de tranziție spre CTA: ce poate face cititorul ca pas următor.]
+                    </p>
+                </section>
+
+                <!-- ════════════════════════════════════════════════
+                   CTA BOX — îndemn la acțiune
+                   · h3: titlu scurt și convingător
+                   · p: beneficiul concret al acțiunii
+                   · buton → portal.novamusicacademy.ro
+                   ════════════════════════════════════════════════ -->
+                <div class="article-cta-box">
+                    <h3>[PLACEHOLDER — ex: Vrei să faci primul pas?]</h3>
+                    <p>[PLACEHOLDER — descriere beneficiu, max 2 propoziții]</p>
+                    <a
+                        href="https://portal.novamusicacademy.ro"
+                        class="btn btn--primary"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        🎵 Rezervă o ședință introductivă
+                    </a>
+                </div>
+
+                <!-- ════════════════════════════════════════════════
+                   NAVIGARE ARTICOLE — link înapoi la listing
+                   ════════════════════════════════════════════════ -->
+                <nav class="article-nav" aria-label="Navigare articole">
+                    <a href="/articole/">← Înapoi la toate articolele</a>
+                </nav>
+
+            </div>
+        </article>
+
+        <!-- ============================================================
+           FOOTER — identic cu site-ul principal
+           Calea imaginilor folosește prefix ../../
+           ============================================================ -->
+        <footer class="site-footer" role="contentinfo">
+            <div class="container">
+                <div class="footer__grid">
+                    <div class="footer__brand">
+                        <a
+                            href="/"
+                            class="nav__logo footer__logo"
+                            aria-label="Nova Music Academy"
+                        >
+                            <img
+                                src="../../assets/images/logo-white.png"
+                                alt="Nova Music Academy"
+                                width="40"
+                                height="40"
+                                loading="lazy"
+                            />
+                            <span class="nav__logo-text">Nova Music <em>Academy</em></span>
+                        </a>
+                        <p class="footer__tagline" data-i18n="footer.tagline">Where Stars Are Born</p>
+                        <p data-i18n="footer.desc">Muzica nu se predă. Se descoperă împreună.</p>
+                        <div class="footer__social">
+                            <a
+                                href="https://www.instagram.com/novamusicro/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Instagram Nova Music Academy"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    width="22"
+                                    height="22"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608.975-.975 2.242-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.014 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.986 8.741 24 12 24s3.668-.014 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038.058-1.28.072-1.689.072-4.948s-.014-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Facebook Nova Music Academy">📘</a>
+                            <a href="#" aria-label="YouTube Nova Music Academy">▶️</a>
+                            <a href="#" aria-label="TikTok Nova Music Academy">🎵</a>
+                        </div>
+                    </div>
+
+                    <nav aria-label="Cursuri">
+                        <h4>Cursuri</h4>
+                        <ul role="list">
+                            <li><a href="/#cursuri" data-discipline="canto-cvt">Canto CVT</a></li>
+                            <li><a href="/#cursuri" data-discipline="pian">Pian</a></li>
+                            <li><a href="/#cursuri" data-discipline="chitara">Chitară</a></li>
+                            <li><a href="/#cursuri" data-discipline="teorie">Teorie Muzicală</a></li>
+                            <li><a href="/#cursuri" data-discipline="saxofon">Saxofon</a></li>
+                            <li><a href="/#cursuri" data-discipline="vioara">Vioară</a></li>
+                            <li><a href="/#cursuri" data-discipline="tobe">Tobe</a></li>
+                            <li><a href="/#cursuri" data-discipline="productie">Producție Muzicală</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav aria-label="Academia">
+                        <h4>Academia</h4>
+                        <ul role="list">
+                            <li><a href="/#despre-noi">Despre noi</a></li>
+                            <li><a href="/#profesori">Profesori</a></li>
+                            <li><a href="/#recenzii">Recenzii</a></li>
+                            <li>
+                                <a
+                                    href="https://www.youtube.com/@novamusicro"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >YouTube Nova Music</a>
+                            </li>
+                            <li><a href="/articole/">Articole</a></li>
+                            <li><a href="/#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="footer__contact" id="contact">
+                        <h4>Contact</h4>
+                        <address>
+                            <p>
+                                📍 Str. Făinari nr. 25, et. 1<br />București,
+                                Sector 2
+                            </p>
+                            <p>
+                                📞 <a href="tel:+40771089525">0771 089 525</a>
+                            </p>
+                            <p>
+                                ✉️
+                                <a href="mailto:contact@novamusic.ro">contact@novamusic.ro</a>
+                            </p>
+                        </address>
+                    </div>
+                </div>
+
+                <div class="footer__bottom">
+                    <p data-i18n="footer.copy">
+                        © 2026 Nova Music Academy. Toate drepturile rezervate.
+                    </p>
+                    <div class="footer__legal">
+                        <a
+                            href="https://novamusicacademy.ro/politica-confidentialitate/"
+                            data-i18n="footer.legal.privacy"
+                        >Politica de Confidențial</a>itate</a>
+                        <a
+                            href="https://novamusicacademy.ro/termeni-conditii/"
+                            data-i18n="footer.legal.terms"
+                        >Termeni și Condiții</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- ═══════════════════════════════════════════════════════
+             SCRIPTURI — nu modifica căile; ../../ e corect
+             pentru nivelul articole/[slug]/
+             ═══════════════════════════════════════════════════════ -->
+        <script src="../../js/translations.js" defer></script>
+        <script src="../../js/i18n.js" defer></script>
+        <script src="../../js/main.js?v=3" defer></script>
+    </body>
+</html>

@@ -9,6 +9,7 @@ window.NMA_TRANSLATIONS = {
     "nav.contact": "Contact",
     "nav.cta": "Programează-te",
     "nav.login": "Login",
+    "nav.articole": "Articole",
 
     /* HERO */
     "hero.preheader": "✦ Scoală de Muzică în București",
@@ -168,6 +169,7 @@ window.NMA_TRANSLATIONS = {
     "nav.contact": "Contact",
     "nav.cta": "Book a Session",
     "nav.login": "Login",
+    "nav.articole": "Articles",
 
     /* HERO */
     "hero.preheader": "✦ Music School in Bucharest",
