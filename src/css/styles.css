@@ -3260,7 +3260,76 @@ h3 {
 @media (max-width: 900px) {
     .nav__login {
         display: inline-flex;
+        align-items: center;
+        min-height: 40px;
         padding: 0.5rem 1rem;
         font-size: 0.8rem;
+    }
+}
+
+/* ── HEADER MOBIL (Android / iPhone) ─────────────────────────
+   Logo + selector limba + Login + burger trebuie sa incapa pe
+   360-412px. Fara asta, Login-ul iesea in afara ecranului. */
+@media (max-width: 900px) {
+    /* Niciun element nu are voie sa largeasca pagina pe telefon (Android/iPhone) */
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    /* Meniul inchis (ascuns deasupra ecranului) nu trebuie sa largeasca pagina */
+    .mobile-menu {
+        overflow: hidden;
+    }
+    .mobile-menu .btn {
+        max-width: calc(100vw - 2rem);
+        white-space: normal;
+        text-align: center;
+    }
+    /* Paginile secundare au un buton CTA in navbar care nu incape pe telefon */
+    .site-header .nav__cta {
+        display: none !important;
+    }
+    .nav {
+        gap: 0.5rem;
+    }
+    .nav__logo {
+        min-width: 0;
+        flex-shrink: 1;
+    }
+    .lang-btn {
+        min-height: 36px;
+    }
+    .nav__burger {
+        min-width: 40px;
+        min-height: 40px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        justify-content: flex-start;
+    }
+    .nav__burger {
+        margin-left: auto;
+    }
+    .nav__logo-text {
+        display: none;
+    }
+    .lang-switcher {
+        gap: 0;
+        padding: 0.15rem 0.25rem;
+    }
+    .lang-code {
+        display: none;
+    }
+    .lang-btn {
+        padding: 0.35rem 0.45rem;
+        min-height: 40px;
+    }
+    .nav__login {
+        padding: 0.5rem 0.85rem;
+        font-size: 0.78rem;
     }
 }
