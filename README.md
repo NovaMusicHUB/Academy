@@ -48,6 +48,10 @@ ssh -i /Users/mihailtirica/Site-uri/ssh/do_droplet root@174.138.1.241
 rsync -avz -e "ssh -i /Users/mihailtirica/Site-uri/ssh/do_droplet" \
   /Users/mihailtirica/Site-uri/Academy/src/ \
   root@174.138.1.241:/var/www/academy/src/
+
+# Obligatoriu dupa rsync: rsync copiaza permisiunile de pe Mac (ex. 600),
+# iar Nginx nu mai poate citi fisierele (403).
+ssh -i /Users/mihailtirica/Site-uri/ssh/do_droplet root@174.138.1.241 "chmod -R a+rX /var/www/academy/src"
 ```
 
 ### DNS — adaugă în panoul de la registrar
