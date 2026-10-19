@@ -164,9 +164,9 @@ window.NMA_TRANSLATIONS = {
     "teachers.alt.feli": "Feli Dilbea — Pian · Vocal Coach",
     "teachers.feli.pre": "✦ Pian · Vocal Coach CVT",
     "teachers.feli.bio": "Absolventă a Universității Naționale de Muzică din București, secția Compoziție – Muzică Ușoară. Artist singer-songwriter cu peste 18 ani de experiență muzicală și 6 ani de pedagogie vocală activă.",
-    "teachers.alt.nelu": "Bubuci Nelu — Vioară",
-    "teachers.nelu.pre": "✦ Vioară",
-    "teachers.nelu.bio": "Violonist și profesor de vioară, absolvent al Universității Naționale de Muzică din București. Membru al Orchestrei Române de Tineret și al formației „Intermezzo Cantabile\".",
+    "teachers.alt.andrei": "Andrei Comșa — Vioară",
+    "teachers.andrei.pre": "✦ Vioară",
+    "teachers.andrei.bio": "Absolvent al Colegiului Național de Muzică „George Enescu” și al Universității Naționale de Muzică din București, cu peste 20 de ani de experiență în interpretarea la vioară.",
 
     /* GALLERY */
     "gallery.aria": "Galerie foto evenimente",
@@ -510,9 +510,9 @@ window.NMA_TRANSLATIONS = {
     "teachers.alt.feli": "Feli Dilbea — Piano · Vocal Coach",
     "teachers.feli.pre": "✦ Piano · CVT Vocal Coach",
     "teachers.feli.bio": "Graduate of the National University of Music Bucharest, Composition – Popular Music department. Singer-songwriter with over 18 years of musical experience and 6 years of active vocal teaching.",
-    "teachers.alt.nelu": "Bubuci Nelu — Violin",
-    "teachers.nelu.pre": "✦ Violin",
-    "teachers.nelu.bio": "Violinist and violin teacher, graduate of the National University of Music Bucharest. Member of the Romanian Youth Orchestra and of the ensemble “Intermezzo Cantabile”.",
+    "teachers.alt.andrei": "Andrei Comșa — Violin",
+    "teachers.andrei.pre": "✦ Violin",
+    "teachers.andrei.bio": "Graduate of the “George Enescu” National College of Music and the National University of Music Bucharest, with over 20 years of experience in violin performance.",
 
     /* GALLERY */
     "gallery.aria": "Event photo gallery",

@@ -350,15 +350,15 @@ function tr(key, vars) {
         "teacher.feli-dilbea.bio.3",
       ],
     },
-    "bubuci-nelu": {
-      name: "Bubuci Nelu",
-      specialty: "teacher.bubuci-nelu.specialty",
-      photos: ["assets/images/Nelu.jpeg"],
+    "andrei-comsa": {
+      name: "Andrei Comșa",
+      specialty: "teacher.andrei-comsa.specialty",
+      photos: [base + "Andrei%20Comsa.jpg"],
       bio: [
-        "teacher.bubuci-nelu.bio.0",
-        "teacher.bubuci-nelu.bio.1",
-        "teacher.bubuci-nelu.bio.2",
-        "teacher.bubuci-nelu.bio.3",
+        "teacher.andrei-comsa.bio.0",
+        "teacher.andrei-comsa.bio.1",
+        "teacher.andrei-comsa.bio.2",
+        "teacher.andrei-comsa.bio.3",
       ],
     },
   };

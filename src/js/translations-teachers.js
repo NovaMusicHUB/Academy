@@ -52,9 +52,9 @@
   "tp.feli-dilbea.photo.1": "Feli Dilbea — foto 1",
   "tp.feli-dilbea.photo.2": "Feli Dilbea — foto 2",
   "tp.feli-dilbea.photo.3": "Feli Dilbea — foto 3",
-  "tp.bubuci-nelu.title": "Bubuci Nelu — Vioară | Nova Music Academy",
-  "tp.bubuci-nelu.desc": "Violonist și profesor de vioară, absolvent al Universității Naționale de Muzică din București (licență și master, specializarea Stilistică interpretativă…",
-  "tp.bubuci-nelu.photo.1": "Bubuci Nelu — foto 1"
+  "tp.andrei-comsa.title": "Andrei Comșa — Vioară | Nova Music Academy",
+  "tp.andrei-comsa.desc": "Absolvent al Colegiului Național de Muzică „George Enescu” și al Universității Naționale de Muzică din București, Andrei are peste 20 de ani de experiență…",
+  "tp.andrei-comsa.photo.1": "Andrei Comșa — foto 1"
 });
   Object.assign(T.en, {
   "tp.crumb.home": "Home",
@@ -105,8 +105,8 @@
   "tp.feli-dilbea.photo.1": "Feli Dilbea — photo 1",
   "tp.feli-dilbea.photo.2": "Feli Dilbea — photo 2",
   "tp.feli-dilbea.photo.3": "Feli Dilbea — photo 3",
-  "tp.bubuci-nelu.title": "Bubuci Nelu — Violin | Nova Music Academy",
-  "tp.bubuci-nelu.desc": "Violinist and violin teacher, graduate of the National University of Music Bucharest (bachelor's and master's, specialising in Interpretive Stylistics –…",
-  "tp.bubuci-nelu.photo.1": "Bubuci Nelu — photo 1"
+  "tp.andrei-comsa.title": "Andrei Comșa — Violin | Nova Music Academy",
+  "tp.andrei-comsa.desc": "A graduate of the “George Enescu” National College of Music and the National University of Music Bucharest, Andrei has over 20 years of experience in…",
+  "tp.andrei-comsa.photo.1": "Andrei Comșa — photo 1"
 });
 })();

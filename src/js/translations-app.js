@@ -168,11 +168,11 @@
     "teacher.feli-dilbea.bio.2": "Creează un spațiu în care copiii și tinerii se simt liberi să descopere muzica fără presiune, cu entuziasm și autenticitate. Pasiunea ei pentru psihologie face diferența în modul în care predă — înțelege nevoile emoționale ale elevilor și transformă fiecare lecție într-o experiență de creștere personală, nu doar muzicală.",
     "teacher.feli-dilbea.bio.3": "Pe scenă de la 6 ani, Feli știe că muzica nu este doar tehnică — este emoție, prezență și autenticitate. La Nova Music Academy, ea transmite exact asta: pasiunea pentru muzică și convingerea că aceasta poate transforma, conecta și inspira.",
 
-    "teacher.bubuci-nelu.specialty": "✦ Vioară",
-    "teacher.bubuci-nelu.bio.0": "Violonist și profesor de vioară, absolvent al Universității Naționale de Muzică din București (licență și master, specializarea Stilistică interpretativă – Muzică de cameră).",
-    "teacher.bubuci-nelu.bio.1": "Parcursul său muzical a început de la o vârstă fragedă, studiind vioara și pianul la Liceul „Serghei Rahmaninov\" din Chișinău, iar ulterior a activat în cadrul Filarmonicii Naționale „Serghei Lunchevici\".",
-    "teacher.bubuci-nelu.bio.2": "În prezent, este membru al Orchestrei Române de Tineret și al formației „Intermezzo Cantabile\", implicându-se constant în concerte și proiecte artistice.",
-    "teacher.bubuci-nelu.bio.3": "Ca profesor, se remarcă prin răbdare, claritate în explicații și o abordare echilibrată între tehnică și expresivitate, adaptându-se fiecărui elev și ghidându-l cu atenție în dezvoltarea sa muzicală.",
+    "teacher.andrei-comsa.specialty": "✦ Vioară",
+    "teacher.andrei-comsa.bio.0": "Absolvent al Colegiului Național de Muzică „George Enescu” și al Universității Naționale de Muzică din București, Andrei are peste 20 de ani de experiență în domeniul muzical, fiind specializat în interpretare instrumentală – vioară.",
+    "teacher.andrei-comsa.bio.1": "Pasionat de muzică și educație, îmbină tehnicile clasice cu metode moderne de predare, adaptând fiecare lecție vârstei, personalității și ritmului de învățare al elevului.",
+    "teacher.andrei-comsa.bio.2": "Prin răbdare, creativitate și o abordare prietenoasă, îi încurajează pe elevi să își dezvolte tehnica, expresivitatea și încrederea în sine.",
+    "teacher.andrei-comsa.bio.3": "Pentru Andrei, studiul viorii înseamnă mai mult decât învățarea unui instrument: este o călătorie de descoperire, exprimare și evoluție prin muzică.",
 
     /* ── Modal resursă ── */
     "res.close": "Închide resursa",
@@ -385,11 +385,11 @@
     "teacher.feli-dilbea.bio.2": "She creates a space where children and young people feel free to discover music without pressure, with enthusiasm and authenticity. Her passion for psychology makes a difference in how she teaches — she understands her students' emotional needs and turns every lesson into a personal growth experience, not just a musical one.",
     "teacher.feli-dilbea.bio.3": "On stage since she was 6, Feli knows that music is not just technique — it is emotion, presence and authenticity. At Nova Music Academy she passes on exactly that: a passion for music and the conviction that it can transform, connect and inspire.",
 
-    "teacher.bubuci-nelu.specialty": "✦ Violin",
-    "teacher.bubuci-nelu.bio.0": "Violinist and violin teacher, graduate of the National University of Music Bucharest (bachelor's and master's, specialising in Interpretive Stylistics – Chamber Music).",
-    "teacher.bubuci-nelu.bio.1": "His musical journey began at a young age, studying violin and piano at the “Serghei Rahmaninov” High School in Chișinău, and later he performed with the “Serghei Lunchevici” National Philharmonic.",
-    "teacher.bubuci-nelu.bio.2": "He is currently a member of the Romanian Youth Orchestra and of the ensemble “Intermezzo Cantabile”, and is constantly involved in concerts and artistic projects.",
-    "teacher.bubuci-nelu.bio.3": "As a teacher, he stands out for his patience, clarity of explanation and a balanced approach between technique and expressiveness, adapting to each student and guiding them carefully in their musical development.",
+    "teacher.andrei-comsa.specialty": "✦ Violin",
+    "teacher.andrei-comsa.bio.0": "A graduate of the “George Enescu” National College of Music and the National University of Music Bucharest, Andrei has over 20 years of experience in music, specialising in instrumental performance – violin.",
+    "teacher.andrei-comsa.bio.1": "Passionate about music and education, he combines classical techniques with modern teaching methods, adapting each lesson to the student's age, personality and learning pace.",
+    "teacher.andrei-comsa.bio.2": "With patience, creativity and a friendly approach, he encourages students to develop their technique, expressiveness and self-confidence.",
+    "teacher.andrei-comsa.bio.3": "For Andrei, studying the violin means more than learning an instrument: it is a journey of discovery, expression and growth through music.",
 
     /* ── Resource modal ── */
     "res.close": "Close resource",

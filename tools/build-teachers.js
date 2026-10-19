@@ -294,7 +294,7 @@ ${JSON.stringify(ld, null, 2)}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../../css/styles.css?v=6" />
+    <link rel="stylesheet" href="../../css/styles.css?v=7" />
     <style>${PAGE_CSS}
     </style>
   </head>
@@ -353,7 +353,7 @@ ${JSON.stringify(ld, null, 2)}
     <script src="../../js/translations-app.js" defer></script>
     <script src="../../js/translations-teachers.js" defer></script>
     <script src="../../js/i18n.js" defer></script>
-    <script src="../../js/main.js?v=6" defer></script>
+    <script src="../../js/main.js?v=7" defer></script>
     <script>${SHARE_JS}
     </script>
   </body>
