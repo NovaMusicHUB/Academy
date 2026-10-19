@@ -278,21 +278,25 @@
 
 
                 <!-- H1 SEO -->
-                <h1 class="pre-header hero__preheader" data-i18n="hero.preheader">
-                    ✦ Scoală de Muzică în București
+                <h1 class="hero__main-title">
+                    NOVA MUSIC ACADEMY
                 </h1>
 
-                <!-- Visual headline -->
+                <!-- Tagline -->
+                <p class="hero__tagline" data-i18n="hero.tagline">
+                    Din pasiune pentru muzică.
+                </p>
+
+                <!-- Visual headline (Values) -->
                 <p class="hero__headline">
-                    <span data-i18n="hero.headline">Muzica nu se predă.</span><br />
-                    <em data-i18n="hero.headline.em">Se descoperă împreună.</em>
+                    <span data-i18n="hero.headline">LIBERTATE.</span><br />
+                    <span>CREATIVITATE.</span><br />
+                    <em data-i18n="hero.headline.em">EVOLUȚIE.</em>
                 </p>
 
                 <!-- Subheadline -->
-                <p class="hero__subheadline" data-i18n="hero.subheadline">
-                    Canto CVT, lecții de pian, chitară, saxofon, tobe și vioară
-                    pentru copii și adulți în București. Profesori pasionați,
-                    metode dovedite.
+                <p class="hero__subheadline" data-i18n="hero.subheadline" style="display: none;">
+                    Din pasiune pentru muzică.
                 </p>
 
                 <!-- CTAs -->
@@ -312,7 +316,7 @@
                 </div>
 
                 <!-- Trust signals -->
-                <div class="hero__trust" role="list" aria-label="Garanții" data-i18n-aria="hero.trust.aria">
+                <div class="hero__trust" role="list" aria-label="Garanții" data-i18n-aria="hero.trust.aria" style="display: none;">
                     <span class="trust-item" role="listitem" data-i18n="hero.trust.1"
                         >✓ 300+ studenți mulțumiți</span
                     >
@@ -2980,6 +2984,13 @@
                         >
                             <span data-i18n="teacher.modal.btn">🎵 Rezervă o ședință</span>
                         </a>
+                        <a
+                            id="teacher-modal-page"
+                            href="profesori/"
+                            class="btn btn--outline"
+                        >
+                            <span data-i18n="tp.view.page">Vezi pagina profesorului →</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -2987,6 +2998,7 @@
 
         <script src="js/translations.js" defer></script>
         <script src="js/translations-app.js" defer></script>
+        <script src="js/translations-teachers.js" defer></script>
         <script src="js/i18n.js?v=2" defer></script>
         <script src="js/main.js?v=5" defer></script>
     </body>
