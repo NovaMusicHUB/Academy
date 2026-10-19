@@ -361,6 +361,18 @@ function tr(key, vars) {
         "teacher.andrei-comsa.bio.3",
       ],
     },
+    "stefania-biciin": {
+      name: "Ștefania Bîcîin",
+      specialty: "teacher.stefania-biciin.specialty",
+      photos: [base + "Stefania%20Biciin%201.jpg", base + "Stefania%20Biciin%202.jpg"],
+      bio: [
+        "teacher.stefania-biciin.bio.0",
+        "teacher.stefania-biciin.bio.1",
+        "teacher.stefania-biciin.bio.2",
+        "teacher.stefania-biciin.bio.3",
+        "teacher.stefania-biciin.bio.4",
+      ],
+    },
   };
 
   // Paragraf marcat ca citat: se randează ca <blockquote> în loc de <p>

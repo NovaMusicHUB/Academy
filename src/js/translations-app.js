@@ -173,6 +173,12 @@
     "teacher.andrei-comsa.bio.1": "Pasionat de muzică și educație, îmbină tehnicile clasice cu metode moderne de predare, adaptând fiecare lecție vârstei, personalității și ritmului de învățare al elevului.",
     "teacher.andrei-comsa.bio.2": "Prin răbdare, creativitate și o abordare prietenoasă, îi încurajează pe elevi să își dezvolte tehnica, expresivitatea și încrederea în sine.",
     "teacher.andrei-comsa.bio.3": "Pentru Andrei, studiul viorii înseamnă mai mult decât învățarea unui instrument: este o călătorie de descoperire, exprimare și evoluție prin muzică.",
+    "teacher.stefania-biciin.specialty": "✦ Canto CVT",
+    "teacher.stefania-biciin.bio.0": "Pasionată de muzică și de explorarea vocii, Ștefania Bîcîin și-a construit parcursul artistic prin studiu, perseverență și dorința continuă de evoluție.",
+    "teacher.stefania-biciin.bio.1": "Absolventă a Facultății de Psihologie și Științele Educației din cadrul Universității din București, îmbină cunoștințele psihologice cu principiile Complete Vocal Technique (CVT), adaptând lecțiile nevoilor și ritmului fiecărui elev.",
+    "teacher.stefania-biciin.bio.2": "Cu o abordare empatică, răbdătoare și structurată, îi încurajează pe cursanți să își descopere vocea, să își dezvolte tehnica vocală și să capete încredere în propriile abilități.",
+    "teacher.stefania-biciin.bio.3": "În paralel, activează ca backing vocalist în diverse trupe live, aducând experiența scenei în procesul de predare.",
+    "teacher.stefania-biciin.bio.4": "Pentru Ștefania, vocea este mai mult decât un instrument: este o formă autentică de exprimare, descoperire și evoluție personală.",
 
     /* ── Modal resursă ── */
     "res.close": "Închide resursa",
@@ -390,6 +396,12 @@
     "teacher.andrei-comsa.bio.1": "Passionate about music and education, he combines classical techniques with modern teaching methods, adapting each lesson to the student's age, personality and learning pace.",
     "teacher.andrei-comsa.bio.2": "With patience, creativity and a friendly approach, he encourages students to develop their technique, expressiveness and self-confidence.",
     "teacher.andrei-comsa.bio.3": "For Andrei, studying the violin means more than learning an instrument: it is a journey of discovery, expression and growth through music.",
+    "teacher.stefania-biciin.specialty": "✦ Canto CVT",
+    "teacher.stefania-biciin.bio.0": "Passionate about music and about exploring the voice, Ștefania Bîcîin has built her artistic path through study, perseverance and a constant desire to grow.",
+    "teacher.stefania-biciin.bio.1": "A graduate of the Faculty of Psychology and Educational Sciences at the University of Bucharest, she combines her knowledge of psychology with the principles of Complete Vocal Technique (CVT), adapting lessons to each student's needs and pace.",
+    "teacher.stefania-biciin.bio.2": "With an empathetic, patient and structured approach, she encourages students to discover their voice, develop their vocal technique and gain confidence in their own abilities.",
+    "teacher.stefania-biciin.bio.3": "Alongside teaching, she works as a backing vocalist with various live bands, bringing her stage experience into the lessons.",
+    "teacher.stefania-biciin.bio.4": "For Ștefania, the voice is more than an instrument: it is an authentic form of expression, discovery and personal growth.",
 
     /* ── Resource modal ── */
     "res.close": "Close resource",

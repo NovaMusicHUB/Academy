@@ -54,7 +54,11 @@
   "tp.feli-dilbea.photo.3": "Feli Dilbea — foto 3",
   "tp.andrei-comsa.title": "Andrei Comșa — Vioară | Nova Music Academy",
   "tp.andrei-comsa.desc": "Absolvent al Colegiului Național de Muzică „George Enescu” și al Universității Naționale de Muzică din București, Andrei are peste 20 de ani de experiență…",
-  "tp.andrei-comsa.photo.1": "Andrei Comșa — foto 1"
+  "tp.andrei-comsa.photo.1": "Andrei Comșa — foto 1",
+  "tp.stefania-biciin.title": "Ștefania Bîcîin — Canto CVT | Nova Music Academy",
+  "tp.stefania-biciin.desc": "Pasionată de muzică și de explorarea vocii, Ștefania Bîcîin și-a construit parcursul artistic prin studiu, perseverență și dorința continuă de evoluție.",
+  "tp.stefania-biciin.photo.1": "Ștefania Bîcîin — foto 1",
+  "tp.stefania-biciin.photo.2": "Ștefania Bîcîin — foto 2"
 });
   Object.assign(T.en, {
   "tp.crumb.home": "Home",
@@ -107,6 +111,10 @@
   "tp.feli-dilbea.photo.3": "Feli Dilbea — photo 3",
   "tp.andrei-comsa.title": "Andrei Comșa — Violin | Nova Music Academy",
   "tp.andrei-comsa.desc": "A graduate of the “George Enescu” National College of Music and the National University of Music Bucharest, Andrei has over 20 years of experience in…",
-  "tp.andrei-comsa.photo.1": "Andrei Comșa — photo 1"
+  "tp.andrei-comsa.photo.1": "Andrei Comșa — photo 1",
+  "tp.stefania-biciin.title": "Ștefania Bîcîin — Canto CVT | Nova Music Academy",
+  "tp.stefania-biciin.desc": "Passionate about music and about exploring the voice, Ștefania Bîcîin has built her artistic path through study, perseverance and a constant desire to…",
+  "tp.stefania-biciin.photo.1": "Ștefania Bîcîin — photo 1",
+  "tp.stefania-biciin.photo.2": "Ștefania Bîcîin — photo 2"
 });
 })();

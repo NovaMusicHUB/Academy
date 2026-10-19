@@ -41,7 +41,7 @@ window.NMA_TRANSLATIONS = {
     "hero.value.1": "Libertate",
     "hero.value.2": "Creativitate",
     "hero.value.3": "Evoluție",
-    "hero.team": "Cunoaște cei <strong>9 profesori</strong> ai academiei",
+    "hero.team": "Cunoaște cei <strong>10 profesori</strong> ai academiei",
 
     /* CURSURI */
     "cursuri.aria": "Cursuri disponibile",
@@ -167,6 +167,9 @@ window.NMA_TRANSLATIONS = {
     "teachers.alt.andrei": "Andrei Comșa — Vioară",
     "teachers.andrei.pre": "✦ Vioară",
     "teachers.andrei.bio": "Absolvent al Colegiului Național de Muzică „George Enescu” și al Universității Naționale de Muzică din București, cu peste 20 de ani de experiență în interpretarea la vioară.",
+    "teachers.alt.stefania": "Ștefania Bîcîin — Canto",
+    "teachers.stefania.pre": "✦ Canto CVT",
+    "teachers.stefania.bio": "Absolventă de Psihologie și Științele Educației (Universitatea din București), predă canto după Complete Vocal Technique (CVT) și cântă ca backing vocalist în trupe live.",
 
     /* GALLERY */
     "gallery.aria": "Galerie foto evenimente",
@@ -387,7 +390,7 @@ window.NMA_TRANSLATIONS = {
     "hero.value.1": "Freedom",
     "hero.value.2": "Creativity",
     "hero.value.3": "Evolution",
-    "hero.team": "Meet our <strong>9 teachers</strong>",
+    "hero.team": "Meet our <strong>10 teachers</strong>",
 
     /* CURSURI */
     "cursuri.aria": "Available courses",
@@ -513,6 +516,9 @@ window.NMA_TRANSLATIONS = {
     "teachers.alt.andrei": "Andrei Comșa — Violin",
     "teachers.andrei.pre": "✦ Violin",
     "teachers.andrei.bio": "Graduate of the “George Enescu” National College of Music and the National University of Music Bucharest, with over 20 years of experience in violin performance.",
+    "teachers.alt.stefania": "Ștefania Bîcîin — Singing",
+    "teachers.stefania.pre": "✦ Canto CVT",
+    "teachers.stefania.bio": "Psychology and Educational Sciences graduate (University of Bucharest), teaching singing with Complete Vocal Technique (CVT) and performing as a backing vocalist with live bands.",
 
     /* GALLERY */
     "gallery.aria": "Event photo gallery",
