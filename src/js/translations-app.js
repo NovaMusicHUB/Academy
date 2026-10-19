@@ -137,10 +137,6 @@
     "teacher.daniela-bazac.bio.2": "Cu o experiență scenică de peste 17 ani, Dana a susținut numeroase concerte și evenimente încă din 2014, colaborând cu diverse trupe și proiecte muzicale din România.",
     "teacher.daniela-bazac.bio.3": "În rolul de profesor de pian și vocal coach, Dana creează un mediu sigur și încurajator pentru elevii săi, unde aceștia pot explora, experimenta și evolua în ritmul propriu. Abordarea sa îmbină rigoarea tehnică cu dezvoltarea încrederii și a expresivității, punând accent pe autenticitate — esența oricărui act artistic.",
 
-    "teacher.matei-alexandru.specialty": "✦ Pian · Chitară · Teorie Muzicală",
-    "teacher.matei-alexandru.bio.0": "Vocația pentru muzică a lui Matei s-a manifestat de la cele mai mici vârste prin fascinația pentru instrumente și manifestarea muzicală a emoțiilor. La vârsta de 5 ani a început studiul pianului prin lecții particulare, iar de la 7 la 15 ani a urmat cursurile Școlii de Muzică și Arte Plastice nr. 5 din București, studiind pian, chitară, teorie muzicală și cor.",
-    "teacher.matei-alexandru.bio.1": "De-a lungul timpului a fost laureat al unor concursuri de interpretare vocală, la chitară și la pian, și a coordonat ateliere de artă muzicală în cadrul unor proiecte educaționale. Actualmente compune și cântă în formația A Theory of Harmony.",
-    "teacher.matei-alexandru.bio.2": "La ora de instrument ofer elevului nu numai cunoașterea instrumentului prin tehnici specifice pianului sau chitarei, ci și uneltele necesare pentru a înțelege muzica în întregul ei. Urmăresc ca elevul să devină un interpret cu impact și în același timp un artist profund și inteligent.",
 
     "teacher.daniel-iudean.specialty": "✦ Tobe · Percuție",
     "teacher.daniel-iudean.bio.0": "La 6 ani începe cursurile la Liceul de Artă din Târgu Mureș la secția de pian. La 10 ani, atras de instrumentele de percuție, își schimbă instrumentul și este premiat la olimpiadele de muzică regionale și naționale, remarcându-se la marimbă.",
@@ -360,10 +356,6 @@
     "teacher.daniela-bazac.bio.2": "With over 17 years of stage experience, Dana has performed at numerous concerts and events since 2014, collaborating with various bands and music projects in Romania.",
     "teacher.daniela-bazac.bio.3": "As a piano teacher and vocal coach, Dana creates a safe and encouraging environment for her students, where they can explore, experiment and grow at their own pace. Her approach combines technical rigour with the development of confidence and expressiveness, with an emphasis on authenticity — the essence of any artistic act.",
 
-    "teacher.matei-alexandru.specialty": "✦ Piano · Guitar · Music Theory",
-    "teacher.matei-alexandru.bio.0": "Matei's calling for music showed from a very young age, through his fascination with instruments and his musical expression of emotions. At 5 he began studying piano with private lessons, and from ages 7 to 15 he attended the School of Music and Fine Arts no. 5 in Bucharest, studying piano, guitar, music theory and choir.",
-    "teacher.matei-alexandru.bio.1": "Over time he has won several vocal performance, guitar and piano competitions, and has coordinated music art workshops within educational projects. He currently composes and performs with the band A Theory of Harmony.",
-    "teacher.matei-alexandru.bio.2": "In instrument lessons I give students not only knowledge of the instrument through techniques specific to piano or guitar, but also the tools needed to understand music in its entirety. My aim is for the student to become a performer with impact and, at the same time, a deep and intelligent artist.",
 
     "teacher.daniel-iudean.specialty": "✦ Drums · Percussion",
     "teacher.daniel-iudean.bio.0": "At 6 he starts classes at the Art High School in Târgu Mureș, in the piano department. At 10, drawn to percussion instruments, he switches instrument and is awarded at regional and national music olympiads, standing out on the marimba.",

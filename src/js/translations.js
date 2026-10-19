@@ -41,7 +41,7 @@ window.NMA_TRANSLATIONS = {
     "hero.value.1": "Libertate",
     "hero.value.2": "Creativitate",
     "hero.value.3": "Evoluție",
-    "hero.team": "Cunoaște cei <strong>10 profesori</strong> ai academiei",
+    "hero.team": "Cunoaște cei <strong>9 profesori</strong> ai academiei",
 
     /* CURSURI */
     "cursuri.aria": "Cursuri disponibile",
@@ -146,9 +146,6 @@ window.NMA_TRANSLATIONS = {
     "teachers.alt.dana": "Dana Bazac — Pian · Vocal Coach",
     "teachers.dana.pre": "✦ Pian · Vocal Coach CVT",
     "teachers.dana.bio": "Absolventă UNMB – Compoziție, masterandă în prezent. Cu peste 17 ani de scenă și CVT ca metodă vocală definitorie, predă pian și canto punând accent pe autenticitate și încredere în sine.",
-    "teachers.alt.matei": "Matei Alexandru — Pian, Chitară, Teorie",
-    "teachers.matei.pre": "✦ Pian · Chitară · Teorie Muzicală",
-    "teachers.matei.bio": "A început studiul pianului la 5 ani, urmând cursurile Școlii de Muzică nr. 5 din București unde a studiat pian, chitară, teorie și cor. Laureat la concursuri de interpretare vocală, la chitară și pian. Compune și cântă în formația A Theory of Harmony și transmite pasiunea pentru muzică printr-o abordare care îmbină practic și teoretic.",
     "teachers.alt.daniel": "Daniel Iudean — Tobe",
     "teachers.daniel.pre": "✦ Tobe · Percuție",
     "teachers.daniel.bio": "Absolvent al Universității Naționale de Muzică din București — instrumente de percuție. Câștigător al concursului Constantin Silvestri, a studiat la Stewarts Melville College din Edinburgh. Colaborator permanent în trupa Loredanei Groza din 2011, a colaborat și cu Keo, Alexandra Ungureanu, Skizzo Skillz. Profesor de tobe din 2018.",
@@ -390,7 +387,7 @@ window.NMA_TRANSLATIONS = {
     "hero.value.1": "Freedom",
     "hero.value.2": "Creativity",
     "hero.value.3": "Evolution",
-    "hero.team": "Meet our <strong>10 teachers</strong>",
+    "hero.team": "Meet our <strong>9 teachers</strong>",
 
     /* CURSURI */
     "cursuri.aria": "Available courses",
@@ -495,9 +492,6 @@ window.NMA_TRANSLATIONS = {
     "teachers.alt.dana": "Dana Bazac — Piano · Vocal Coach",
     "teachers.dana.pre": "✦ Piano · CVT Vocal Coach",
     "teachers.dana.bio": "Graduate of UNMB – Composition, currently a master's student. With over 17 years on stage and CVT as her defining vocal method, she teaches piano and singing with a focus on authenticity and self-confidence.",
-    "teachers.alt.matei": "Matei Alexandru — Piano, Guitar, Theory",
-    "teachers.matei.pre": "✦ Piano · Guitar · Music Theory",
-    "teachers.matei.bio": "Began studying piano at age 5, attending Music School no. 5 in Bucharest, where he studied piano, guitar, theory and choir. Prize winner in vocal interpretation, guitar and piano competitions. He composes and performs with the band A Theory of Harmony and shares his passion for music through an approach that combines practice and theory.",
     "teachers.alt.daniel": "Daniel Iudean — Drums",
     "teachers.daniel.pre": "✦ Drums · Percussion",
     "teachers.daniel.bio": "Graduate of the National University of Music Bucharest — percussion instruments. Winner of the Constantin Silvestri competition, he studied at Stewarts Melville College in Edinburgh. Permanent collaborator in Loredana Groza's band since 2011, he has also worked with Keo, Alexandra Ungureanu and Skizzo Skillz. Drum teacher since 2018.",

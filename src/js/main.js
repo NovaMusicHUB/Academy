@@ -272,19 +272,6 @@ function tr(key, vars) {
         "teacher.daniela-bazac.bio.3",
       ],
     },
-    "matei-alexandru": {
-      name: "Matei Alexandru",
-      specialty: "teacher.matei-alexandru.specialty",
-      photos: [
-        base + "Matei%20Alexandru.jpg",
-        base + "Matei%20Alexandru%202.jpg",
-      ],
-      bio: [
-        "teacher.matei-alexandru.bio.0",
-        "teacher.matei-alexandru.bio.1",
-        quote("teacher.matei-alexandru.bio.2"),
-      ],
-    },
     "daniel-iudean": {
       name: "Daniel Iudean",
       specialty: "teacher.daniel-iudean.specialty",
