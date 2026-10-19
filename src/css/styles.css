@@ -522,19 +522,23 @@ h3 {
     position: absolute;
     inset: 0;
     z-index: 1;
-    background: linear-gradient(
-        155deg,
-        rgba(26, 26, 46, 0.68) 0%,
-        rgba(26, 26, 46, 0.52) 40%,
-        rgba(26, 26, 46, 0.72) 100%
-    );
+    background:
+        linear-gradient(
+            90deg,
+            rgba(16, 16, 32, 0.94) 0%,
+            rgba(20, 20, 38, 0.84) 34%,
+            rgba(26, 26, 46, 0.5) 64%,
+            rgba(26, 26, 46, 0.3) 100%
+        ),
+        linear-gradient(180deg, rgba(16, 16, 32, 0.35) 0%, transparent 22%, transparent 72%, rgba(16, 16, 32, 0.7) 100%);
 }
 
 .hero__content {
     position: relative;
     z-index: 2;
     padding-block: 8rem 5rem;
-    max-width: 800px;
+    width: 100%;
+    max-width: var(--container-max);
 }
 
 /* Intent Selector */
@@ -584,50 +588,145 @@ h3 {
     opacity: 0.75;
 }
 
-/* Hero Text */
+/* Hero Text — v2: brand, tagline, valori, echipa */
+.hero__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.875rem;
+    margin-bottom: 1.75rem;
+    font-family: var(--font-sans);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.78);
+}
+.hero__eyebrow::before {
+    content: "";
+    width: 2.5rem;
+    height: 1px;
+    background: var(--color-highlight);
+}
+
 .hero__main-title {
-    font-size: var(--text-h1);
-    font-weight: 900;
+    margin: 0 0 1.25rem;
     color: var(--color-white);
-    margin-bottom: 1.5rem;
-    line-height: 1.1;
+    line-height: 1;
+}
+.hero__brand {
+    display: block;
+    font-family: var(--font-serif);
+    font-weight: 900;
+    font-size: clamp(3rem, 8vw, 6.75rem);
+    line-height: 0.95;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+    text-shadow: 0 2px 30px rgba(10, 10, 25, 0.35);
+}
+.hero__brand-sub {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.9rem;
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-size: clamp(0.95rem, 1.7vw, 1.35rem);
+    letter-spacing: 0.62em;
+    text-transform: uppercase;
+    color: var(--color-highlight);
+}
+.hero__brand-sub::after {
+    content: "";
+    flex: 0 1 7rem;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(242, 201, 76, 0.7), transparent);
 }
 
 .hero__tagline {
-    font-size: clamp(1.25rem, 2.2vw, 1.75rem);
-    color: rgba(255, 255, 255, 0.82);
-    max-width: 560px;
-    line-height: 1.7;
-    margin-bottom: 3rem;
-    font-weight: 600;
-}
-
-.hero__preheader {
-    color: var(--color-highlight) !important;
-    margin-bottom: 1rem;
-    display: none !important;
-}
-
-.hero__headline {
-    font-size: clamp(1.1rem, 1.8vw, 1.5rem);
+    margin: 0 0 1.75rem;
+    font-family: var(--font-handwriting);
     font-weight: 700;
+    font-size: clamp(1.9rem, 3.4vw, 2.75rem);
+    line-height: 1.15;
     color: var(--color-white);
-    margin-bottom: 2.25rem;
-    line-height: 1.3;
-    letter-spacing: 0.05em;
 }
 
-.hero__headline em {
-    font-style: italic;
+.hero__values {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1.25rem;
+    margin: 0 0 2.75rem;
+    padding: 0;
+    list-style: none;
+}
+.hero__values li {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.25rem;
+    font-family: var(--font-sans);
+    font-size: clamp(0.8rem, 1.1vw, 0.95rem);
+    font-weight: 600;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.92);
+}
+.hero__values li + li::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(224, 122, 95, 0.22);
+}
+
+.hero__team {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1.25rem 0.5rem 0.5rem;
+    border-radius: var(--radius-full);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    color: rgba(255, 255, 255, 0.86);
+    font-size: 0.9375rem;
+    text-decoration: none;
+    transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+.hero__team:hover,
+.hero__team:focus-visible {
+    background: rgba(255, 255, 255, 0.14);
+    border-color: rgba(242, 201, 76, 0.5);
+    transform: translateY(-2px);
+}
+.hero__team strong {
+    color: var(--color-white);
+    font-weight: 700;
+}
+.hero__team-faces {
+    display: flex;
+    flex-shrink: 0;
+}
+.hero__team-faces img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #23233a;
+    background: #23233a;
+}
+.hero__team-faces img + img {
+    margin-left: -11px;
+}
+.hero__team-arrow {
     color: var(--color-highlight);
+    transition: transform 0.25s ease;
 }
-
-.hero__subheadline {
-    font-size: clamp(1rem, 1.4vw, 1.2rem);
-    color: rgba(255, 255, 255, 0.82);
-    max-width: 560px;
-    line-height: 1.7;
-    margin-bottom: 2.25rem;
+.hero__team:hover .hero__team-arrow {
+    transform: translateX(4px);
 }
 
 .hero__cta-group {
@@ -3093,11 +3192,20 @@ h3 {
 .hero__preheader {
     animation: fadeUp 0.6s ease both 0.2s;
 }
-.hero__headline {
-    animation: fadeUp 0.7s ease both 0.38s;
+.hero__eyebrow {
+    animation: fadeUp 0.6s ease both 0.1s;
 }
-.hero__subheadline {
-    animation: fadeUp 0.65s ease both 0.56s;
+.hero__main-title {
+    animation: fadeUp 0.8s ease both 0.22s;
+}
+.hero__tagline {
+    animation: fadeUp 0.7s ease both 0.42s;
+}
+.hero__values {
+    animation: fadeUp 0.7s ease both 0.56s;
+}
+.hero__team {
+    animation: fadeIn 0.7s ease both 0.95s;
 }
 .hero__cta-group {
     animation: fadeUp 0.65s ease both 0.72s;
@@ -3158,8 +3266,11 @@ h3 {
     .section-reveal,
     .intent-selector,
     .hero__preheader,
-    .hero__headline,
-    .hero__subheadline,
+    .hero__eyebrow,
+    .hero__main-title,
+    .hero__tagline,
+    .hero__values,
+    .hero__team,
     .hero__cta-group,
     .hero__trust {
         animation: none !important;
@@ -3373,5 +3484,60 @@ h3 {
     .nav__login {
         padding: 0.5rem 0.85rem;
         font-size: 0.78rem;
+    }
+}
+
+/* ── HERO v2 — mobil ─────────────────────────────────────── */
+@media (max-width: 768px) {
+    .hero__overlay {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(16, 16, 32, 0.6) 0%,
+                rgba(16, 16, 32, 0.72) 45%,
+                rgba(16, 16, 32, 0.9) 100%
+            );
+    }
+    .hero__eyebrow {
+        font-size: 0.7rem;
+        letter-spacing: 0.18em;
+        margin-bottom: 1.25rem;
+    }
+    .hero__eyebrow::before {
+        width: 1.75rem;
+    }
+    .hero__brand {
+        font-size: clamp(2.6rem, 12.5vw, 3.5rem);
+    }
+    .hero__brand-sub {
+        letter-spacing: 0.5em;
+        margin-top: 0.6rem;
+    }
+    .hero__values {
+        gap: 0.4rem 0.75rem;
+        margin-bottom: 2.25rem;
+    }
+    .hero__values li {
+        gap: 0.75rem;
+        letter-spacing: 0.18em;
+        font-size: 0.75rem;
+    }
+    .hero__cta-group {
+        align-items: stretch;
+    }
+    .hero__cta-group .btn {
+        justify-content: center;
+        text-align: center;
+    }
+    .hero__team {
+        font-size: 0.8125rem;
+        gap: 0.75rem;
+    }
+    .hero__team-faces img {
+        width: 30px;
+        height: 30px;
+    }
+    .hero__team-faces img:nth-child(n + 6) {
+        display: none;
     }
 }

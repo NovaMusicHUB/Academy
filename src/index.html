@@ -42,7 +42,7 @@
             rel="stylesheet"
         />
 
-        <link rel="stylesheet" href="css/styles.css?v=5" />
+        <link rel="stylesheet" href="css/styles.css?v=6" />
 
         <!-- Meta Pixel Code -->
         <script>
@@ -275,29 +275,23 @@
 
             <!-- Content -->
             <div class="hero__content container">
-
+                <p class="hero__eyebrow" data-i18n="hero.eyebrow">Școală de muzică · București</p>
 
                 <!-- H1 SEO -->
                 <h1 class="hero__main-title">
-                    NOVA MUSIC ACADEMY
+                    <span class="hero__brand">Nova Music</span>
+                    <span class="hero__brand-sub">Academy</span>
                 </h1>
 
                 <!-- Tagline -->
-                <p class="hero__tagline" data-i18n="hero.tagline">
-                    Din pasiune pentru muzică.
-                </p>
+                <p class="hero__tagline" data-i18n="hero.tagline">Din pasiune pentru muzică</p>
 
-                <!-- Visual headline (Values) -->
-                <p class="hero__headline">
-                    <span data-i18n="hero.headline">LIBERTATE.</span><br />
-                    <span>CREATIVITATE.</span><br />
-                    <em data-i18n="hero.headline.em">EVOLUȚIE.</em>
-                </p>
-
-                <!-- Subheadline -->
-                <p class="hero__subheadline" data-i18n="hero.subheadline" style="display: none;">
-                    Din pasiune pentru muzică.
-                </p>
+                <!-- Valori -->
+                <ul class="hero__values" aria-label="Valorile noastre" data-i18n-aria="hero.values.aria">
+                    <li data-i18n="hero.value.1">Libertate</li>
+                    <li data-i18n="hero.value.2">Creativitate</li>
+                    <li data-i18n="hero.value.3">Evoluție</li>
+                </ul>
 
                 <!-- CTAs -->
                 <div class="hero__cta-group">
@@ -315,18 +309,22 @@
                     </a>
                 </div>
 
-                <!-- Trust signals -->
-                <div class="hero__trust" role="list" aria-label="Garanții" data-i18n-aria="hero.trust.aria" style="display: none;">
-                    <span class="trust-item" role="listitem" data-i18n="hero.trust.1"
-                        >✓ 300+ studenți mulțumiți</span
-                    >
-                    <span class="trust-item" role="listitem" data-i18n="hero.trust.2"
-                        >✓ Profesori verificați</span
-                    >
-                    <span class="trust-item" role="listitem" data-i18n="hero.trust.3"
-                        >✓ Metodă dovedită</span
-                    >
-                </div>
+                <!-- Echipa: profesorii reali ai academiei -->
+                <a class="hero__team" href="#profesori">
+                    <span class="hero__team-faces" aria-hidden="true">
+                        <img src="assets/images/hero-team/jessica-diana.webp" alt="" width="56" height="56" loading="eager" decoding="async" />
+                        <img src="assets/images/hero-team/daniela-bazac.webp" alt="" width="56" height="56" loading="eager" decoding="async" />
+                        <img src="assets/images/hero-team/matei-alexandru.webp" alt="" width="56" height="56" loading="eager" decoding="async" />
+                        <img src="assets/images/hero-team/mihail-tirica.webp" alt="" width="56" height="56" loading="eager" decoding="async" />
+                        <img src="assets/images/hero-team/antonia-ivascu.webp" alt="" width="56" height="56" loading="eager" decoding="async" />
+                        <img src="assets/images/hero-team/daniel-iudean.webp" alt="" width="56" height="56" loading="eager" decoding="async" />
+                        <img src="assets/images/hero-team/feli-dilbea.webp" alt="" width="56" height="56" loading="eager" decoding="async" />
+                        <img src="assets/images/hero-team/stefan-laurentiu.webp" alt="" width="56" height="56" loading="eager" decoding="async" />
+                        <img src="assets/images/hero-team/bubuci-nelu.webp" alt="" width="56" height="56" loading="eager" decoding="async" />
+                    </span>
+                    <span class="hero__team-text" data-i18n-html="hero.team">Cunoaște cei <strong>9 profesori</strong> ai academiei</span>
+                    <span class="hero__team-arrow" aria-hidden="true">→</span>
+                </a>
             </div>
 
             <!-- Scroll cue -->
@@ -3000,6 +2998,6 @@
         <script src="js/translations-app.js" defer></script>
         <script src="js/translations-teachers.js" defer></script>
         <script src="js/i18n.js?v=2" defer></script>
-        <script src="js/main.js?v=5" defer></script>
+        <script src="js/main.js?v=6" defer></script>
     </body>
 </html>

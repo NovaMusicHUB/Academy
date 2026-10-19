@@ -35,6 +35,13 @@ window.NMA_TRANSLATIONS = {
     "hero.trust.1": "✓ 300+ studenți mulțumiți",
     "hero.trust.2": "✓ Profesori verificați",
     "hero.trust.3": "✓ Metodă dovedită",
+    "hero.eyebrow": "Școală de muzică · București",
+    "hero.tagline": "Din pasiune pentru muzică",
+    "hero.values.aria": "Valorile noastre",
+    "hero.value.1": "Libertate",
+    "hero.value.2": "Creativitate",
+    "hero.value.3": "Evoluție",
+    "hero.team": "Cunoaște cei <strong>9 profesori</strong> ai academiei",
 
     /* CURSURI */
     "cursuri.aria": "Cursuri disponibile",
@@ -374,6 +381,13 @@ window.NMA_TRANSLATIONS = {
     "hero.trust.1": "✓ 300+ happy students",
     "hero.trust.2": "✓ Verified teachers",
     "hero.trust.3": "✓ Proven method",
+    "hero.eyebrow": "Music school · Bucharest",
+    "hero.tagline": "Out of a passion for music",
+    "hero.values.aria": "Our values",
+    "hero.value.1": "Freedom",
+    "hero.value.2": "Creativity",
+    "hero.value.3": "Evolution",
+    "hero.team": "Meet our <strong>9 teachers</strong>",
 
     /* CURSURI */
     "cursuri.aria": "Available courses",

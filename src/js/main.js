@@ -378,6 +378,9 @@ function tr(key, vars) {
     specialtyEl.textContent = tr(teacher.specialty);
     nameEl.textContent = teacher.name;
 
+    const pageLink = document.getElementById("teacher-modal-page");
+    if (pageLink) pageLink.href = "profesori/" + key + "/";
+
     bioEl.innerHTML = teacher.bio
       .map((p) =>
         typeof p === "string"
