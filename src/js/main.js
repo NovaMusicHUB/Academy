@@ -353,7 +353,7 @@ function tr(key, vars) {
     "andrei-comsa": {
       name: "Andrei Comșa",
       specialty: "teacher.andrei-comsa.specialty",
-      photos: [base + "Andrei%20Comsa.jpg"],
+      photos: [base + "Andrei%20Comsa%201.jpg"],
       bio: [
         "teacher.andrei-comsa.bio.0",
         "teacher.andrei-comsa.bio.1",
