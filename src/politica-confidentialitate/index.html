@@ -15,32 +15,7 @@
         <link rel="icon" href="../assets/images/logo-icon.png" type="image/png" />
 
         <!-- Meta Pixel Code -->
-        <script>
-            !(function (f, b, e, v, n, t, s) {
-                if (f.fbq) return;
-                n = f.fbq = function () {
-                    n.callMethod
-                        ? n.callMethod.apply(n, arguments)
-                        : n.queue.push(arguments);
-                };
-                if (!f._fbq) f._fbq = n;
-                n.push = n;
-                n.loaded = !0;
-                n.version = "2.0";
-                n.queue = [];
-                t = b.createElement(e);
-                t.async = !0;
-                t.src = v;
-                s = b.getElementsByTagName(e)[0];
-                s.parentNode.insertBefore(t, s);
-            })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
-            fbq("init", "1841691336722567");
-            fbq("track", "PageView");
-        </script>
-        <noscript
-            ><img height="1" width="1" style="display: none"
-            src="https://www.facebook.com/tr?id=1841691336722567&ev=PageView&noscript=1"
-        /></noscript>
+    <script src="/js/consent.js" defer></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -616,6 +591,10 @@
                 </table>
                 <p data-i18n-html="pol.s8.p2">
                     Poți controla sau dezactiva cookie-urile din setările browserului tău. Reține că dezactivarea anumitor cookie-uri poate afecta funcționalitatea site-ului. Pentru a opta împotriva cookie-urilor Meta, accesează <a href="https://www.facebook.com/privacy/policies/cookies/" target="_blank" rel="noopener">politica de cookie-uri Facebook</a>.
+                </p>
+                <p>
+                    Meta Pixel se încarcă doar după ce îți dai acordul în fereastra de cookie-uri. Îți poți schimba oricând alegerea:
+                    <button type="button" onclick="window.novaCookieSettings &amp;&amp; window.novaCookieSettings()" style="margin-left:6px;border:1px solid currentColor;border-radius:8px;padding:4px 10px;background:transparent;cursor:pointer;font:inherit">Setări cookie-uri</button>
                 </p>
             </section>
 
