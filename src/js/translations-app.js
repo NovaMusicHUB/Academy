@@ -175,6 +175,10 @@
     "teacher.stefania-biciin.bio.2": "Cu o abordare empatică, răbdătoare și structurată, îi încurajează pe cursanți să își descopere vocea, să își dezvolte tehnica vocală și să capete încredere în propriile abilități.",
     "teacher.stefania-biciin.bio.3": "În paralel, activează ca backing vocalist în diverse trupe live, aducând experiența scenei în procesul de predare.",
     "teacher.stefania-biciin.bio.4": "Pentru Ștefania, vocea este mai mult decât un instrument: este o formă autentică de exprimare, descoperire și evoluție personală.",
+    "teacher.justina-cosarca.specialty": "✦ Canto CVT",
+    "teacher.justina-cosarca.bio.0": "Pentru Justina Coșarcă, muzica reprezintă echilibrul dintre rigoarea studiului și libertatea exprimării artistice. Pregătirea sa în compoziție clasică, îmbinată cu principiile metodei Complete Vocal Technique (CVT), îi permite să ofere cursanților o bază tehnică solidă, adaptată personalității, nevoilor și stilului muzical al fiecăruia.",
+    "teacher.justina-cosarca.bio.1": "În activitatea sa ca profesor de canto la Nova Music Academy, Justina lucrează cu aceeași pasiune atât cu cei mici, aflați la începutul descoperirii muzicii, cât și cu adulții care își doresc să își dezvolte abilitățile vocale.",
+    "teacher.justina-cosarca.bio.2": "Crede că fiecare voce are o identitate și o poveste proprie, iar misiunea sa este să îi ajute pe cursanți să își descopere potențialul, să își dezvolte expresivitatea și să cânte cu libertate și încredere.",
 
     /* ── Modal resursă ── */
     "res.close": "Închide resursa",
@@ -394,6 +398,10 @@
     "teacher.stefania-biciin.bio.2": "With an empathetic, patient and structured approach, she encourages students to discover their voice, develop their vocal technique and gain confidence in their own abilities.",
     "teacher.stefania-biciin.bio.3": "Alongside teaching, she works as a backing vocalist with various live bands, bringing her stage experience into the lessons.",
     "teacher.stefania-biciin.bio.4": "For Ștefania, the voice is more than an instrument: it is an authentic form of expression, discovery and personal growth.",
+    "teacher.justina-cosarca.specialty": "✦ Canto CVT",
+    "teacher.justina-cosarca.bio.0": "For Justina Coșarcă, music is the balance between the rigour of study and the freedom of artistic expression. Her training in classical composition, combined with the principles of Complete Vocal Technique (CVT), allows her to give students a solid technical foundation, adapted to each one's personality, needs and musical style.",
+    "teacher.justina-cosarca.bio.1": "As a singing teacher at Nova Music Academy, Justina works with the same passion both with young children at the start of their musical journey and with adults who want to develop their vocal skills.",
+    "teacher.justina-cosarca.bio.2": "She believes every voice has its own identity and story, and her mission is to help students discover their potential, develop their expressiveness and sing with freedom and confidence.",
 
     /* ── Resource modal ── */
     "res.close": "Close resource",

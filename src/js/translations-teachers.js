@@ -54,7 +54,10 @@
   "tp.stefania-biciin.title": "Ștefania Bîcîin — Canto CVT | Nova Music Academy",
   "tp.stefania-biciin.desc": "Pasionată de muzică și de explorarea vocii, Ștefania Bîcîin și-a construit parcursul artistic prin studiu, perseverență și dorința continuă de evoluție.",
   "tp.stefania-biciin.photo.1": "Ștefania Bîcîin — foto 1",
-  "tp.stefania-biciin.photo.2": "Ștefania Bîcîin — foto 2"
+  "tp.stefania-biciin.photo.2": "Ștefania Bîcîin — foto 2",
+  "tp.justina-cosarca.title": "Justina Coșarcă — Canto CVT | Nova Music Academy",
+  "tp.justina-cosarca.desc": "Pentru Justina Coșarcă, muzica reprezintă echilibrul dintre rigoarea studiului și libertatea exprimării artistice. Pregătirea sa în compoziție clasică,…",
+  "tp.justina-cosarca.photo.1": "Justina Coșarcă — foto 1"
 });
   Object.assign(T.en, {
   "tp.crumb.home": "Home",
@@ -107,6 +110,9 @@
   "tp.stefania-biciin.title": "Ștefania Bîcîin — Canto CVT | Nova Music Academy",
   "tp.stefania-biciin.desc": "Passionate about music and about exploring the voice, Ștefania Bîcîin has built her artistic path through study, perseverance and a constant desire to…",
   "tp.stefania-biciin.photo.1": "Ștefania Bîcîin — photo 1",
-  "tp.stefania-biciin.photo.2": "Ștefania Bîcîin — photo 2"
+  "tp.stefania-biciin.photo.2": "Ștefania Bîcîin — photo 2",
+  "tp.justina-cosarca.title": "Justina Coșarcă — Canto CVT | Nova Music Academy",
+  "tp.justina-cosarca.desc": "For Justina Coșarcă, music is the balance between the rigour of study and the freedom of artistic expression. Her training in classical composition,…",
+  "tp.justina-cosarca.photo.1": "Justina Coșarcă — photo 1"
 });
 })();

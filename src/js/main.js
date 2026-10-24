@@ -360,6 +360,16 @@ function tr(key, vars) {
         "teacher.stefania-biciin.bio.4",
       ],
     },
+    "justina-cosarca": {
+      name: "Justina Coșarcă",
+      specialty: "teacher.justina-cosarca.specialty",
+      photos: [base + "Justina%20Cosarca%201.jpg"],
+      bio: [
+        "teacher.justina-cosarca.bio.0",
+        "teacher.justina-cosarca.bio.1",
+        "teacher.justina-cosarca.bio.2",
+      ],
+    },
   };
 
   // Paragraf marcat ca citat: se randează ca <blockquote> în loc de <p>
