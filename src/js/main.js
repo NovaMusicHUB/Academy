@@ -1,7 +1,7 @@
 /* Toate butoanele de rezervare / programare duc în portal: elevul își face
    cont (sau intră în cont) și de acolo își alege disciplina, profesorul și ora.
    Contactul (telefon, WhatsApp, email) rămâne neschimbat. */
-const PORTAL_SIGNUP = "https://portal.novamusicacademy.ro/?cont=nou";
+const PORTAL_SIGNUP = "https://portal.novamusicacademy.ro/programeaza?src=site";
 function goToPortal() {
   const lang = window.NMA_getLang ? window.NMA_getLang() : "ro";
   window.location.href = PORTAL_SIGNUP + "&lang=" + encodeURIComponent(lang);
