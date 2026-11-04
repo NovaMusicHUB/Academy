@@ -3541,3 +3541,35 @@ h3 {
         display: none;
     }
 }
+
+/* Hero: limbile în care se țin lecțiile */
+.hero__langs {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin: -1.25rem 0 2.25rem;
+    padding: 0.45rem 1rem 0.45rem 0.8rem;
+    border-radius: var(--radius-full);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.9375rem;
+    animation: fadeUp 0.7s ease both 0.64s;
+}
+.hero__langs::before {
+    content: "🌍";
+    font-size: 1rem;
+}
+.hero__langs strong {
+    color: var(--color-white);
+    font-weight: 600;
+}
+@media (max-width: 768px) {
+    .hero__langs {
+        margin: -1rem 0 1.75rem;
+        font-size: 0.8125rem;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .hero__langs { animation: none; }
+}

@@ -3,7 +3,7 @@ window.NMA_TRANSLATIONS = {
   ro: {
     /* META */
     "meta.title": "Scoala de muzica in Bucuresti | Nova Music Academy",
-    "meta.description": "Cursuri de pian, chitara si canto pentru copii si adulti in Bucuresti. Nova Music Academy.",
+    "meta.description": "Cursuri de pian, chitară și canto pentru copii și adulți în București. Lecții în română, engleză și spaniolă. Nova Music Academy.",
     "meta.keywords": "scoala de muzica in Bucuresti, cursuri pian Bucuresti, cursuri chitara Bucuresti, cursuri canto CVT, lectii muzica copii adulti, academia muzica Bucuresti",
     "meta.og.title": "Nova Music Academy — Lecții de Muzică Premium în București",
     "meta.og.description": "Muzica nu se predă. Se descoperă împreună. Profesori pasionați, metode dovedite.",
@@ -42,6 +42,7 @@ window.NMA_TRANSLATIONS = {
     "hero.value.2": "Creativitate",
     "hero.value.3": "Evoluție",
     "hero.team": "Cunoaște cei <strong>10 profesori</strong> ai academiei",
+    "hero.langs": "Lecții în <strong>română</strong>, <strong>engleză</strong> și <strong>spaniolă</strong>",
 
     /* CURSURI */
     "cursuri.aria": "Cursuri disponibile",
@@ -120,7 +121,7 @@ window.NMA_TRANSLATIONS = {
     "features.f4.title": "Mediu Sigur & Suportiv",
     "features.f4.desc": "Greșelile sunt parte din proces. Atmosfera noastră elimină frica de eșec și celebrează fiecare pas.",
     "features.f5.title": "Flexibilitate Completă",
-    "features.f5.desc": "Lecții față-în-față în București sau online oriunde. Programul tău, ritmul tău.",
+    "features.f5.desc": "Lecții față-în-față în București sau online, în română, engleză sau spaniolă. Programul tău, ritmul tău.",
     "features.f6.title": "Ședință Introductivă",
     "features.f6.desc": "Prima întâlnire cu profesorul tău — discutăm obiectivele, nivelul actual și planul personalizat.",
 
@@ -269,6 +270,8 @@ window.NMA_TRANSLATIONS = {
     "faq.a8": "Pentru fiecare membru activ cu abonament la preț standard, un alt membru al familiei înscris la școala noastră beneficiază de o reducere de 10%. Reducerea este valabilă și dacă el se înscrie la un curs diferit de cel al membrului activ. Mai mult decât atât, avem un sistem de recompensă pentru cursanții activi ce recomandă cursurile noastre prietenilor.",
     "faq.q9": "Cursurile se desfășoară numai fizic?",
     "faq.a9": "Nu, anumite cursuri individuale se pot desfășura și online.",
+    "faq.q10": "Se pot face lecții în engleză sau spaniolă?",
+    "faq.a10": "Da. Pe lângă limba română, susținem lecții și în limba engleză și în limba spaniolă. Spune-ne limba preferată când programezi lecția de probă și te punem în legătură cu profesorul potrivit.",
 
     /* FLOATING WHATSAPP */
     "whatsapp.aria": "Contactează-ne pe WhatsApp",
@@ -352,7 +355,7 @@ window.NMA_TRANSLATIONS = {
   en: {
     /* META */
     "meta.title": "Music School in Bucharest | Nova Music Academy",
-    "meta.description": "Piano, guitar and singing lessons for children and adults in Bucharest. Nova Music Academy.",
+    "meta.description": "Piano, guitar and singing lessons for children and adults in Bucharest. Lessons in English, Spanish and Romanian. Nova Music Academy.",
     "meta.keywords": "music school in Bucharest, piano lessons Bucharest, guitar lessons Bucharest, CVT singing lessons, music lessons for kids and adults, music academy Bucharest",
     "meta.og.title": "Nova Music Academy — Premium Music Lessons in Bucharest",
     "meta.og.description": "Music is not taught. It is discovered together. Passionate teachers, proven methods.",
@@ -391,6 +394,7 @@ window.NMA_TRANSLATIONS = {
     "hero.value.2": "Creativity",
     "hero.value.3": "Evolution",
     "hero.team": "Meet our <strong>10 teachers</strong>",
+    "hero.langs": "Lessons in <strong>English</strong>, <strong>Spanish</strong> and <strong>Romanian</strong>",
 
     /* CURSURI */
     "cursuri.aria": "Available courses",
@@ -469,7 +473,7 @@ window.NMA_TRANSLATIONS = {
     "features.f4.title": "Safe & Supportive Environment",
     "features.f4.desc": "Mistakes are part of the process. Our atmosphere eliminates fear of failure and celebrates every step.",
     "features.f5.title": "Complete Flexibility",
-    "features.f5.desc": "Face-to-face lessons in Bucharest or online anywhere. Your schedule, your pace.",
+    "features.f5.desc": "Face-to-face lessons in Bucharest or online, in English, Spanish or Romanian. Your schedule, your pace.",
     "features.f6.title": "Introductory Session",
     "features.f6.desc": "First meeting with your teacher — we discuss goals, current level and build a personalized plan.",
 
@@ -618,6 +622,8 @@ window.NMA_TRANSLATIONS = {
     "faq.a8": "For each active member with a standard-price subscription, another family member enrolled at our school receives a 10% discount. The discount also applies if they enroll in a different course from the active member's. Moreover, we have a reward system for active students who recommend our courses to their friends.",
     "faq.q9": "Are courses only held in person?",
     "faq.a9": "No, certain individual courses can also be held online.",
+    "faq.q10": "Can I take lessons in English or Spanish?",
+    "faq.a10": "Yes. Besides Romanian, we also teach in English and in Spanish. Just tell us your preferred language when you book the trial lesson and we will match you with the right teacher.",
 
     /* FLOATING WHATSAPP */
     "whatsapp.aria": "Contact us on WhatsApp",
