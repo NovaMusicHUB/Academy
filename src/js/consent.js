@@ -31,7 +31,41 @@
     })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
     window.fbq("init", PIXEL_ID);
     window.fbq("track", "PageView");
+    // eveniment de pagină (ex. pagina unui profesor): <body data-fb-view='{"content_name":"..."}'>
+    try {
+      var v = document.body && document.body.getAttribute("data-fb-view");
+      if (v) window.fbq("track", "ViewContent", JSON.parse(v));
+    } catch (e) {}
   }
+
+  // ── Evenimente Meta Pixel (se trimit DOAR dacă vizitatorul a acceptat) ──
+  var STANDARD = ["ViewContent", "Lead", "Contact", "InitiateCheckout", "Schedule", "CompleteRegistration", "Purchase"];
+  window.novaTrack = function (name, params) {
+    if (typeof window.fbq !== "function") return;
+    if (STANDARD.indexOf(name) >= 0) window.fbq("track", name, params || {});
+    else window.fbq("trackCustom", name, params || {});
+  };
+
+  // Click-uri importante: rezervare (portal), WhatsApp, telefon, email
+  document.addEventListener(
+    "click",
+    function (ev) {
+      var a = ev.target && ev.target.closest && ev.target.closest("a[href]");
+      if (!a || typeof window.fbq !== "function") return;
+      var href = a.getAttribute("href") || "";
+      var where = (a.closest("section[id], header, footer") || {}).id || (a.closest("header") ? "header" : a.closest("footer") ? "footer" : "");
+      if (href.indexOf("portal.novamusicacademy.ro/programeaza") >= 0 || a.classList.contains("nav__cta")) {
+        window.novaTrack("InitiateCheckout", { content_name: "Lecție de probă", content_category: "Programare", placement: where || location.pathname });
+      } else if (/^https:\/\/(wa\.me|api\.whatsapp\.com)/.test(href)) {
+        window.novaTrack("Contact", { contact_method: "whatsapp", placement: where || location.pathname });
+      } else if (href.indexOf("tel:") === 0) {
+        window.novaTrack("Contact", { contact_method: "telefon", placement: where || location.pathname });
+      } else if (href.indexOf("mailto:contact@") === 0) {
+        window.novaTrack("Contact", { contact_method: "email", placement: where || location.pathname });
+      }
+    },
+    true
+  );
 
   function en() {
     var l = (document.documentElement.getAttribute("lang") || "").toLowerCase();

@@ -430,6 +430,7 @@ function tr(key, vars) {
     activeTeacher = key;
     photoIndex = 0;
     render(key);
+    if (window.novaTrack) window.novaTrack("ViewContent", { content_name: data[key].name, content_category: "Profesor" });
 
     overlay.classList.add("is-open");
     overlay.setAttribute("aria-hidden", "false");
@@ -1019,6 +1020,7 @@ function tr(key, vars) {
 
     activeDiscipline = key;
     render(key);
+    if (window.novaTrack) window.novaTrack("ViewContent", { content_name: key, content_category: "Curs" });
 
     overlay.setAttribute("aria-hidden", "false");
     overlay.classList.add("is-open");
