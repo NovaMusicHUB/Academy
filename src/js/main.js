@@ -1222,3 +1222,16 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
   apply();
   document.addEventListener("nma:langchange", apply);
 })();
+
+/* ── STORY: „Citește toată povestea” (telefon) ──────────────── */
+(function () {
+  const section = document.getElementById("povestea-noastra");
+  const btn = section && section.querySelector(".story__toggle");
+  if (!btn) return;
+  btn.addEventListener("click", () => {
+    const open = !section.classList.contains("is-open");
+    section.classList.toggle("is-open", open);
+    btn.setAttribute("aria-expanded", String(open));
+    if (!open) section.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+})();

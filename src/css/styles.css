@@ -3577,44 +3577,54 @@ h3 {
 /* ── STORY / MANIFEST (sub-hero) ─────────────────────────────── */
 .story {
     position: relative;
-    overflow: hidden;
-    padding-block: clamp(4.5rem, 9vw, 8rem);
+    padding-block: clamp(3.5rem, 6vw, 5.5rem);
     background:
-        radial-gradient(60rem 30rem at 85% 0%, rgba(242, 201, 76, 0.12), transparent 60%),
-        radial-gradient(50rem 30rem at 0% 100%, rgba(224, 122, 95, 0.1), transparent 60%),
+        radial-gradient(50rem 26rem at 90% 0%, rgba(242, 201, 76, 0.12), transparent 60%),
+        radial-gradient(40rem 24rem at 0% 100%, rgba(224, 122, 95, 0.09), transparent 60%),
         var(--color-bg);
 }
 .story__inner {
-    position: relative;
-    max-width: 44rem;
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.4fr);
+    grid-template-areas: "head letter" "sign letter";
+    grid-template-rows: auto 1fr;
+    column-gap: clamp(2.5rem, 6vw, 5.5rem);
+    max-width: 72rem;
 }
-.story__head {
-    text-align: center;
-    margin-bottom: clamp(2.5rem, 5vw, 3.5rem);
-}
+.story__head { grid-area: head; }
+.story__letter { grid-area: letter; }
+.story__signature { grid-area: sign; align-self: start; margin-top: 2rem; }
 .story__title {
-    font-size: var(--text-h2);
+    font-size: clamp(1.9rem, 3.4vw, 2.75rem);
+    line-height: 1.12;
     margin: 0;
 }
+.story__head::after {
+    content: "";
+    display: block;
+    width: 3.5rem;
+    height: 3px;
+    margin-top: 1.4rem;
+    border-radius: 2px;
+    background: linear-gradient(90deg, var(--color-accent), var(--color-highlight));
+}
 .story__letter {
-    font-size: clamp(1.0625rem, 1.25vw, 1.1875rem);
-    line-height: 1.85;
+    font-size: clamp(1rem, 1.15vw, 1.0625rem);
+    line-height: 1.75;
     color: var(--color-base);
 }
-.story__letter p {
-    margin: 0 0 1.4em;
-}
+.story__letter p { margin: 0 0 1em; }
 .story__lead {
-    font-size: 1.15em;
-    line-height: 1.75;
+    font-size: 1.12em;
+    line-height: 1.7;
 }
 .story__lead::first-letter {
     float: left;
     font-family: var(--font-serif);
     font-weight: 900;
-    font-size: 4.1em;
+    font-size: 3.6em;
     line-height: 0.8;
-    margin: 0.08em 0.12em 0 0;
+    margin: 0.06em 0.1em 0 0;
     color: var(--color-accent);
 }
 .story__letter em {
@@ -3633,44 +3643,30 @@ h3 {
     color: var(--color-accent-dark);
 }
 .story__statement {
-    position: relative;
-    margin: 2.75rem 0 !important;
-    padding: 1.4rem 0;
-    text-align: center;
+    margin: 1.5rem 0 !important;
+    padding: 0.2rem 0 0.2rem 1.1rem;
+    border-left: 3px solid var(--color-highlight);
     font-family: var(--font-serif);
     font-weight: 900;
-    font-size: clamp(1.6rem, 3.4vw, 2.35rem);
-    line-height: 1.2;
-    color: var(--color-base);
+    font-size: clamp(1.35rem, 2.2vw, 1.65rem);
+    line-height: 1.25;
 }
-.story__statement::before,
-.story__statement::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    width: 4.5rem;
-    height: 2px;
-    transform: translateX(-50%);
-    background: linear-gradient(90deg, transparent, var(--color-highlight), transparent);
-}
-.story__statement::before { top: 0; }
-.story__statement::after { bottom: 0; }
 .story__closing {
-    margin: 2.5rem 0 1rem !important;
+    margin: 1.4rem 0 0 !important;
     font-family: var(--font-handwriting);
     font-weight: 700;
-    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-size: clamp(1.7rem, 3vw, 2.1rem);
     line-height: 1.1;
     color: var(--color-accent);
 }
 .story__signature {
     display: flex;
     align-items: center;
-    gap: 0.9rem;
+    gap: 0.85rem;
 }
 .story__signature img {
-    width: 56px;
-    height: 56px;
+    width: 52px;
+    height: 52px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 0 0 3px var(--color-bg), 0 0 0 4px rgba(224, 122, 95, 0.45);
@@ -3678,20 +3674,51 @@ h3 {
 .story__name {
     display: block;
     font-family: var(--font-handwriting);
-    font-size: 1.75rem;
+    font-size: 1.6rem;
     line-height: 1;
-    color: var(--color-base);
 }
 .story__role {
     display: block;
     margin-top: 0.3rem;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 600;
     letter-spacing: 0.16em;
     text-transform: uppercase;
     color: var(--color-base-light);
 }
-@media (max-width: 768px) {
-    .story__letter { line-height: 1.75; }
-    .story__lead::first-letter { font-size: 3.6em; }
+.story__toggle { display: none; }
+
+/* Telefon / tabletă: o coloană, doar primul paragraf + „Citește toată povestea” */
+@media (max-width: 960px) {
+    .story__inner {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas: "head" "letter" "sign";
+        grid-template-rows: auto;
+    }
+    .story__head { margin-bottom: 1.5rem; }
+    .story__head::after { margin-top: 1rem; }
+    .story__signature { margin-top: 1.5rem; }
+    .story__more { display: none; }
+    .story.is-open .story__more { display: block; }
+    .story__toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        margin-top: 0.25rem;
+        padding: 0.55rem 1.1rem;
+        border: 1.5px solid rgba(224, 122, 95, 0.45);
+        border-radius: var(--radius-full);
+        background: transparent;
+        color: var(--color-accent-dark);
+        font: 600 0.9375rem var(--font-sans);
+        cursor: pointer;
+    }
+    .story__toggle::after {
+        content: "↓";
+        transition: transform 0.25s ease;
+    }
+    .story.is-open .story__toggle::after { transform: rotate(180deg); }
+    .story__toggle-less,
+    .story.is-open .story__toggle-more { display: none; }
+    .story.is-open .story__toggle-less { display: inline; }
 }

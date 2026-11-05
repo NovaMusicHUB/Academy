@@ -55,6 +55,8 @@ window.NMA_TRANSLATIONS = {
     "story.p6": "Pentru noi, asta înseamnă <strong>familia Nova Music Academy</strong>. Un loc în care nu trebuie să demonstrezi de la început cât ești de bun. Trebuie doar să iubești muzica și să îți dorești să mergi mai departe.",
     "story.closing": "De restul ne ocupăm împreună.",
     "story.role": "Fondator, Nova Music Academy",
+    "story.more": "Citește toată povestea",
+    "story.less": "Ascunde",
 
     /* CURSURI */
     "cursuri.aria": "Cursuri disponibile",
@@ -419,6 +421,8 @@ window.NMA_TRANSLATIONS = {
     "story.p6": "To us, this is what <strong>the Nova Music Academy family</strong> means. A place where you don't have to prove from day one how good you are. You just have to love music and want to keep going.",
     "story.closing": "We'll take care of the rest, together.",
     "story.role": "Founder, Nova Music Academy",
+    "story.more": "Read the whole story",
+    "story.less": "Show less",
 
     /* CURSURI */
     "cursuri.aria": "Available courses",

@@ -42,7 +42,7 @@
             rel="stylesheet"
         />
 
-        <link rel="stylesheet" href="css/styles.css?v=13" />
+        <link rel="stylesheet" href="css/styles.css?v=14" />
 
     <script src="/js/consent.js?v=2" defer></script>
 
@@ -306,32 +306,37 @@
        STORY / MANIFEST (sub-hero) — povestea spusă de fondator
        ============================================================ -->
         <section class="story" id="povestea-noastra" aria-label="Povestea Nova Music Academy" data-i18n-aria="story.aria">
-            <!-- fundal foto: se adaugă când vine poza (vezi .story--photo în CSS) -->
+            <!-- fundal / foto: se adaugă când vine poza -->
             <div class="story__inner container">
                 <header class="story__head section-reveal">
                     <p class="pre-header" data-i18n="story.pre">✦ Povestea noastră</p>
                     <h2 class="story__title" data-i18n="story.title">Ce înseamnă Nova Music Academy</h2>
                 </header>
 
-                <div class="story__letter">
-                    <p class="story__lead section-reveal" data-i18n-html="story.p1">Suntem o gașcă de muzicieni pasionați, adunați în jurul unui vis în care credem cu toată convingerea: oricine iubește muzica merită să aibă un loc în care să o descopere, să o învețe, să o desăvârșească și, dacă își dorește, să o transforme într-o profesie.</p>
-                    <p class="section-reveal" data-i18n-html="story.p2">Credem în talent, dar credem și mai mult în <em>ceea ce faci cu el</em>. În pasiunea care te aduce înapoi, în răbdarea de a o lua de la capăt și în consecvența de a deveni, în fiecare zi, puțin mai bun. Pentru că am văzut de prea multe ori cum dedicarea și munca ajung să întreacă un talent care nu a fost niciodată șlefuit.</p>
+                <div class="story__letter section-reveal">
+                    <p class="story__lead" data-i18n-html="story.p1">Suntem o gașcă de muzicieni pasionați, adunați în jurul unui vis în care credem cu toată convingerea: oricine iubește muzica merită să aibă un loc în care să o descopere, să o învețe, să o desăvârșească și, dacă își dorește, să o transforme într-o profesie.</p>
 
-                    <p class="story__statement section-reveal" data-i18n="story.statement">De aceea am construit Nova Music Academy.</p>
+                    <div class="story__more" id="story-more">
+                        <p data-i18n-html="story.p2">Credem în talent, dar credem și mai mult în <em>ceea ce faci cu el</em>. În pasiunea care te aduce înapoi, în răbdarea de a o lua de la capăt și în consecvența de a deveni, în fiecare zi, puțin mai bun. Pentru că am văzut de prea multe ori cum dedicarea și munca ajung să întreacă un talent care nu a fost niciodată șlefuit.</p>
+                        <p class="story__statement" data-i18n="story.statement">De aceea am construit Nova Music Academy.</p>
+                        <p data-i18n-html="story.p3">Nu suntem aici să fabricăm artiști pe bandă rulantă, să punem presiune pe copii sau să transformăm muzica într-o competiție permanentă. Nu credem în performanță cu orice preț și nu vrem să forțăm pe nimeni să devină ceea ce nu își dorește.</p>
+                        <p data-i18n-html="story.p4">Dar atunci când cineva își descoperă pasiunea și decide că vrea să meargă mai departe, <mark>suntem lângă el până în pânzele albe.</mark></p>
+                        <p data-i18n-html="story.p5">Am gândit un alt fel de a învăța muzică. Unul în care bucuria procesului contează la fel de mult ca rezultatul, în care fiecare om are propriul ritm, dar și o direcție clară în care poate crește. Cu profesori care nu doar predau, ci ascultă, înțeleg, încurajează și se implică.</p>
+                        <p data-i18n-html="story.p6">Pentru noi, asta înseamnă <strong>familia Nova Music Academy</strong>. Un loc în care nu trebuie să demonstrezi de la început cât ești de bun. Trebuie doar să iubești muzica și să îți dorești să mergi mai departe.</p>
+                        <p class="story__closing" data-i18n="story.closing">De restul ne ocupăm împreună.</p>
+                    </div>
 
-                    <p class="section-reveal" data-i18n-html="story.p3">Nu suntem aici să fabricăm artiști pe bandă rulantă, să punem presiune pe copii sau să transformăm muzica într-o competiție permanentă. Nu credem în performanță cu orice preț și nu vrem să forțăm pe nimeni să devină ceea ce nu își dorește.</p>
-                    <p class="section-reveal" data-i18n-html="story.p4">Dar atunci când cineva își descoperă pasiunea și decide că vrea să meargă mai departe, <mark>suntem lângă el până în pânzele albe.</mark></p>
-                    <p class="section-reveal" data-i18n-html="story.p5">Am gândit un alt fel de a învăța muzică. Unul în care bucuria procesului contează la fel de mult ca rezultatul, în care fiecare om are propriul ritm, dar și o direcție clară în care poate crește. Cu profesori care nu doar predau, ci ascultă, înțeleg, încurajează și se implică.</p>
-                    <p class="section-reveal" data-i18n-html="story.p6">Pentru noi, asta înseamnă <strong>familia Nova Music Academy</strong>. Un loc în care nu trebuie să demonstrezi de la început cât ești de bun. Trebuie doar să iubești muzica și să îți dorești să mergi mai departe.</p>
+                    <button type="button" class="story__toggle" aria-expanded="false" aria-controls="story-more">
+                        <span class="story__toggle-more" data-i18n="story.more">Citește toată povestea</span>
+                        <span class="story__toggle-less" data-i18n="story.less">Ascunde</span>
+                    </button>
+                </div>
 
-                    <p class="story__closing section-reveal" data-i18n="story.closing">De restul ne ocupăm împreună.</p>
-
-                    <div class="story__signature section-reveal">
-                        <img src="assets/images/hero-team/mihail-tirica.webp" alt="" width="56" height="56" loading="lazy" decoding="async" />
-                        <div>
-                            <span class="story__name">Mihail Tirica</span>
-                            <span class="story__role" data-i18n="story.role">Fondator, Nova Music Academy</span>
-                        </div>
+                <div class="story__signature section-reveal">
+                    <img src="assets/images/hero-team/mihail-tirica.webp" alt="" width="56" height="56" loading="lazy" decoding="async" />
+                    <div>
+                        <span class="story__name">Mihail Tirica</span>
+                        <span class="story__role" data-i18n="story.role">Fondator, Nova Music Academy</span>
                     </div>
                 </div>
             </div>
@@ -3020,10 +3025,10 @@
             </div>
         </div>
 
-        <script src="js/translations.js?v=3" defer></script>
+        <script src="js/translations.js?v=4" defer></script>
         <script src="js/translations-app.js" defer></script>
         <script src="js/translations-teachers.js" defer></script>
         <script src="js/i18n.js?v=2" defer></script>
-        <script src="js/main.js?v=12" defer></script>
+        <script src="js/main.js?v=13" defer></script>
     </body>
 </html>
