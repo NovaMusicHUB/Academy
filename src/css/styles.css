@@ -3573,3 +3573,125 @@ h3 {
 @media (prefers-reduced-motion: reduce) {
     .hero__langs { animation: none; }
 }
+
+/* ── STORY / MANIFEST (sub-hero) ─────────────────────────────── */
+.story {
+    position: relative;
+    overflow: hidden;
+    padding-block: clamp(4.5rem, 9vw, 8rem);
+    background:
+        radial-gradient(60rem 30rem at 85% 0%, rgba(242, 201, 76, 0.12), transparent 60%),
+        radial-gradient(50rem 30rem at 0% 100%, rgba(224, 122, 95, 0.1), transparent 60%),
+        var(--color-bg);
+}
+.story__inner {
+    position: relative;
+    max-width: 44rem;
+}
+.story__head {
+    text-align: center;
+    margin-bottom: clamp(2.5rem, 5vw, 3.5rem);
+}
+.story__title {
+    font-size: var(--text-h2);
+    margin: 0;
+}
+.story__letter {
+    font-size: clamp(1.0625rem, 1.25vw, 1.1875rem);
+    line-height: 1.85;
+    color: var(--color-base);
+}
+.story__letter p {
+    margin: 0 0 1.4em;
+}
+.story__lead {
+    font-size: 1.15em;
+    line-height: 1.75;
+}
+.story__lead::first-letter {
+    float: left;
+    font-family: var(--font-serif);
+    font-weight: 900;
+    font-size: 4.1em;
+    line-height: 0.8;
+    margin: 0.08em 0.12em 0 0;
+    color: var(--color-accent);
+}
+.story__letter em {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 700;
+}
+.story__letter mark {
+    background: linear-gradient(transparent 58%, rgba(242, 201, 76, 0.55) 58%);
+    color: inherit;
+    font-weight: 600;
+    padding: 0 0.1em;
+}
+.story__letter strong {
+    font-weight: 700;
+    color: var(--color-accent-dark);
+}
+.story__statement {
+    position: relative;
+    margin: 2.75rem 0 !important;
+    padding: 1.4rem 0;
+    text-align: center;
+    font-family: var(--font-serif);
+    font-weight: 900;
+    font-size: clamp(1.6rem, 3.4vw, 2.35rem);
+    line-height: 1.2;
+    color: var(--color-base);
+}
+.story__statement::before,
+.story__statement::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 4.5rem;
+    height: 2px;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, transparent, var(--color-highlight), transparent);
+}
+.story__statement::before { top: 0; }
+.story__statement::after { bottom: 0; }
+.story__closing {
+    margin: 2.5rem 0 1rem !important;
+    font-family: var(--font-handwriting);
+    font-weight: 700;
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    line-height: 1.1;
+    color: var(--color-accent);
+}
+.story__signature {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+}
+.story__signature img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 0 3px var(--color-bg), 0 0 0 4px rgba(224, 122, 95, 0.45);
+}
+.story__name {
+    display: block;
+    font-family: var(--font-handwriting);
+    font-size: 1.75rem;
+    line-height: 1;
+    color: var(--color-base);
+}
+.story__role {
+    display: block;
+    margin-top: 0.3rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--color-base-light);
+}
+@media (max-width: 768px) {
+    .story__letter { line-height: 1.75; }
+    .story__lead::first-letter { font-size: 3.6em; }
+}
