@@ -520,7 +520,7 @@ function tr(key, vars) {
   function showImage(i) {
     const img = currentItems[i];
     if (!img) return;
-    lbImg.src = img.src;
+    lbImg.src = img.dataset.full || img.src;
     lbImg.alt = tr("event." + currentEvent);
     currentIndex = i;
   }
@@ -1233,5 +1233,36 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
     section.classList.toggle("is-open", open);
     btn.setAttribute("aria-expanded", String(open));
     if (!open) section.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+})();
+
+/* ── TELEFON: galerie „Vezi toate” + carduri text „Citește mai mult” ── */
+(function () {
+  const ro = (document.documentElement.lang || "ro").indexOf("en") !== 0;
+  const L = () => {
+    let en = false;
+    try { en = (localStorage.getItem("lang") || "").indexOf("en") === 0; } catch (e) {}
+    return en
+      ? { all: "See all photos", more: "Read more ↓", less: "Show less ↑" }
+      : { all: "Vezi toate pozele", more: "Citește mai mult ↓", less: "Mai puțin ↑" };
+  };
+  document.querySelectorAll(".gallery__grid").forEach((grid) => {
+    const n = grid.querySelectorAll(".gallery__item").length;
+    if (n <= 9) return;
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "btn btn--outline btn--sm gallery__more";
+    btn.textContent = L().all + " (" + n + ")";
+    btn.addEventListener("click", () => grid.classList.add("is-expanded"));
+    grid.insertAdjacentElement("afterend", btn);
+  });
+  document.querySelectorAll(".seo-section__card").forEach((card) => {
+    const t = L();
+    card.setAttribute("data-more", t.more);
+    card.setAttribute("data-less", t.less);
+    card.addEventListener("click", (e) => {
+      if (e.target.closest("a")) return;
+      card.classList.toggle("is-open");
+    });
   });
 })();

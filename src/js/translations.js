@@ -2,7 +2,7 @@
 window.NMA_TRANSLATIONS = {
   ro: {
     /* META */
-    "meta.title": "Scoala de muzica in Bucuresti | Nova Music Academy",
+    "meta.title": "Școală de muzică în București: pian, canto, chitară | Nova Music Academy",
     "meta.description": "Cursuri de pian, chitară și canto pentru copii și adulți în București. Lecții în română, engleză și spaniolă. Nova Music Academy.",
     "meta.keywords": "scoala de muzica in Bucuresti, cursuri pian Bucuresti, cursuri chitara Bucuresti, cursuri canto CVT, lectii muzica copii adulti, academia muzica Bucuresti",
     "meta.og.title": "Nova Music Academy — Lecții de Muzică Premium în București",
@@ -368,7 +368,7 @@ window.NMA_TRANSLATIONS = {
 
   en: {
     /* META */
-    "meta.title": "Music School in Bucharest | Nova Music Academy",
+    "meta.title": "Music School in Bucharest: piano, singing, guitar | Nova Music Academy",
     "meta.description": "Piano, guitar and singing lessons for children and adults in Bucharest. Lessons in English, Spanish and Romanian. Nova Music Academy.",
     "meta.keywords": "music school in Bucharest, piano lessons Bucharest, guitar lessons Bucharest, CVT singing lessons, music lessons for kids and adults, music academy Bucharest",
     "meta.og.title": "Nova Music Academy — Premium Music Lessons in Bucharest",
